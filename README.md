@@ -33,6 +33,37 @@ kanban-tui
 
 Supports macOS on Apple Silicon and Intel.
 
+### As a herdr plugin
+
+Run Flow in a [herdr](https://herdr.dev) pane (needs [Bun](https://bun.sh)):
+
+```sh
+herdr plugin install m0hdrar/kanban_tui
+```
+
+Bind a key that jumps to the board pane (and opens one if none is open) in `~/.config/herdr/config.toml`:
+
+```toml
+[[keys.command]]
+key = "prefix+t"
+type = "plugin_action"
+command = "m0hdrar.kanban.open"
+description = "kanban"
+```
+
+### Open work in the herdr tab bar
+
+`kanban-tui status` prints your open work as one line, such as `Kanban 2 doing · 5 to-do`, and prints nothing when To-do and In Progress are empty. To show it at the right of herdr's tab bar:
+
+```toml
+[ui]
+tab_bar_right = [
+  { type = "command", command = "kanban-tui status", interval_seconds = 5, timeout_seconds = 2 },
+]
+```
+
+Then run `herdr server reload-config`.
+
 ## Usage
 
 ### Board

@@ -13,11 +13,24 @@
  *   t            move the selected card back to To-do
  *   x / del      delete the selected card
  *   q / ctrl+c   quit
+ *
+ *   bun run start status   print "Kanban 2 doing · 5 to-do" for status bars
  */
-import { createCliRenderer } from "@opentui/core"
-import { createKanbanApp } from "./src/app"
-import { createBoard, defaultBoardPath } from "./src/board"
-import { theme } from "./src/theme"
+import { createBoard, defaultBoardPath, statusLine } from "./src/board"
+
+// `kanban-tui status` prints one line for status bars; it skips loading the UI.
+if (process.argv[2] === "status") {
+  try {
+    console.log(statusLine(createBoard({ path: defaultBoardPath() }).counts()))
+  } catch {
+    // An unreadable board just leaves the status line empty.
+  }
+  process.exit(0)
+}
+
+const { createCliRenderer } = await import("@opentui/core")
+const { createKanbanApp } = await import("./src/app")
+const { theme } = await import("./src/theme")
 
 // Load before the renderer takes over the terminal, so a bad file is reported plainly.
 let board: ReturnType<typeof createBoard>

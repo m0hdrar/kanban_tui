@@ -37,6 +37,12 @@ export interface Board {
   counts(): Record<ColumnId, number>
 }
 
+/** One line for status bars such as herdr's tab bar; empty when there's nothing to do. */
+export function statusLine(counts: Record<ColumnId, number>): string {
+  if (!counts.todo && !counts.progress) return ""
+  return `Kanban ${counts.progress} doing · ${counts.todo} to-do`
+}
+
 /** Where the installed app keeps your board. */
 export function defaultBoardPath(): string {
   return join(homedir(), "Library", "Application Support", "kanban_tui", "board.json")

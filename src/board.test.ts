@@ -2,7 +2,7 @@ import { expect, test } from "bun:test"
 import { mkdtempSync, readFileSync, writeFileSync } from "node:fs"
 import { tmpdir } from "node:os"
 import { join } from "node:path"
-import { createBoard } from "./board"
+import { createBoard, statusLine } from "./board"
 
 const tempPath = () => join(mkdtempSync(join(tmpdir(), "kanban-")), "nested", "board.json")
 
@@ -32,4 +32,9 @@ test("a corrupt file is reported and left untouched", () => {
 
 test("without a path the board is the in-memory demo", () => {
   expect(createBoard().cards.length).toBeGreaterThan(0)
+})
+
+test("status line counts open work and is empty when there is none", () => {
+  expect(statusLine({ todo: 5, progress: 2, done: 9 })).toBe("Kanban 2 doing · 5 to-do")
+  expect(statusLine({ todo: 0, progress: 0, done: 3 })).toBe("")
 })

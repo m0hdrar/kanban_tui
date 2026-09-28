@@ -1,0 +1,21 @@
+id = "m0hdrar.kanban"
+name = "Kanban"
+version = "0.1.0"
+min_herdr_version = "0.9.0"
+description = "Flow, a keyboard-first kanban board, in a Herdr pane."
+platforms = ["macos"]
+
+[[build]]
+command = ["bun", "install", "--production"]
+
+[[panes]]
+id = "board"
+title = "Kanban"
+placement = "split"
+command = ["bun", "run", "index.ts"]
+
+[[actions]]
+id = "open"
+title = "Kanban: go to board"
+contexts = ["pane", "workspace"]
+command = ["bun", "run", "scripts/herdr-focus.ts"]
