@@ -1,0 +1,35 @@
+                                                                                                              
+  ╭━━━╮ ╭╮╱╱╱ ╭━━━╮ ╭╮╭╮╭╮                                                                                    
+  ┃╭━━╯ ┃┃╱╱╱ ┃╭━╮┃ ┃┃┃┃┃┃                                                                                    
+  ┃╰━━╮ ┃┃╱╱╱ ┃┃╱┃┃ ┃┃┃┃┃┃                                                            17:32:05 · Sun, Sep 27  
+  ┃╭━━╯ ┃┃╱╭╮ ┃┃╱┃┃ ┃╰╯╰╯┃                                              ████████████░░░░░░░░░░  55%  shipped  
+  ┃┃╱╱╱ ┃╰━╯┃ ┃╰━╯┃ ╰╮╭╮╭╯                                                  4 to-do · 1 in progress · 6 done  
+  ╰╯╱╱╱ ╰━━━╯ ╰━━━╯ ╱╰╯╰╯╱                                                                                    
+  kanban board · sprint 24                                                                                    
+                                                                                                              
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                              
+ ╭─ TO-DO · 4 ─────────────────────╮ ╭─ IN PROGRESS · 1 ────────────────╮ ╭─ DONE · 6 ──────────────────────╮ 
+ │                                 │ │                                  │ │                                 │ 
+ │ ┃   ● Ship the ...ding checklis │ │ ┃   ● Instrument checkout funnel │ │ ┃   ✓ Migrate auth to OIDC      │ 
+ │ ┃   K-01 · 2h ago · high        │ │ ┃   K-07 · 5h ago · medium       │ │ ┃   K-05 · just now · done      │ 
+ │                                 │ │                                  │ │                                 │ 
+ │ ┃ ▸ ● Fix token refresh race    │ │                                  │ │ ┃   ✓ Dark-mode contrast audit  │ 
+ │ ┃   K-02 · 5h ago · high        │ │                                  │ │ ┃   K-06 · just now · done      │ 
+ │                                 │ │                                  │ │                                 │ 
+ │ ┃   ● Design empty states       │ │                                  │ │ ┃   ✓ Cut release 1.4.0         │ 
+ │ ┃   K-03 · 9h ago · medium      │ │                                  │ │ ┃   K-08 · 1h ago · done        │ 
+ │                                 │ │                                  │ │                                 │ 
+ │ ┃   ● Add CSV export to reports │ │                                  │ │ ┃   ✓ Upgrade CI runners        │ 
+ │ ┃   K-04 · 1d ago · low         │ │                                  │ │ ┃   K-09 · 4h ago · done        │ 
+ │                                 │ │                                  │ │                                 │ 
+ ╰─────────────────────────────────╯ ╰──────────────────────────────────╯ ╰─────────────────────────────────╯ 
+                                                                                                              
+ ╭─ new card ───────────────────────────────────────────────────────────────────────────────────────────────╮ 
+ │  ▸ Polish the launch checklist                                                                           │ 
+ │ enter add card to To-do   ·   esc cancel                                                                 │ 
+ ╰──────────────────────────────────────────────────────────────────────────────────────────────────────────╯ 
+                                                                                                              
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  n new  p progress  d done  t to-do  x delete  ↑↓ card  ←→ column  q quit                K-06 moved to Done  
+

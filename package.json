@@ -1,0 +1,20 @@
+{
+  "name": "kanban-tui",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "description": "Flow — a premium kanban board for the terminal, built with OpenTUI (@opentui/core)",
+  "scripts": {
+    "start": "bun run index.ts",
+    "dev": "bun --watch run index.ts",
+    "preview": "bun run scripts/preview.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "@opentui/core": "^0.5.12"
+  }
+}

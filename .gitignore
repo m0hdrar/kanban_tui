@@ -1,0 +1,12 @@
+# dependencies (bun install)
+node_modules
+
+# logs
+*.log
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# output
+dist
