@@ -75,7 +75,7 @@ export function createKanbanApp(
 
   // ------------------------------------------------------------------ header
   const tagline = new TextRenderable(ctx, {
-    content: t`${fg(theme.textDim)("kanban board")} ${fg(theme.textFaint)("·")} ${fg(theme.textFaint)("sprint 24")}`,
+    content: t`${fg(theme.textDim)("kanban board")}`,
   })
 
   const clockLine = new TextRenderable(ctx, { content: t`${fg(theme.textDim)("--:--:--")}` })
