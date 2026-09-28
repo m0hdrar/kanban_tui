@@ -117,7 +117,7 @@ function toSvg(frame: CapturedFrame): string {
   frame.lines.forEach((line, row) => {
     let col = 0
     for (const span of line.spans) {
-      const spanWidth = cellWidth(span)
+      const spanWidth = cellWidth(span) * CELL_W
       const x = PAD + col * CELL_W
       const y = PAD + row * CELL_H
 
@@ -149,8 +149,8 @@ function toSvg(frame: CapturedFrame): string {
 
         parts.push(
           `<text x="${round(x)}" y="${round(y + CELL_H * 0.75)}" fill="${rgb(span.fg)}" ` +
-            `xml:space="preserve" ` +
-            `font-family='${FONT_STACK}' font-size="13" ` +
+            `xml:space="preserve" textLength="${round(spanWidth)}" lengthAdjust="spacingAndGlyphs" ` +
+            `font-family='${FONT_STACK}' font-size="15" ` +
             `${span.attributes & TextAttributes.BOLD ? 'font-weight="700"' : 'font-weight="400"'} ` +
             `${span.attributes & TextAttributes.ITALIC ? 'font-style="italic"' : ""} ` +
             `${span.attributes & TextAttributes.DIM ? 'opacity="0.6"' : ""}>` +

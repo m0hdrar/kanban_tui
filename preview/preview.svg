@@ -1,679 +1,679 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="952" height="640" viewBox="0 0 952 640">
 <rect width="100%" height="100%" fill="#0A0D16"/>
-<rect x="14" y="14" width="110" height="18" fill="#0f141f"/>
-<rect x="14" y="32" width="86" height="18" fill="#0f141f"/>
-<rect x="736.4" y="32" width="8" height="18" fill="#0f141f"/>
-<text x="736.4" y="45.5" fill="#e9eff9" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="700"  >17:32:05</text>
-<rect x="803.6" y="32" width="1" height="18" fill="#0f141f"/>
-<rect x="812" y="32" width="1" height="18" fill="#0f141f"/>
-<text x="812" y="45.5" fill="#5a6579" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >·</text>
-<rect x="820.4" y="32" width="1" height="18" fill="#0f141f"/>
-<rect x="828.8" y="32" width="11" height="18" fill="#0f141f"/>
-<text x="828.8" y="45.5" fill="#93a0b8" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >Sun, Sep 27</text>
-<rect x="921.2" y="32" width="2" height="18" fill="#0f141f"/>
-<rect x="14" y="50" width="2" height="18" fill="#0f141f"/>
-<rect x="30.8" y="50" width="12" height="18" fill="#0f141f"/>
-<text x="30.8" y="63.5" fill="#93a0b8" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >kanban board</text>
-<rect x="131.6" y="50" width="58" height="18" fill="#0f141f"/>
-<rect x="618.8" y="50" width="12" height="18" fill="#0f141f"/>
-<text x="618.8" y="63.5" fill="#4ade80" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >████████████</text>
-<rect x="719.6" y="50" width="10" height="18" fill="#0f141f"/>
-<text x="719.6" y="63.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >░░░░░░░░░░</text>
-<rect x="803.6" y="50" width="5" height="18" fill="#0f141f"/>
-<text x="803.6" y="63.5" fill="#93a0b8" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >  55%</text>
-<rect x="845.6" y="50" width="9" height="18" fill="#0f141f"/>
-<text x="845.6" y="63.5" fill="#5a6579" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >  shipped</text>
-<rect x="921.2" y="50" width="2" height="18" fill="#0f141f"/>
-<rect x="14" y="68" width="76" height="18" fill="#0f141f"/>
-<rect x="652.4" y="68" width="7" height="18" fill="#0f141f"/>
-<text x="652.4" y="81.5" fill="#93a0b8" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >4 to-do</text>
-<rect x="711.2" y="68" width="1" height="18" fill="#0f141f"/>
-<rect x="719.6" y="68" width="1" height="18" fill="#0f141f"/>
-<text x="719.6" y="81.5" fill="#5a6579" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >·</text>
-<rect x="728" y="68" width="1" height="18" fill="#0f141f"/>
-<rect x="736.4" y="68" width="13" height="18" fill="#0f141f"/>
-<text x="736.4" y="81.5" fill="#93a0b8" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >1 in progress</text>
-<rect x="845.6" y="68" width="1" height="18" fill="#0f141f"/>
-<rect x="854" y="68" width="1" height="18" fill="#0f141f"/>
-<text x="854" y="81.5" fill="#5a6579" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >·</text>
-<rect x="862.4" y="68" width="1" height="18" fill="#0f141f"/>
-<rect x="870.8" y="68" width="6" height="18" fill="#0f141f"/>
-<text x="870.8" y="81.5" fill="#93a0b8" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >6 done</text>
-<rect x="921.2" y="68" width="2" height="18" fill="#0f141f"/>
-<rect x="14" y="86" width="110" height="18" fill="#0f141f"/>
-<rect x="14" y="104" width="110" height="18" fill="#0f141f"/>
-<text x="14" y="117.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >──────────────────────────────────────────────────────────────────────────────────────────────────────────────</text>
-<rect x="14" y="122" width="110" height="18" fill="#0a0d16"/>
-<rect x="14" y="140" width="1" height="18" fill="#0a0d16"/>
-<rect x="22.4" y="140" width="35" height="18" fill="#121a2b"/>
-<text x="22.4" y="153.5" fill="#56c8ff" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >╭─ TO-DO · 4 ─────────────────────╮</text>
-<rect x="316.4" y="140" width="1" height="18" fill="#0a0d16"/>
-<rect x="324.8" y="140" width="2" height="18" fill="#0f141f"/>
-<text x="324.8" y="153.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >╭─</text>
-<rect x="341.6" y="140" width="17" height="18" fill="#0f141f"/>
-<text x="341.6" y="153.5" fill="#5a6579" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  > IN PROGRESS · 1 </text>
-<rect x="484.4" y="140" width="17" height="18" fill="#0f141f"/>
-<text x="484.4" y="153.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >────────────────╮</text>
-<rect x="627.2" y="140" width="1" height="18" fill="#0a0d16"/>
-<rect x="635.6" y="140" width="2" height="18" fill="#0f141f"/>
-<text x="635.6" y="153.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >╭─</text>
-<rect x="652.4" y="140" width="10" height="18" fill="#0f141f"/>
-<text x="652.4" y="153.5" fill="#5a6579" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  > DONE · 6 </text>
-<rect x="736.4" y="140" width="23" height="18" fill="#0f141f"/>
-<text x="736.4" y="153.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >──────────────────────╮</text>
-<rect x="929.6" y="140" width="1" height="18" fill="#0a0d16"/>
-<rect x="14" y="158" width="1" height="18" fill="#0a0d16"/>
-<rect x="22.4" y="158" width="1" height="18" fill="#121a2b"/>
-<text x="22.4" y="171.5" fill="#56c8ff" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="30.8" y="158" width="33" height="18" fill="#121a2b"/>
-<rect x="308" y="158" width="1" height="18" fill="#121a2b"/>
-<text x="308" y="171.5" fill="#56c8ff" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="316.4" y="158" width="1" height="18" fill="#0a0d16"/>
-<rect x="324.8" y="158" width="1" height="18" fill="#0f141f"/>
-<text x="324.8" y="171.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="333.2" y="158" width="34" height="18" fill="#0f141f"/>
-<rect x="618.8" y="158" width="1" height="18" fill="#0f141f"/>
-<text x="618.8" y="171.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="627.2" y="158" width="1" height="18" fill="#0a0d16"/>
-<rect x="635.6" y="158" width="1" height="18" fill="#0f141f"/>
-<text x="635.6" y="171.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="644" y="158" width="33" height="18" fill="#0f141f"/>
-<rect x="921.2" y="158" width="1" height="18" fill="#0f141f"/>
-<text x="921.2" y="171.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="929.6" y="158" width="1" height="18" fill="#0a0d16"/>
-<rect x="14" y="176" width="1" height="18" fill="#0a0d16"/>
-<rect x="22.4" y="176" width="1" height="18" fill="#121a2b"/>
-<text x="22.4" y="189.5" fill="#56c8ff" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="30.8" y="176" width="1" height="18" fill="#121a2b"/>
-<rect x="39.2" y="176" width="1" height="18" fill="#131a28"/>
-<text x="39.2" y="189.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >┃</text>
-<rect x="47.6" y="176" width="1" height="18" fill="#131a28"/>
-<rect x="56" y="176" width="2" height="18" fill="#131a28"/>
-<rect x="72.8" y="176" width="2" height="18" fill="#131a28"/>
-<text x="72.8" y="189.5" fill="#ff6b8a" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >● </text>
-<rect x="89.6" y="176" width="9" height="18" fill="#131a28"/>
-<text x="89.6" y="189.5" fill="#e9eff9" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >Ship the </text>
-<rect x="165.2" y="176" width="3" height="18" fill="#131a28"/>
-<text x="165.2" y="189.5" fill="#ffffff" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >...</text>
-<rect x="190.4" y="176" width="13" height="18" fill="#131a28"/>
-<text x="190.4" y="189.5" fill="#e9eff9" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >ding checklis</text>
-<rect x="299.6" y="176" width="1" height="18" fill="#121a2b"/>
-<rect x="308" y="176" width="1" height="18" fill="#121a2b"/>
-<text x="308" y="189.5" fill="#56c8ff" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="316.4" y="176" width="1" height="18" fill="#0a0d16"/>
-<rect x="324.8" y="176" width="1" height="18" fill="#0f141f"/>
-<text x="324.8" y="189.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="333.2" y="176" width="1" height="18" fill="#0f141f"/>
-<rect x="341.6" y="176" width="1" height="18" fill="#131a28"/>
-<text x="341.6" y="189.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >┃</text>
-<rect x="350" y="176" width="1" height="18" fill="#131a28"/>
-<rect x="358.4" y="176" width="2" height="18" fill="#131a28"/>
-<rect x="375.2" y="176" width="2" height="18" fill="#131a28"/>
-<text x="375.2" y="189.5" fill="#ffc24b" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >● </text>
-<rect x="392" y="176" width="26" height="18" fill="#131a28"/>
-<text x="392" y="189.5" fill="#e9eff9" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >Instrument checkout funnel</text>
-<rect x="610.4" y="176" width="1" height="18" fill="#0f141f"/>
-<rect x="618.8" y="176" width="1" height="18" fill="#0f141f"/>
-<text x="618.8" y="189.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="627.2" y="176" width="1" height="18" fill="#0a0d16"/>
-<rect x="635.6" y="176" width="1" height="18" fill="#0f141f"/>
-<text x="635.6" y="189.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="644" y="176" width="1" height="18" fill="#0f141f"/>
-<rect x="652.4" y="176" width="1" height="18" fill="#131a28"/>
-<text x="652.4" y="189.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >┃</text>
-<rect x="660.8" y="176" width="1" height="18" fill="#131a28"/>
-<rect x="669.2" y="176" width="2" height="18" fill="#131a28"/>
-<rect x="686" y="176" width="2" height="18" fill="#131a28"/>
-<text x="686" y="189.5" fill="#4ade80" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >✓ </text>
-<rect x="702.8" y="176" width="20" height="18" fill="#131a28"/>
-<rect x="702.8" y="185" width="20" height="1" fill="#93a0b8"/>
-<text x="702.8" y="189.5" fill="#93a0b8" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >Migrate auth to OIDC</text>
-<rect x="870.8" y="176" width="5" height="18" fill="#131a28"/>
-<rect x="912.8" y="176" width="1" height="18" fill="#0f141f"/>
-<rect x="921.2" y="176" width="1" height="18" fill="#0f141f"/>
-<text x="921.2" y="189.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="929.6" y="176" width="1" height="18" fill="#0a0d16"/>
-<rect x="14" y="194" width="1" height="18" fill="#0a0d16"/>
-<rect x="22.4" y="194" width="1" height="18" fill="#121a2b"/>
-<text x="22.4" y="207.5" fill="#56c8ff" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="30.8" y="194" width="1" height="18" fill="#121a2b"/>
-<rect x="39.2" y="194" width="1" height="18" fill="#131a28"/>
-<text x="39.2" y="207.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >┃</text>
-<rect x="47.6" y="194" width="1" height="18" fill="#131a28"/>
-<rect x="56" y="194" width="18" height="18" fill="#131a28"/>
-<text x="56" y="207.5" fill="#5a6579" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >  K-01 · 2h ago · </text>
-<rect x="207.2" y="194" width="4" height="18" fill="#131a28"/>
-<text x="207.2" y="207.5" fill="#ff6b8a" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >high</text>
-<rect x="240.8" y="194" width="7" height="18" fill="#131a28"/>
-<rect x="299.6" y="194" width="1" height="18" fill="#121a2b"/>
-<rect x="308" y="194" width="1" height="18" fill="#121a2b"/>
-<text x="308" y="207.5" fill="#56c8ff" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="316.4" y="194" width="1" height="18" fill="#0a0d16"/>
-<rect x="324.8" y="194" width="1" height="18" fill="#0f141f"/>
-<text x="324.8" y="207.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="333.2" y="194" width="1" height="18" fill="#0f141f"/>
-<rect x="341.6" y="194" width="1" height="18" fill="#131a28"/>
-<text x="341.6" y="207.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >┃</text>
-<rect x="350" y="194" width="1" height="18" fill="#131a28"/>
-<rect x="358.4" y="194" width="18" height="18" fill="#131a28"/>
-<text x="358.4" y="207.5" fill="#5a6579" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >  K-07 · 5h ago · </text>
-<rect x="509.6" y="194" width="6" height="18" fill="#131a28"/>
-<text x="509.6" y="207.5" fill="#ffc24b" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >medium</text>
-<rect x="560" y="194" width="6" height="18" fill="#131a28"/>
-<rect x="610.4" y="194" width="1" height="18" fill="#0f141f"/>
-<rect x="618.8" y="194" width="1" height="18" fill="#0f141f"/>
-<text x="618.8" y="207.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="627.2" y="194" width="1" height="18" fill="#0a0d16"/>
-<rect x="635.6" y="194" width="1" height="18" fill="#0f141f"/>
-<text x="635.6" y="207.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="644" y="194" width="1" height="18" fill="#0f141f"/>
-<rect x="652.4" y="194" width="1" height="18" fill="#131a28"/>
-<text x="652.4" y="207.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >┃</text>
-<rect x="660.8" y="194" width="1" height="18" fill="#131a28"/>
-<rect x="669.2" y="194" width="20" height="18" fill="#131a28"/>
-<text x="669.2" y="207.5" fill="#5a6579" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >  K-05 · just now · </text>
-<rect x="837.2" y="194" width="4" height="18" fill="#131a28"/>
-<text x="837.2" y="207.5" fill="#4ade80" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >done</text>
-<rect x="870.8" y="194" width="5" height="18" fill="#131a28"/>
-<rect x="912.8" y="194" width="1" height="18" fill="#0f141f"/>
-<rect x="921.2" y="194" width="1" height="18" fill="#0f141f"/>
-<text x="921.2" y="207.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="929.6" y="194" width="1" height="18" fill="#0a0d16"/>
-<rect x="14" y="212" width="1" height="18" fill="#0a0d16"/>
-<rect x="22.4" y="212" width="1" height="18" fill="#121a2b"/>
-<text x="22.4" y="225.5" fill="#56c8ff" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="30.8" y="212" width="33" height="18" fill="#121a2b"/>
-<rect x="308" y="212" width="1" height="18" fill="#121a2b"/>
-<text x="308" y="225.5" fill="#56c8ff" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="316.4" y="212" width="1" height="18" fill="#0a0d16"/>
-<rect x="324.8" y="212" width="1" height="18" fill="#0f141f"/>
-<text x="324.8" y="225.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="333.2" y="212" width="34" height="18" fill="#0f141f"/>
-<rect x="618.8" y="212" width="1" height="18" fill="#0f141f"/>
-<text x="618.8" y="225.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="627.2" y="212" width="1" height="18" fill="#0a0d16"/>
-<rect x="635.6" y="212" width="1" height="18" fill="#0f141f"/>
-<text x="635.6" y="225.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="644" y="212" width="33" height="18" fill="#0f141f"/>
-<rect x="921.2" y="212" width="1" height="18" fill="#0f141f"/>
-<text x="921.2" y="225.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="929.6" y="212" width="1" height="18" fill="#0a0d16"/>
-<rect x="14" y="230" width="1" height="18" fill="#0a0d16"/>
-<rect x="22.4" y="230" width="1" height="18" fill="#121a2b"/>
-<text x="22.4" y="243.5" fill="#56c8ff" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="30.8" y="230" width="1" height="18" fill="#121a2b"/>
-<rect x="39.2" y="230" width="1" height="18" fill="#1d2745"/>
-<text x="39.2" y="243.5" fill="#7c8cf8" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >┃</text>
-<rect x="47.6" y="230" width="1" height="18" fill="#1d2745"/>
-<rect x="56" y="230" width="2" height="18" fill="#1d2745"/>
-<text x="56" y="243.5" fill="#7c8cf8" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >▸ </text>
-<rect x="72.8" y="230" width="2" height="18" fill="#1d2745"/>
-<text x="72.8" y="243.5" fill="#ff6b8a" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >● </text>
-<rect x="89.6" y="230" width="22" height="18" fill="#1d2745"/>
-<text x="89.6" y="243.5" fill="#e9eff9" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="700"  >Fix token refresh race</text>
-<rect x="274.4" y="230" width="3" height="18" fill="#1d2745"/>
-<rect x="299.6" y="230" width="1" height="18" fill="#121a2b"/>
-<rect x="308" y="230" width="1" height="18" fill="#121a2b"/>
-<text x="308" y="243.5" fill="#56c8ff" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="316.4" y="230" width="1" height="18" fill="#0a0d16"/>
-<rect x="324.8" y="230" width="1" height="18" fill="#0f141f"/>
-<text x="324.8" y="243.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="333.2" y="230" width="34" height="18" fill="#0f141f"/>
-<rect x="618.8" y="230" width="1" height="18" fill="#0f141f"/>
-<text x="618.8" y="243.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="627.2" y="230" width="1" height="18" fill="#0a0d16"/>
-<rect x="635.6" y="230" width="1" height="18" fill="#0f141f"/>
-<text x="635.6" y="243.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="644" y="230" width="1" height="18" fill="#0f141f"/>
-<rect x="652.4" y="230" width="1" height="18" fill="#131a28"/>
-<text x="652.4" y="243.5" fill="#4ade80" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >┃</text>
-<rect x="660.8" y="230" width="1" height="18" fill="#131a28"/>
-<rect x="669.2" y="230" width="2" height="18" fill="#131a28"/>
-<rect x="686" y="230" width="2" height="18" fill="#131a28"/>
-<text x="686" y="243.5" fill="#4ade80" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >✓ </text>
-<rect x="702.8" y="230" width="24" height="18" fill="#131a28"/>
-<rect x="702.8" y="239" width="24" height="1" fill="#93a0b8"/>
-<text x="702.8" y="243.5" fill="#93a0b8" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >Dark-mode contrast audit</text>
-<rect x="904.4" y="230" width="1" height="18" fill="#131a28"/>
-<rect x="912.8" y="230" width="1" height="18" fill="#0f141f"/>
-<rect x="921.2" y="230" width="1" height="18" fill="#0f141f"/>
-<text x="921.2" y="243.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="929.6" y="230" width="1" height="18" fill="#0a0d16"/>
-<rect x="14" y="248" width="1" height="18" fill="#0a0d16"/>
-<rect x="22.4" y="248" width="1" height="18" fill="#121a2b"/>
-<text x="22.4" y="261.5" fill="#56c8ff" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="30.8" y="248" width="1" height="18" fill="#121a2b"/>
-<rect x="39.2" y="248" width="1" height="18" fill="#1d2745"/>
-<text x="39.2" y="261.5" fill="#7c8cf8" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >┃</text>
-<rect x="47.6" y="248" width="1" height="18" fill="#1d2745"/>
-<rect x="56" y="248" width="18" height="18" fill="#1d2745"/>
-<text x="56" y="261.5" fill="#5a6579" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >  K-02 · 5h ago · </text>
-<rect x="207.2" y="248" width="4" height="18" fill="#1d2745"/>
-<text x="207.2" y="261.5" fill="#ff6b8a" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >high</text>
-<rect x="240.8" y="248" width="7" height="18" fill="#1d2745"/>
-<rect x="299.6" y="248" width="1" height="18" fill="#121a2b"/>
-<rect x="308" y="248" width="1" height="18" fill="#121a2b"/>
-<text x="308" y="261.5" fill="#56c8ff" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="316.4" y="248" width="1" height="18" fill="#0a0d16"/>
-<rect x="324.8" y="248" width="1" height="18" fill="#0f141f"/>
-<text x="324.8" y="261.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="333.2" y="248" width="34" height="18" fill="#0f141f"/>
-<rect x="618.8" y="248" width="1" height="18" fill="#0f141f"/>
-<text x="618.8" y="261.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="627.2" y="248" width="1" height="18" fill="#0a0d16"/>
-<rect x="635.6" y="248" width="1" height="18" fill="#0f141f"/>
-<text x="635.6" y="261.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="644" y="248" width="1" height="18" fill="#0f141f"/>
-<rect x="652.4" y="248" width="1" height="18" fill="#131a28"/>
-<text x="652.4" y="261.5" fill="#4ade80" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >┃</text>
-<rect x="660.8" y="248" width="1" height="18" fill="#131a28"/>
-<rect x="669.2" y="248" width="20" height="18" fill="#131a28"/>
-<text x="669.2" y="261.5" fill="#5a6579" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >  K-06 · just now · </text>
-<rect x="837.2" y="248" width="4" height="18" fill="#131a28"/>
-<text x="837.2" y="261.5" fill="#4ade80" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >done</text>
-<rect x="870.8" y="248" width="5" height="18" fill="#131a28"/>
-<rect x="912.8" y="248" width="1" height="18" fill="#0f141f"/>
-<rect x="921.2" y="248" width="1" height="18" fill="#0f141f"/>
-<text x="921.2" y="261.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="929.6" y="248" width="1" height="18" fill="#0a0d16"/>
-<rect x="14" y="266" width="1" height="18" fill="#0a0d16"/>
-<rect x="22.4" y="266" width="1" height="18" fill="#121a2b"/>
-<text x="22.4" y="279.5" fill="#56c8ff" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="30.8" y="266" width="33" height="18" fill="#121a2b"/>
-<rect x="308" y="266" width="1" height="18" fill="#121a2b"/>
-<text x="308" y="279.5" fill="#56c8ff" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="316.4" y="266" width="1" height="18" fill="#0a0d16"/>
-<rect x="324.8" y="266" width="1" height="18" fill="#0f141f"/>
-<text x="324.8" y="279.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="333.2" y="266" width="34" height="18" fill="#0f141f"/>
-<rect x="618.8" y="266" width="1" height="18" fill="#0f141f"/>
-<text x="618.8" y="279.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="627.2" y="266" width="1" height="18" fill="#0a0d16"/>
-<rect x="635.6" y="266" width="1" height="18" fill="#0f141f"/>
-<text x="635.6" y="279.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="644" y="266" width="33" height="18" fill="#0f141f"/>
-<rect x="921.2" y="266" width="1" height="18" fill="#0f141f"/>
-<text x="921.2" y="279.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="929.6" y="266" width="1" height="18" fill="#0a0d16"/>
-<rect x="14" y="284" width="1" height="18" fill="#0a0d16"/>
-<rect x="22.4" y="284" width="1" height="18" fill="#121a2b"/>
-<text x="22.4" y="297.5" fill="#56c8ff" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="30.8" y="284" width="1" height="18" fill="#121a2b"/>
-<rect x="39.2" y="284" width="1" height="18" fill="#131a28"/>
-<text x="39.2" y="297.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >┃</text>
-<rect x="47.6" y="284" width="1" height="18" fill="#131a28"/>
-<rect x="56" y="284" width="2" height="18" fill="#131a28"/>
-<rect x="72.8" y="284" width="2" height="18" fill="#131a28"/>
-<text x="72.8" y="297.5" fill="#ffc24b" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >● </text>
-<rect x="89.6" y="284" width="19" height="18" fill="#131a28"/>
-<text x="89.6" y="297.5" fill="#e9eff9" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >Design empty states</text>
-<rect x="249.2" y="284" width="6" height="18" fill="#131a28"/>
-<rect x="299.6" y="284" width="1" height="18" fill="#121a2b"/>
-<rect x="308" y="284" width="1" height="18" fill="#121a2b"/>
-<text x="308" y="297.5" fill="#56c8ff" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="316.4" y="284" width="1" height="18" fill="#0a0d16"/>
-<rect x="324.8" y="284" width="1" height="18" fill="#0f141f"/>
-<text x="324.8" y="297.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="333.2" y="284" width="34" height="18" fill="#0f141f"/>
-<rect x="618.8" y="284" width="1" height="18" fill="#0f141f"/>
-<text x="618.8" y="297.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="627.2" y="284" width="1" height="18" fill="#0a0d16"/>
-<rect x="635.6" y="284" width="1" height="18" fill="#0f141f"/>
-<text x="635.6" y="297.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="644" y="284" width="1" height="18" fill="#0f141f"/>
-<rect x="652.4" y="284" width="1" height="18" fill="#131a28"/>
-<text x="652.4" y="297.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >┃</text>
-<rect x="660.8" y="284" width="1" height="18" fill="#131a28"/>
-<rect x="669.2" y="284" width="2" height="18" fill="#131a28"/>
-<rect x="686" y="284" width="2" height="18" fill="#131a28"/>
-<text x="686" y="297.5" fill="#4ade80" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >✓ </text>
-<rect x="702.8" y="284" width="17" height="18" fill="#131a28"/>
-<rect x="702.8" y="293" width="17" height="1" fill="#93a0b8"/>
-<text x="702.8" y="297.5" fill="#93a0b8" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >Cut release 1.4.0</text>
-<rect x="845.6" y="284" width="8" height="18" fill="#131a28"/>
-<rect x="912.8" y="284" width="1" height="18" fill="#0f141f"/>
-<rect x="921.2" y="284" width="1" height="18" fill="#0f141f"/>
-<text x="921.2" y="297.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="929.6" y="284" width="1" height="18" fill="#0a0d16"/>
-<rect x="14" y="302" width="1" height="18" fill="#0a0d16"/>
-<rect x="22.4" y="302" width="1" height="18" fill="#121a2b"/>
-<text x="22.4" y="315.5" fill="#56c8ff" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="30.8" y="302" width="1" height="18" fill="#121a2b"/>
-<rect x="39.2" y="302" width="1" height="18" fill="#131a28"/>
-<text x="39.2" y="315.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >┃</text>
-<rect x="47.6" y="302" width="1" height="18" fill="#131a28"/>
-<rect x="56" y="302" width="18" height="18" fill="#131a28"/>
-<text x="56" y="315.5" fill="#5a6579" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >  K-03 · 9h ago · </text>
-<rect x="207.2" y="302" width="6" height="18" fill="#131a28"/>
-<text x="207.2" y="315.5" fill="#ffc24b" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >medium</text>
-<rect x="257.6" y="302" width="5" height="18" fill="#131a28"/>
-<rect x="299.6" y="302" width="1" height="18" fill="#121a2b"/>
-<rect x="308" y="302" width="1" height="18" fill="#121a2b"/>
-<text x="308" y="315.5" fill="#56c8ff" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="316.4" y="302" width="1" height="18" fill="#0a0d16"/>
-<rect x="324.8" y="302" width="1" height="18" fill="#0f141f"/>
-<text x="324.8" y="315.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="333.2" y="302" width="34" height="18" fill="#0f141f"/>
-<rect x="618.8" y="302" width="1" height="18" fill="#0f141f"/>
-<text x="618.8" y="315.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="627.2" y="302" width="1" height="18" fill="#0a0d16"/>
-<rect x="635.6" y="302" width="1" height="18" fill="#0f141f"/>
-<text x="635.6" y="315.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="644" y="302" width="1" height="18" fill="#0f141f"/>
-<rect x="652.4" y="302" width="1" height="18" fill="#131a28"/>
-<text x="652.4" y="315.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >┃</text>
-<rect x="660.8" y="302" width="1" height="18" fill="#131a28"/>
-<rect x="669.2" y="302" width="18" height="18" fill="#131a28"/>
-<text x="669.2" y="315.5" fill="#5a6579" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >  K-08 · 1h ago · </text>
-<rect x="820.4" y="302" width="4" height="18" fill="#131a28"/>
-<text x="820.4" y="315.5" fill="#4ade80" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >done</text>
-<rect x="854" y="302" width="7" height="18" fill="#131a28"/>
-<rect x="912.8" y="302" width="1" height="18" fill="#0f141f"/>
-<rect x="921.2" y="302" width="1" height="18" fill="#0f141f"/>
-<text x="921.2" y="315.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="929.6" y="302" width="1" height="18" fill="#0a0d16"/>
-<rect x="14" y="320" width="1" height="18" fill="#0a0d16"/>
-<rect x="22.4" y="320" width="1" height="18" fill="#121a2b"/>
-<text x="22.4" y="333.5" fill="#56c8ff" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="30.8" y="320" width="33" height="18" fill="#121a2b"/>
-<rect x="308" y="320" width="1" height="18" fill="#121a2b"/>
-<text x="308" y="333.5" fill="#56c8ff" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="316.4" y="320" width="1" height="18" fill="#0a0d16"/>
-<rect x="324.8" y="320" width="1" height="18" fill="#0f141f"/>
-<text x="324.8" y="333.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="333.2" y="320" width="34" height="18" fill="#0f141f"/>
-<rect x="618.8" y="320" width="1" height="18" fill="#0f141f"/>
-<text x="618.8" y="333.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="627.2" y="320" width="1" height="18" fill="#0a0d16"/>
-<rect x="635.6" y="320" width="1" height="18" fill="#0f141f"/>
-<text x="635.6" y="333.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="644" y="320" width="33" height="18" fill="#0f141f"/>
-<rect x="921.2" y="320" width="1" height="18" fill="#0f141f"/>
-<text x="921.2" y="333.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="929.6" y="320" width="1" height="18" fill="#0a0d16"/>
-<rect x="14" y="338" width="1" height="18" fill="#0a0d16"/>
-<rect x="22.4" y="338" width="1" height="18" fill="#121a2b"/>
-<text x="22.4" y="351.5" fill="#56c8ff" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="30.8" y="338" width="1" height="18" fill="#121a2b"/>
-<rect x="39.2" y="338" width="1" height="18" fill="#131a28"/>
-<text x="39.2" y="351.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >┃</text>
-<rect x="47.6" y="338" width="1" height="18" fill="#131a28"/>
-<rect x="56" y="338" width="2" height="18" fill="#131a28"/>
-<rect x="72.8" y="338" width="2" height="18" fill="#131a28"/>
-<text x="72.8" y="351.5" fill="#56c8ff" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >● </text>
-<rect x="89.6" y="338" width="25" height="18" fill="#131a28"/>
-<text x="89.6" y="351.5" fill="#e9eff9" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >Add CSV export to reports</text>
-<rect x="299.6" y="338" width="1" height="18" fill="#121a2b"/>
-<rect x="308" y="338" width="1" height="18" fill="#121a2b"/>
-<text x="308" y="351.5" fill="#56c8ff" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="316.4" y="338" width="1" height="18" fill="#0a0d16"/>
-<rect x="324.8" y="338" width="1" height="18" fill="#0f141f"/>
-<text x="324.8" y="351.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="333.2" y="338" width="34" height="18" fill="#0f141f"/>
-<rect x="618.8" y="338" width="1" height="18" fill="#0f141f"/>
-<text x="618.8" y="351.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="627.2" y="338" width="1" height="18" fill="#0a0d16"/>
-<rect x="635.6" y="338" width="1" height="18" fill="#0f141f"/>
-<text x="635.6" y="351.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="644" y="338" width="1" height="18" fill="#0f141f"/>
-<rect x="652.4" y="338" width="1" height="18" fill="#131a28"/>
-<text x="652.4" y="351.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >┃</text>
-<rect x="660.8" y="338" width="1" height="18" fill="#131a28"/>
-<rect x="669.2" y="338" width="2" height="18" fill="#131a28"/>
-<rect x="686" y="338" width="2" height="18" fill="#131a28"/>
-<text x="686" y="351.5" fill="#4ade80" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >✓ </text>
-<rect x="702.8" y="338" width="18" height="18" fill="#131a28"/>
-<rect x="702.8" y="347" width="18" height="1" fill="#93a0b8"/>
-<text x="702.8" y="351.5" fill="#93a0b8" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >Upgrade CI runners</text>
-<rect x="854" y="338" width="7" height="18" fill="#131a28"/>
-<rect x="912.8" y="338" width="1" height="18" fill="#0f141f"/>
-<rect x="921.2" y="338" width="1" height="18" fill="#0f141f"/>
-<text x="921.2" y="351.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="929.6" y="338" width="1" height="18" fill="#0a0d16"/>
-<rect x="14" y="356" width="1" height="18" fill="#0a0d16"/>
-<rect x="22.4" y="356" width="1" height="18" fill="#121a2b"/>
-<text x="22.4" y="369.5" fill="#56c8ff" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="30.8" y="356" width="1" height="18" fill="#121a2b"/>
-<rect x="39.2" y="356" width="1" height="18" fill="#131a28"/>
-<text x="39.2" y="369.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >┃</text>
-<rect x="47.6" y="356" width="1" height="18" fill="#131a28"/>
-<rect x="56" y="356" width="18" height="18" fill="#131a28"/>
-<text x="56" y="369.5" fill="#5a6579" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >  K-04 · 1d ago · </text>
-<rect x="207.2" y="356" width="3" height="18" fill="#131a28"/>
-<text x="207.2" y="369.5" fill="#56c8ff" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >low</text>
-<rect x="232.4" y="356" width="8" height="18" fill="#131a28"/>
-<rect x="299.6" y="356" width="1" height="18" fill="#121a2b"/>
-<rect x="308" y="356" width="1" height="18" fill="#121a2b"/>
-<text x="308" y="369.5" fill="#56c8ff" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="316.4" y="356" width="1" height="18" fill="#0a0d16"/>
-<rect x="324.8" y="356" width="1" height="18" fill="#0f141f"/>
-<text x="324.8" y="369.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="333.2" y="356" width="34" height="18" fill="#0f141f"/>
-<rect x="618.8" y="356" width="1" height="18" fill="#0f141f"/>
-<text x="618.8" y="369.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="627.2" y="356" width="1" height="18" fill="#0a0d16"/>
-<rect x="635.6" y="356" width="1" height="18" fill="#0f141f"/>
-<text x="635.6" y="369.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="644" y="356" width="1" height="18" fill="#0f141f"/>
-<rect x="652.4" y="356" width="1" height="18" fill="#131a28"/>
-<text x="652.4" y="369.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >┃</text>
-<rect x="660.8" y="356" width="1" height="18" fill="#131a28"/>
-<rect x="669.2" y="356" width="18" height="18" fill="#131a28"/>
-<text x="669.2" y="369.5" fill="#5a6579" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >  K-09 · 4h ago · </text>
-<rect x="820.4" y="356" width="4" height="18" fill="#131a28"/>
-<text x="820.4" y="369.5" fill="#4ade80" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >done</text>
-<rect x="854" y="356" width="7" height="18" fill="#131a28"/>
-<rect x="912.8" y="356" width="1" height="18" fill="#0f141f"/>
-<rect x="921.2" y="356" width="1" height="18" fill="#0f141f"/>
-<text x="921.2" y="369.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="929.6" y="356" width="1" height="18" fill="#0a0d16"/>
-<rect x="14" y="374" width="1" height="18" fill="#0a0d16"/>
-<rect x="22.4" y="374" width="1" height="18" fill="#121a2b"/>
-<text x="22.4" y="387.5" fill="#56c8ff" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="30.8" y="374" width="33" height="18" fill="#121a2b"/>
-<rect x="308" y="374" width="1" height="18" fill="#121a2b"/>
-<text x="308" y="387.5" fill="#56c8ff" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="316.4" y="374" width="1" height="18" fill="#0a0d16"/>
-<rect x="324.8" y="374" width="1" height="18" fill="#0f141f"/>
-<text x="324.8" y="387.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="333.2" y="374" width="34" height="18" fill="#0f141f"/>
-<rect x="618.8" y="374" width="1" height="18" fill="#0f141f"/>
-<text x="618.8" y="387.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="627.2" y="374" width="1" height="18" fill="#0a0d16"/>
-<rect x="635.6" y="374" width="1" height="18" fill="#0f141f"/>
-<text x="635.6" y="387.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="644" y="374" width="33" height="18" fill="#0f141f"/>
-<rect x="921.2" y="374" width="1" height="18" fill="#0f141f"/>
-<text x="921.2" y="387.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="929.6" y="374" width="1" height="18" fill="#0a0d16"/>
-<rect x="14" y="392" width="1" height="18" fill="#0a0d16"/>
-<rect x="22.4" y="392" width="1" height="18" fill="#121a2b"/>
-<text x="22.4" y="405.5" fill="#56c8ff" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="30.8" y="392" width="33" height="18" fill="#121a2b"/>
-<rect x="308" y="392" width="1" height="18" fill="#121a2b"/>
-<text x="308" y="405.5" fill="#56c8ff" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="316.4" y="392" width="1" height="18" fill="#0a0d16"/>
-<rect x="324.8" y="392" width="1" height="18" fill="#0f141f"/>
-<text x="324.8" y="405.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="333.2" y="392" width="34" height="18" fill="#0f141f"/>
-<rect x="618.8" y="392" width="1" height="18" fill="#0f141f"/>
-<text x="618.8" y="405.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="627.2" y="392" width="1" height="18" fill="#0a0d16"/>
-<rect x="635.6" y="392" width="1" height="18" fill="#0f141f"/>
-<text x="635.6" y="405.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="644" y="392" width="1" height="18" fill="#0f141f"/>
-<rect x="652.4" y="392" width="1" height="18" fill="#131a28"/>
-<text x="652.4" y="405.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >┃</text>
-<rect x="660.8" y="392" width="1" height="18" fill="#131a28"/>
-<rect x="669.2" y="392" width="2" height="18" fill="#131a28"/>
-<rect x="686" y="392" width="2" height="18" fill="#131a28"/>
-<text x="686" y="405.5" fill="#4ade80" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >✓ </text>
-<rect x="702.8" y="392" width="25" height="18" fill="#131a28"/>
-<rect x="702.8" y="401" width="25" height="1" fill="#93a0b8"/>
-<text x="702.8" y="405.5" fill="#93a0b8" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >Refactor billing webhooks</text>
-<rect x="912.8" y="392" width="1" height="18" fill="#0f141f"/>
-<rect x="921.2" y="392" width="1" height="18" fill="#0f141f"/>
-<text x="921.2" y="405.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="929.6" y="392" width="1" height="18" fill="#0a0d16"/>
-<rect x="14" y="410" width="1" height="18" fill="#0a0d16"/>
-<rect x="22.4" y="410" width="1" height="18" fill="#121a2b"/>
-<text x="22.4" y="423.5" fill="#56c8ff" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="30.8" y="410" width="33" height="18" fill="#121a2b"/>
-<rect x="308" y="410" width="1" height="18" fill="#121a2b"/>
-<text x="308" y="423.5" fill="#56c8ff" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="316.4" y="410" width="1" height="18" fill="#0a0d16"/>
-<rect x="324.8" y="410" width="1" height="18" fill="#0f141f"/>
-<text x="324.8" y="423.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="333.2" y="410" width="34" height="18" fill="#0f141f"/>
-<rect x="618.8" y="410" width="1" height="18" fill="#0f141f"/>
-<text x="618.8" y="423.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="627.2" y="410" width="1" height="18" fill="#0a0d16"/>
-<rect x="635.6" y="410" width="1" height="18" fill="#0f141f"/>
-<text x="635.6" y="423.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="644" y="410" width="1" height="18" fill="#0f141f"/>
-<rect x="652.4" y="410" width="1" height="18" fill="#131a28"/>
-<text x="652.4" y="423.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >┃</text>
-<rect x="660.8" y="410" width="1" height="18" fill="#131a28"/>
-<rect x="669.2" y="410" width="18" height="18" fill="#131a28"/>
-<text x="669.2" y="423.5" fill="#5a6579" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >  K-10 · 8h ago · </text>
-<rect x="820.4" y="410" width="4" height="18" fill="#131a28"/>
-<text x="820.4" y="423.5" fill="#4ade80" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >done</text>
-<rect x="854" y="410" width="7" height="18" fill="#131a28"/>
-<rect x="912.8" y="410" width="1" height="18" fill="#0f141f"/>
-<rect x="921.2" y="410" width="1" height="18" fill="#0f141f"/>
-<text x="921.2" y="423.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="929.6" y="410" width="1" height="18" fill="#0a0d16"/>
-<rect x="14" y="428" width="1" height="18" fill="#0a0d16"/>
-<rect x="22.4" y="428" width="1" height="18" fill="#121a2b"/>
-<text x="22.4" y="441.5" fill="#56c8ff" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="30.8" y="428" width="33" height="18" fill="#121a2b"/>
-<rect x="308" y="428" width="1" height="18" fill="#121a2b"/>
-<text x="308" y="441.5" fill="#56c8ff" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="316.4" y="428" width="1" height="18" fill="#0a0d16"/>
-<rect x="324.8" y="428" width="1" height="18" fill="#0f141f"/>
-<text x="324.8" y="441.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="333.2" y="428" width="34" height="18" fill="#0f141f"/>
-<rect x="618.8" y="428" width="1" height="18" fill="#0f141f"/>
-<text x="618.8" y="441.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="627.2" y="428" width="1" height="18" fill="#0a0d16"/>
-<rect x="635.6" y="428" width="1" height="18" fill="#0f141f"/>
-<text x="635.6" y="441.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="644" y="428" width="33" height="18" fill="#0f141f"/>
-<rect x="921.2" y="428" width="1" height="18" fill="#0f141f"/>
-<text x="921.2" y="441.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="929.6" y="428" width="1" height="18" fill="#0a0d16"/>
-<rect x="14" y="446" width="1" height="18" fill="#0a0d16"/>
-<rect x="22.4" y="446" width="1" height="18" fill="#121a2b"/>
-<text x="22.4" y="459.5" fill="#56c8ff" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="30.8" y="446" width="33" height="18" fill="#121a2b"/>
-<rect x="308" y="446" width="1" height="18" fill="#121a2b"/>
-<text x="308" y="459.5" fill="#56c8ff" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="316.4" y="446" width="1" height="18" fill="#0a0d16"/>
-<rect x="324.8" y="446" width="1" height="18" fill="#0f141f"/>
-<text x="324.8" y="459.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="333.2" y="446" width="34" height="18" fill="#0f141f"/>
-<rect x="618.8" y="446" width="1" height="18" fill="#0f141f"/>
-<text x="618.8" y="459.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="627.2" y="446" width="1" height="18" fill="#0a0d16"/>
-<rect x="635.6" y="446" width="1" height="18" fill="#0f141f"/>
-<text x="635.6" y="459.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="644" y="446" width="33" height="18" fill="#0f141f"/>
-<rect x="921.2" y="446" width="1" height="18" fill="#0f141f"/>
-<text x="921.2" y="459.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="929.6" y="446" width="1" height="18" fill="#0a0d16"/>
-<rect x="14" y="464" width="1" height="18" fill="#0a0d16"/>
-<rect x="22.4" y="464" width="35" height="18" fill="#121a2b"/>
-<text x="22.4" y="477.5" fill="#56c8ff" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >╰─────────────────────────────────╯</text>
-<rect x="316.4" y="464" width="1" height="18" fill="#0a0d16"/>
-<rect x="324.8" y="464" width="36" height="18" fill="#0f141f"/>
-<text x="324.8" y="477.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >╰──────────────────────────────────╯</text>
-<rect x="627.2" y="464" width="1" height="18" fill="#0a0d16"/>
-<rect x="635.6" y="464" width="35" height="18" fill="#0f141f"/>
-<text x="635.6" y="477.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >╰─────────────────────────────────╯</text>
-<rect x="929.6" y="464" width="1" height="18" fill="#0a0d16"/>
-<rect x="14" y="482" width="110" height="18" fill="#0a0d16"/>
-<rect x="14" y="500" width="1" height="18" fill="#0a0d16"/>
-<rect x="22.4" y="500" width="108" height="18" fill="#101a2e"/>
-<text x="22.4" y="513.5" fill="#7c8cf8" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >╭─ new card ───────────────────────────────────────────────────────────────────────────────────────────────╮</text>
-<rect x="929.6" y="500" width="1" height="18" fill="#0a0d16"/>
-<rect x="14" y="518" width="1" height="18" fill="#0a0d16"/>
-<rect x="22.4" y="518" width="1" height="18" fill="#101a2e"/>
-<text x="22.4" y="531.5" fill="#7c8cf8" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="30.8" y="518" width="2" height="18" fill="#101a2e"/>
-<rect x="47.6" y="518" width="1" height="18" fill="#101a2e"/>
-<text x="47.6" y="531.5" fill="#7c8cf8" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >▸</text>
-<rect x="56" y="518" width="1" height="18" fill="#101a2e"/>
-<rect x="64.4" y="518" width="27" height="18" fill="#101a2e"/>
-<text x="64.4" y="531.5" fill="#e9eff9" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >Polish the launch checklist</text>
-<rect x="291.2" y="518" width="75" height="18" fill="#101a2e"/>
-<rect x="921.2" y="518" width="1" height="18" fill="#101a2e"/>
-<text x="921.2" y="531.5" fill="#7c8cf8" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="929.6" y="518" width="1" height="18" fill="#0a0d16"/>
-<rect x="14" y="536" width="1" height="18" fill="#0a0d16"/>
-<rect x="22.4" y="536" width="1" height="18" fill="#101a2e"/>
-<text x="22.4" y="549.5" fill="#7c8cf8" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="30.8" y="536" width="1" height="18" fill="#101a2e"/>
-<rect x="39.2" y="536" width="5" height="18" fill="#101a2e"/>
-<text x="39.2" y="549.5" fill="#93a0b8" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >enter</text>
-<rect x="81.2" y="536" width="25" height="18" fill="#101a2e"/>
-<text x="81.2" y="549.5" fill="#5a6579" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  > add card to To-do   ·   </text>
-<rect x="291.2" y="536" width="3" height="18" fill="#101a2e"/>
-<text x="291.2" y="549.5" fill="#93a0b8" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >esc</text>
-<rect x="316.4" y="536" width="7" height="18" fill="#101a2e"/>
-<text x="316.4" y="549.5" fill="#5a6579" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  > cancel</text>
-<rect x="375.2" y="536" width="65" height="18" fill="#101a2e"/>
-<rect x="921.2" y="536" width="1" height="18" fill="#101a2e"/>
-<text x="921.2" y="549.5" fill="#7c8cf8" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >│</text>
-<rect x="929.6" y="536" width="1" height="18" fill="#0a0d16"/>
-<rect x="14" y="554" width="1" height="18" fill="#0a0d16"/>
-<rect x="22.4" y="554" width="108" height="18" fill="#101a2e"/>
-<text x="22.4" y="567.5" fill="#7c8cf8" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >╰──────────────────────────────────────────────────────────────────────────────────────────────────────────╯</text>
-<rect x="929.6" y="554" width="1" height="18" fill="#0a0d16"/>
-<rect x="14" y="572" width="110" height="18" fill="#0a0d16"/>
-<rect x="14" y="590" width="110" height="18" fill="#0f141f"/>
-<text x="14" y="603.5" fill="#19202f" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >──────────────────────────────────────────────────────────────────────────────────────────────────────────────</text>
-<rect x="14" y="608" width="2" height="18" fill="#0f141f"/>
-<rect x="30.8" y="608" width="1" height="18" fill="#384072"/>
-<text x="30.8" y="621.5" fill="#e9eff9" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >n</text>
-<rect x="39.2" y="608" width="4" height="18" fill="#0f141f"/>
-<text x="39.2" y="621.5" fill="#93a0b8" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  > new</text>
-<rect x="72.8" y="608" width="2" height="18" fill="#0f141f"/>
-<rect x="89.6" y="608" width="1" height="18" fill="#384072"/>
-<text x="89.6" y="621.5" fill="#e9eff9" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >p</text>
-<rect x="98" y="608" width="9" height="18" fill="#0f141f"/>
-<text x="98" y="621.5" fill="#93a0b8" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  > progress</text>
-<rect x="173.6" y="608" width="2" height="18" fill="#0f141f"/>
-<rect x="190.4" y="608" width="1" height="18" fill="#384072"/>
-<text x="190.4" y="621.5" fill="#e9eff9" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >d</text>
-<rect x="198.8" y="608" width="5" height="18" fill="#0f141f"/>
-<text x="198.8" y="621.5" fill="#93a0b8" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  > done</text>
-<rect x="240.8" y="608" width="2" height="18" fill="#0f141f"/>
-<rect x="257.6" y="608" width="1" height="18" fill="#384072"/>
-<text x="257.6" y="621.5" fill="#e9eff9" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >t</text>
-<rect x="266" y="608" width="6" height="18" fill="#0f141f"/>
-<text x="266" y="621.5" fill="#93a0b8" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  > to-do</text>
-<rect x="316.4" y="608" width="2" height="18" fill="#0f141f"/>
-<rect x="333.2" y="608" width="1" height="18" fill="#384072"/>
-<text x="333.2" y="621.5" fill="#e9eff9" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >x</text>
-<rect x="341.6" y="608" width="7" height="18" fill="#0f141f"/>
-<text x="341.6" y="621.5" fill="#93a0b8" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  > delete</text>
-<rect x="400.4" y="608" width="2" height="18" fill="#0f141f"/>
-<rect x="417.2" y="608" width="2" height="18" fill="#384072"/>
-<text x="417.2" y="621.5" fill="#e9eff9" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >↑↓</text>
-<rect x="434" y="608" width="5" height="18" fill="#0f141f"/>
-<text x="434" y="621.5" fill="#93a0b8" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  > card</text>
-<rect x="476" y="608" width="2" height="18" fill="#0f141f"/>
-<rect x="492.8" y="608" width="2" height="18" fill="#384072"/>
-<text x="492.8" y="621.5" fill="#e9eff9" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >←→</text>
-<rect x="509.6" y="608" width="7" height="18" fill="#0f141f"/>
-<text x="509.6" y="621.5" fill="#93a0b8" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  > column</text>
-<rect x="568.4" y="608" width="2" height="18" fill="#0f141f"/>
-<rect x="585.2" y="608" width="1" height="18" fill="#384072"/>
-<text x="585.2" y="621.5" fill="#e9eff9" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >q</text>
-<rect x="593.6" y="608" width="5" height="18" fill="#0f141f"/>
-<text x="593.6" y="621.5" fill="#93a0b8" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  > quit</text>
-<rect x="635.6" y="608" width="16" height="18" fill="#0f141f"/>
-<rect x="770" y="608" width="18" height="18" fill="#0f141f"/>
-<text x="770" y="621.5" fill="#4ade80" xml:space="preserve" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="13" font-weight="400"  >K-06 moved to Done</text>
-<rect x="921.2" y="608" width="2" height="18" fill="#0f141f"/>
+<rect x="14" y="14" width="924" height="18" fill="#0f141f"/>
+<rect x="14" y="32" width="722.4" height="18" fill="#0f141f"/>
+<rect x="736.4" y="32" width="67.2" height="18" fill="#0f141f"/>
+<text x="736.4" y="45.5" fill="#e9eff9" xml:space="preserve" textLength="67.2" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="700"  >17:32:05</text>
+<rect x="803.6" y="32" width="8.4" height="18" fill="#0f141f"/>
+<rect x="812" y="32" width="8.4" height="18" fill="#0f141f"/>
+<text x="812" y="45.5" fill="#5a6579" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >·</text>
+<rect x="820.4" y="32" width="8.4" height="18" fill="#0f141f"/>
+<rect x="828.8" y="32" width="92.4" height="18" fill="#0f141f"/>
+<text x="828.8" y="45.5" fill="#93a0b8" xml:space="preserve" textLength="92.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >Sun, Sep 27</text>
+<rect x="921.2" y="32" width="16.8" height="18" fill="#0f141f"/>
+<rect x="14" y="50" width="16.8" height="18" fill="#0f141f"/>
+<rect x="30.8" y="50" width="100.8" height="18" fill="#0f141f"/>
+<text x="30.8" y="63.5" fill="#93a0b8" xml:space="preserve" textLength="100.8" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >kanban board</text>
+<rect x="131.6" y="50" width="487.2" height="18" fill="#0f141f"/>
+<rect x="618.8" y="50" width="100.8" height="18" fill="#0f141f"/>
+<text x="618.8" y="63.5" fill="#4ade80" xml:space="preserve" textLength="100.8" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >████████████</text>
+<rect x="719.6" y="50" width="84" height="18" fill="#0f141f"/>
+<text x="719.6" y="63.5" fill="#19202f" xml:space="preserve" textLength="84" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >░░░░░░░░░░</text>
+<rect x="803.6" y="50" width="42" height="18" fill="#0f141f"/>
+<text x="803.6" y="63.5" fill="#93a0b8" xml:space="preserve" textLength="42" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >  55%</text>
+<rect x="845.6" y="50" width="75.6" height="18" fill="#0f141f"/>
+<text x="845.6" y="63.5" fill="#5a6579" xml:space="preserve" textLength="75.6" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >  shipped</text>
+<rect x="921.2" y="50" width="16.8" height="18" fill="#0f141f"/>
+<rect x="14" y="68" width="638.4" height="18" fill="#0f141f"/>
+<rect x="652.4" y="68" width="58.8" height="18" fill="#0f141f"/>
+<text x="652.4" y="81.5" fill="#93a0b8" xml:space="preserve" textLength="58.8" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >4 to-do</text>
+<rect x="711.2" y="68" width="8.4" height="18" fill="#0f141f"/>
+<rect x="719.6" y="68" width="8.4" height="18" fill="#0f141f"/>
+<text x="719.6" y="81.5" fill="#5a6579" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >·</text>
+<rect x="728" y="68" width="8.4" height="18" fill="#0f141f"/>
+<rect x="736.4" y="68" width="109.2" height="18" fill="#0f141f"/>
+<text x="736.4" y="81.5" fill="#93a0b8" xml:space="preserve" textLength="109.2" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >1 in progress</text>
+<rect x="845.6" y="68" width="8.4" height="18" fill="#0f141f"/>
+<rect x="854" y="68" width="8.4" height="18" fill="#0f141f"/>
+<text x="854" y="81.5" fill="#5a6579" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >·</text>
+<rect x="862.4" y="68" width="8.4" height="18" fill="#0f141f"/>
+<rect x="870.8" y="68" width="50.4" height="18" fill="#0f141f"/>
+<text x="870.8" y="81.5" fill="#93a0b8" xml:space="preserve" textLength="50.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >6 done</text>
+<rect x="921.2" y="68" width="16.8" height="18" fill="#0f141f"/>
+<rect x="14" y="86" width="924" height="18" fill="#0f141f"/>
+<rect x="14" y="104" width="924" height="18" fill="#0f141f"/>
+<text x="14" y="117.5" fill="#19202f" xml:space="preserve" textLength="924" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >──────────────────────────────────────────────────────────────────────────────────────────────────────────────</text>
+<rect x="14" y="122" width="924" height="18" fill="#0a0d16"/>
+<rect x="14" y="140" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="22.4" y="140" width="294" height="18" fill="#121a2b"/>
+<text x="22.4" y="153.5" fill="#56c8ff" xml:space="preserve" textLength="294" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >╭─ TO-DO · 4 ─────────────────────╮</text>
+<rect x="316.4" y="140" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="324.8" y="140" width="16.8" height="18" fill="#0f141f"/>
+<text x="324.8" y="153.5" fill="#19202f" xml:space="preserve" textLength="16.8" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >╭─</text>
+<rect x="341.6" y="140" width="142.8" height="18" fill="#0f141f"/>
+<text x="341.6" y="153.5" fill="#5a6579" xml:space="preserve" textLength="142.8" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  > IN PROGRESS · 1 </text>
+<rect x="484.4" y="140" width="142.8" height="18" fill="#0f141f"/>
+<text x="484.4" y="153.5" fill="#19202f" xml:space="preserve" textLength="142.8" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >────────────────╮</text>
+<rect x="627.2" y="140" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="635.6" y="140" width="16.8" height="18" fill="#0f141f"/>
+<text x="635.6" y="153.5" fill="#19202f" xml:space="preserve" textLength="16.8" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >╭─</text>
+<rect x="652.4" y="140" width="84" height="18" fill="#0f141f"/>
+<text x="652.4" y="153.5" fill="#5a6579" xml:space="preserve" textLength="84" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  > DONE · 6 </text>
+<rect x="736.4" y="140" width="193.2" height="18" fill="#0f141f"/>
+<text x="736.4" y="153.5" fill="#19202f" xml:space="preserve" textLength="193.2" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >──────────────────────╮</text>
+<rect x="929.6" y="140" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="14" y="158" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="22.4" y="158" width="8.4" height="18" fill="#121a2b"/>
+<text x="22.4" y="171.5" fill="#56c8ff" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="30.8" y="158" width="277.2" height="18" fill="#121a2b"/>
+<rect x="308" y="158" width="8.4" height="18" fill="#121a2b"/>
+<text x="308" y="171.5" fill="#56c8ff" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="316.4" y="158" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="324.8" y="158" width="8.4" height="18" fill="#0f141f"/>
+<text x="324.8" y="171.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="333.2" y="158" width="285.6" height="18" fill="#0f141f"/>
+<rect x="618.8" y="158" width="8.4" height="18" fill="#0f141f"/>
+<text x="618.8" y="171.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="627.2" y="158" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="635.6" y="158" width="8.4" height="18" fill="#0f141f"/>
+<text x="635.6" y="171.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="644" y="158" width="277.2" height="18" fill="#0f141f"/>
+<rect x="921.2" y="158" width="8.4" height="18" fill="#0f141f"/>
+<text x="921.2" y="171.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="929.6" y="158" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="14" y="176" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="22.4" y="176" width="8.4" height="18" fill="#121a2b"/>
+<text x="22.4" y="189.5" fill="#56c8ff" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="30.8" y="176" width="8.4" height="18" fill="#121a2b"/>
+<rect x="39.2" y="176" width="8.4" height="18" fill="#131a28"/>
+<text x="39.2" y="189.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >┃</text>
+<rect x="47.6" y="176" width="8.4" height="18" fill="#131a28"/>
+<rect x="56" y="176" width="16.8" height="18" fill="#131a28"/>
+<rect x="72.8" y="176" width="16.8" height="18" fill="#131a28"/>
+<text x="72.8" y="189.5" fill="#ff6b8a" xml:space="preserve" textLength="16.8" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >● </text>
+<rect x="89.6" y="176" width="75.6" height="18" fill="#131a28"/>
+<text x="89.6" y="189.5" fill="#e9eff9" xml:space="preserve" textLength="75.6" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >Ship the </text>
+<rect x="165.2" y="176" width="25.2" height="18" fill="#131a28"/>
+<text x="165.2" y="189.5" fill="#ffffff" xml:space="preserve" textLength="25.2" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >...</text>
+<rect x="190.4" y="176" width="109.2" height="18" fill="#131a28"/>
+<text x="190.4" y="189.5" fill="#e9eff9" xml:space="preserve" textLength="109.2" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >ding checklis</text>
+<rect x="299.6" y="176" width="8.4" height="18" fill="#121a2b"/>
+<rect x="308" y="176" width="8.4" height="18" fill="#121a2b"/>
+<text x="308" y="189.5" fill="#56c8ff" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="316.4" y="176" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="324.8" y="176" width="8.4" height="18" fill="#0f141f"/>
+<text x="324.8" y="189.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="333.2" y="176" width="8.4" height="18" fill="#0f141f"/>
+<rect x="341.6" y="176" width="8.4" height="18" fill="#131a28"/>
+<text x="341.6" y="189.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >┃</text>
+<rect x="350" y="176" width="8.4" height="18" fill="#131a28"/>
+<rect x="358.4" y="176" width="16.8" height="18" fill="#131a28"/>
+<rect x="375.2" y="176" width="16.8" height="18" fill="#131a28"/>
+<text x="375.2" y="189.5" fill="#ffc24b" xml:space="preserve" textLength="16.8" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >● </text>
+<rect x="392" y="176" width="218.4" height="18" fill="#131a28"/>
+<text x="392" y="189.5" fill="#e9eff9" xml:space="preserve" textLength="218.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >Instrument checkout funnel</text>
+<rect x="610.4" y="176" width="8.4" height="18" fill="#0f141f"/>
+<rect x="618.8" y="176" width="8.4" height="18" fill="#0f141f"/>
+<text x="618.8" y="189.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="627.2" y="176" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="635.6" y="176" width="8.4" height="18" fill="#0f141f"/>
+<text x="635.6" y="189.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="644" y="176" width="8.4" height="18" fill="#0f141f"/>
+<rect x="652.4" y="176" width="8.4" height="18" fill="#131a28"/>
+<text x="652.4" y="189.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >┃</text>
+<rect x="660.8" y="176" width="8.4" height="18" fill="#131a28"/>
+<rect x="669.2" y="176" width="16.8" height="18" fill="#131a28"/>
+<rect x="686" y="176" width="16.8" height="18" fill="#131a28"/>
+<text x="686" y="189.5" fill="#4ade80" xml:space="preserve" textLength="16.8" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >✓ </text>
+<rect x="702.8" y="176" width="168" height="18" fill="#131a28"/>
+<rect x="702.8" y="185" width="168" height="1" fill="#93a0b8"/>
+<text x="702.8" y="189.5" fill="#93a0b8" xml:space="preserve" textLength="168" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >Migrate auth to OIDC</text>
+<rect x="870.8" y="176" width="42" height="18" fill="#131a28"/>
+<rect x="912.8" y="176" width="8.4" height="18" fill="#0f141f"/>
+<rect x="921.2" y="176" width="8.4" height="18" fill="#0f141f"/>
+<text x="921.2" y="189.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="929.6" y="176" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="14" y="194" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="22.4" y="194" width="8.4" height="18" fill="#121a2b"/>
+<text x="22.4" y="207.5" fill="#56c8ff" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="30.8" y="194" width="8.4" height="18" fill="#121a2b"/>
+<rect x="39.2" y="194" width="8.4" height="18" fill="#131a28"/>
+<text x="39.2" y="207.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >┃</text>
+<rect x="47.6" y="194" width="8.4" height="18" fill="#131a28"/>
+<rect x="56" y="194" width="151.2" height="18" fill="#131a28"/>
+<text x="56" y="207.5" fill="#5a6579" xml:space="preserve" textLength="151.2" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >  K-01 · 2h ago · </text>
+<rect x="207.2" y="194" width="33.6" height="18" fill="#131a28"/>
+<text x="207.2" y="207.5" fill="#ff6b8a" xml:space="preserve" textLength="33.6" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >high</text>
+<rect x="240.8" y="194" width="58.8" height="18" fill="#131a28"/>
+<rect x="299.6" y="194" width="8.4" height="18" fill="#121a2b"/>
+<rect x="308" y="194" width="8.4" height="18" fill="#121a2b"/>
+<text x="308" y="207.5" fill="#56c8ff" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="316.4" y="194" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="324.8" y="194" width="8.4" height="18" fill="#0f141f"/>
+<text x="324.8" y="207.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="333.2" y="194" width="8.4" height="18" fill="#0f141f"/>
+<rect x="341.6" y="194" width="8.4" height="18" fill="#131a28"/>
+<text x="341.6" y="207.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >┃</text>
+<rect x="350" y="194" width="8.4" height="18" fill="#131a28"/>
+<rect x="358.4" y="194" width="151.2" height="18" fill="#131a28"/>
+<text x="358.4" y="207.5" fill="#5a6579" xml:space="preserve" textLength="151.2" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >  K-07 · 5h ago · </text>
+<rect x="509.6" y="194" width="50.4" height="18" fill="#131a28"/>
+<text x="509.6" y="207.5" fill="#ffc24b" xml:space="preserve" textLength="50.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >medium</text>
+<rect x="560" y="194" width="50.4" height="18" fill="#131a28"/>
+<rect x="610.4" y="194" width="8.4" height="18" fill="#0f141f"/>
+<rect x="618.8" y="194" width="8.4" height="18" fill="#0f141f"/>
+<text x="618.8" y="207.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="627.2" y="194" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="635.6" y="194" width="8.4" height="18" fill="#0f141f"/>
+<text x="635.6" y="207.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="644" y="194" width="8.4" height="18" fill="#0f141f"/>
+<rect x="652.4" y="194" width="8.4" height="18" fill="#131a28"/>
+<text x="652.4" y="207.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >┃</text>
+<rect x="660.8" y="194" width="8.4" height="18" fill="#131a28"/>
+<rect x="669.2" y="194" width="168" height="18" fill="#131a28"/>
+<text x="669.2" y="207.5" fill="#5a6579" xml:space="preserve" textLength="168" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >  K-05 · just now · </text>
+<rect x="837.2" y="194" width="33.6" height="18" fill="#131a28"/>
+<text x="837.2" y="207.5" fill="#4ade80" xml:space="preserve" textLength="33.6" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >done</text>
+<rect x="870.8" y="194" width="42" height="18" fill="#131a28"/>
+<rect x="912.8" y="194" width="8.4" height="18" fill="#0f141f"/>
+<rect x="921.2" y="194" width="8.4" height="18" fill="#0f141f"/>
+<text x="921.2" y="207.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="929.6" y="194" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="14" y="212" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="22.4" y="212" width="8.4" height="18" fill="#121a2b"/>
+<text x="22.4" y="225.5" fill="#56c8ff" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="30.8" y="212" width="277.2" height="18" fill="#121a2b"/>
+<rect x="308" y="212" width="8.4" height="18" fill="#121a2b"/>
+<text x="308" y="225.5" fill="#56c8ff" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="316.4" y="212" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="324.8" y="212" width="8.4" height="18" fill="#0f141f"/>
+<text x="324.8" y="225.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="333.2" y="212" width="285.6" height="18" fill="#0f141f"/>
+<rect x="618.8" y="212" width="8.4" height="18" fill="#0f141f"/>
+<text x="618.8" y="225.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="627.2" y="212" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="635.6" y="212" width="8.4" height="18" fill="#0f141f"/>
+<text x="635.6" y="225.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="644" y="212" width="277.2" height="18" fill="#0f141f"/>
+<rect x="921.2" y="212" width="8.4" height="18" fill="#0f141f"/>
+<text x="921.2" y="225.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="929.6" y="212" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="14" y="230" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="22.4" y="230" width="8.4" height="18" fill="#121a2b"/>
+<text x="22.4" y="243.5" fill="#56c8ff" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="30.8" y="230" width="8.4" height="18" fill="#121a2b"/>
+<rect x="39.2" y="230" width="8.4" height="18" fill="#1d2745"/>
+<text x="39.2" y="243.5" fill="#7c8cf8" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >┃</text>
+<rect x="47.6" y="230" width="8.4" height="18" fill="#1d2745"/>
+<rect x="56" y="230" width="16.8" height="18" fill="#1d2745"/>
+<text x="56" y="243.5" fill="#7c8cf8" xml:space="preserve" textLength="16.8" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >▸ </text>
+<rect x="72.8" y="230" width="16.8" height="18" fill="#1d2745"/>
+<text x="72.8" y="243.5" fill="#ff6b8a" xml:space="preserve" textLength="16.8" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >● </text>
+<rect x="89.6" y="230" width="184.8" height="18" fill="#1d2745"/>
+<text x="89.6" y="243.5" fill="#e9eff9" xml:space="preserve" textLength="184.8" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="700"  >Fix token refresh race</text>
+<rect x="274.4" y="230" width="25.2" height="18" fill="#1d2745"/>
+<rect x="299.6" y="230" width="8.4" height="18" fill="#121a2b"/>
+<rect x="308" y="230" width="8.4" height="18" fill="#121a2b"/>
+<text x="308" y="243.5" fill="#56c8ff" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="316.4" y="230" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="324.8" y="230" width="8.4" height="18" fill="#0f141f"/>
+<text x="324.8" y="243.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="333.2" y="230" width="285.6" height="18" fill="#0f141f"/>
+<rect x="618.8" y="230" width="8.4" height="18" fill="#0f141f"/>
+<text x="618.8" y="243.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="627.2" y="230" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="635.6" y="230" width="8.4" height="18" fill="#0f141f"/>
+<text x="635.6" y="243.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="644" y="230" width="8.4" height="18" fill="#0f141f"/>
+<rect x="652.4" y="230" width="8.4" height="18" fill="#131a28"/>
+<text x="652.4" y="243.5" fill="#4ade80" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >┃</text>
+<rect x="660.8" y="230" width="8.4" height="18" fill="#131a28"/>
+<rect x="669.2" y="230" width="16.8" height="18" fill="#131a28"/>
+<rect x="686" y="230" width="16.8" height="18" fill="#131a28"/>
+<text x="686" y="243.5" fill="#4ade80" xml:space="preserve" textLength="16.8" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >✓ </text>
+<rect x="702.8" y="230" width="201.6" height="18" fill="#131a28"/>
+<rect x="702.8" y="239" width="201.6" height="1" fill="#93a0b8"/>
+<text x="702.8" y="243.5" fill="#93a0b8" xml:space="preserve" textLength="201.6" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >Dark-mode contrast audit</text>
+<rect x="904.4" y="230" width="8.4" height="18" fill="#131a28"/>
+<rect x="912.8" y="230" width="8.4" height="18" fill="#0f141f"/>
+<rect x="921.2" y="230" width="8.4" height="18" fill="#0f141f"/>
+<text x="921.2" y="243.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="929.6" y="230" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="14" y="248" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="22.4" y="248" width="8.4" height="18" fill="#121a2b"/>
+<text x="22.4" y="261.5" fill="#56c8ff" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="30.8" y="248" width="8.4" height="18" fill="#121a2b"/>
+<rect x="39.2" y="248" width="8.4" height="18" fill="#1d2745"/>
+<text x="39.2" y="261.5" fill="#7c8cf8" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >┃</text>
+<rect x="47.6" y="248" width="8.4" height="18" fill="#1d2745"/>
+<rect x="56" y="248" width="151.2" height="18" fill="#1d2745"/>
+<text x="56" y="261.5" fill="#5a6579" xml:space="preserve" textLength="151.2" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >  K-02 · 5h ago · </text>
+<rect x="207.2" y="248" width="33.6" height="18" fill="#1d2745"/>
+<text x="207.2" y="261.5" fill="#ff6b8a" xml:space="preserve" textLength="33.6" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >high</text>
+<rect x="240.8" y="248" width="58.8" height="18" fill="#1d2745"/>
+<rect x="299.6" y="248" width="8.4" height="18" fill="#121a2b"/>
+<rect x="308" y="248" width="8.4" height="18" fill="#121a2b"/>
+<text x="308" y="261.5" fill="#56c8ff" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="316.4" y="248" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="324.8" y="248" width="8.4" height="18" fill="#0f141f"/>
+<text x="324.8" y="261.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="333.2" y="248" width="285.6" height="18" fill="#0f141f"/>
+<rect x="618.8" y="248" width="8.4" height="18" fill="#0f141f"/>
+<text x="618.8" y="261.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="627.2" y="248" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="635.6" y="248" width="8.4" height="18" fill="#0f141f"/>
+<text x="635.6" y="261.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="644" y="248" width="8.4" height="18" fill="#0f141f"/>
+<rect x="652.4" y="248" width="8.4" height="18" fill="#131a28"/>
+<text x="652.4" y="261.5" fill="#4ade80" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >┃</text>
+<rect x="660.8" y="248" width="8.4" height="18" fill="#131a28"/>
+<rect x="669.2" y="248" width="168" height="18" fill="#131a28"/>
+<text x="669.2" y="261.5" fill="#5a6579" xml:space="preserve" textLength="168" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >  K-06 · just now · </text>
+<rect x="837.2" y="248" width="33.6" height="18" fill="#131a28"/>
+<text x="837.2" y="261.5" fill="#4ade80" xml:space="preserve" textLength="33.6" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >done</text>
+<rect x="870.8" y="248" width="42" height="18" fill="#131a28"/>
+<rect x="912.8" y="248" width="8.4" height="18" fill="#0f141f"/>
+<rect x="921.2" y="248" width="8.4" height="18" fill="#0f141f"/>
+<text x="921.2" y="261.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="929.6" y="248" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="14" y="266" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="22.4" y="266" width="8.4" height="18" fill="#121a2b"/>
+<text x="22.4" y="279.5" fill="#56c8ff" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="30.8" y="266" width="277.2" height="18" fill="#121a2b"/>
+<rect x="308" y="266" width="8.4" height="18" fill="#121a2b"/>
+<text x="308" y="279.5" fill="#56c8ff" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="316.4" y="266" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="324.8" y="266" width="8.4" height="18" fill="#0f141f"/>
+<text x="324.8" y="279.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="333.2" y="266" width="285.6" height="18" fill="#0f141f"/>
+<rect x="618.8" y="266" width="8.4" height="18" fill="#0f141f"/>
+<text x="618.8" y="279.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="627.2" y="266" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="635.6" y="266" width="8.4" height="18" fill="#0f141f"/>
+<text x="635.6" y="279.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="644" y="266" width="277.2" height="18" fill="#0f141f"/>
+<rect x="921.2" y="266" width="8.4" height="18" fill="#0f141f"/>
+<text x="921.2" y="279.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="929.6" y="266" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="14" y="284" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="22.4" y="284" width="8.4" height="18" fill="#121a2b"/>
+<text x="22.4" y="297.5" fill="#56c8ff" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="30.8" y="284" width="8.4" height="18" fill="#121a2b"/>
+<rect x="39.2" y="284" width="8.4" height="18" fill="#131a28"/>
+<text x="39.2" y="297.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >┃</text>
+<rect x="47.6" y="284" width="8.4" height="18" fill="#131a28"/>
+<rect x="56" y="284" width="16.8" height="18" fill="#131a28"/>
+<rect x="72.8" y="284" width="16.8" height="18" fill="#131a28"/>
+<text x="72.8" y="297.5" fill="#ffc24b" xml:space="preserve" textLength="16.8" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >● </text>
+<rect x="89.6" y="284" width="159.6" height="18" fill="#131a28"/>
+<text x="89.6" y="297.5" fill="#e9eff9" xml:space="preserve" textLength="159.6" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >Design empty states</text>
+<rect x="249.2" y="284" width="50.4" height="18" fill="#131a28"/>
+<rect x="299.6" y="284" width="8.4" height="18" fill="#121a2b"/>
+<rect x="308" y="284" width="8.4" height="18" fill="#121a2b"/>
+<text x="308" y="297.5" fill="#56c8ff" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="316.4" y="284" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="324.8" y="284" width="8.4" height="18" fill="#0f141f"/>
+<text x="324.8" y="297.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="333.2" y="284" width="285.6" height="18" fill="#0f141f"/>
+<rect x="618.8" y="284" width="8.4" height="18" fill="#0f141f"/>
+<text x="618.8" y="297.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="627.2" y="284" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="635.6" y="284" width="8.4" height="18" fill="#0f141f"/>
+<text x="635.6" y="297.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="644" y="284" width="8.4" height="18" fill="#0f141f"/>
+<rect x="652.4" y="284" width="8.4" height="18" fill="#131a28"/>
+<text x="652.4" y="297.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >┃</text>
+<rect x="660.8" y="284" width="8.4" height="18" fill="#131a28"/>
+<rect x="669.2" y="284" width="16.8" height="18" fill="#131a28"/>
+<rect x="686" y="284" width="16.8" height="18" fill="#131a28"/>
+<text x="686" y="297.5" fill="#4ade80" xml:space="preserve" textLength="16.8" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >✓ </text>
+<rect x="702.8" y="284" width="142.8" height="18" fill="#131a28"/>
+<rect x="702.8" y="293" width="142.8" height="1" fill="#93a0b8"/>
+<text x="702.8" y="297.5" fill="#93a0b8" xml:space="preserve" textLength="142.8" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >Cut release 1.4.0</text>
+<rect x="845.6" y="284" width="67.2" height="18" fill="#131a28"/>
+<rect x="912.8" y="284" width="8.4" height="18" fill="#0f141f"/>
+<rect x="921.2" y="284" width="8.4" height="18" fill="#0f141f"/>
+<text x="921.2" y="297.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="929.6" y="284" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="14" y="302" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="22.4" y="302" width="8.4" height="18" fill="#121a2b"/>
+<text x="22.4" y="315.5" fill="#56c8ff" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="30.8" y="302" width="8.4" height="18" fill="#121a2b"/>
+<rect x="39.2" y="302" width="8.4" height="18" fill="#131a28"/>
+<text x="39.2" y="315.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >┃</text>
+<rect x="47.6" y="302" width="8.4" height="18" fill="#131a28"/>
+<rect x="56" y="302" width="151.2" height="18" fill="#131a28"/>
+<text x="56" y="315.5" fill="#5a6579" xml:space="preserve" textLength="151.2" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >  K-03 · 9h ago · </text>
+<rect x="207.2" y="302" width="50.4" height="18" fill="#131a28"/>
+<text x="207.2" y="315.5" fill="#ffc24b" xml:space="preserve" textLength="50.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >medium</text>
+<rect x="257.6" y="302" width="42" height="18" fill="#131a28"/>
+<rect x="299.6" y="302" width="8.4" height="18" fill="#121a2b"/>
+<rect x="308" y="302" width="8.4" height="18" fill="#121a2b"/>
+<text x="308" y="315.5" fill="#56c8ff" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="316.4" y="302" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="324.8" y="302" width="8.4" height="18" fill="#0f141f"/>
+<text x="324.8" y="315.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="333.2" y="302" width="285.6" height="18" fill="#0f141f"/>
+<rect x="618.8" y="302" width="8.4" height="18" fill="#0f141f"/>
+<text x="618.8" y="315.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="627.2" y="302" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="635.6" y="302" width="8.4" height="18" fill="#0f141f"/>
+<text x="635.6" y="315.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="644" y="302" width="8.4" height="18" fill="#0f141f"/>
+<rect x="652.4" y="302" width="8.4" height="18" fill="#131a28"/>
+<text x="652.4" y="315.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >┃</text>
+<rect x="660.8" y="302" width="8.4" height="18" fill="#131a28"/>
+<rect x="669.2" y="302" width="151.2" height="18" fill="#131a28"/>
+<text x="669.2" y="315.5" fill="#5a6579" xml:space="preserve" textLength="151.2" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >  K-08 · 1h ago · </text>
+<rect x="820.4" y="302" width="33.6" height="18" fill="#131a28"/>
+<text x="820.4" y="315.5" fill="#4ade80" xml:space="preserve" textLength="33.6" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >done</text>
+<rect x="854" y="302" width="58.8" height="18" fill="#131a28"/>
+<rect x="912.8" y="302" width="8.4" height="18" fill="#0f141f"/>
+<rect x="921.2" y="302" width="8.4" height="18" fill="#0f141f"/>
+<text x="921.2" y="315.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="929.6" y="302" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="14" y="320" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="22.4" y="320" width="8.4" height="18" fill="#121a2b"/>
+<text x="22.4" y="333.5" fill="#56c8ff" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="30.8" y="320" width="277.2" height="18" fill="#121a2b"/>
+<rect x="308" y="320" width="8.4" height="18" fill="#121a2b"/>
+<text x="308" y="333.5" fill="#56c8ff" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="316.4" y="320" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="324.8" y="320" width="8.4" height="18" fill="#0f141f"/>
+<text x="324.8" y="333.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="333.2" y="320" width="285.6" height="18" fill="#0f141f"/>
+<rect x="618.8" y="320" width="8.4" height="18" fill="#0f141f"/>
+<text x="618.8" y="333.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="627.2" y="320" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="635.6" y="320" width="8.4" height="18" fill="#0f141f"/>
+<text x="635.6" y="333.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="644" y="320" width="277.2" height="18" fill="#0f141f"/>
+<rect x="921.2" y="320" width="8.4" height="18" fill="#0f141f"/>
+<text x="921.2" y="333.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="929.6" y="320" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="14" y="338" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="22.4" y="338" width="8.4" height="18" fill="#121a2b"/>
+<text x="22.4" y="351.5" fill="#56c8ff" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="30.8" y="338" width="8.4" height="18" fill="#121a2b"/>
+<rect x="39.2" y="338" width="8.4" height="18" fill="#131a28"/>
+<text x="39.2" y="351.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >┃</text>
+<rect x="47.6" y="338" width="8.4" height="18" fill="#131a28"/>
+<rect x="56" y="338" width="16.8" height="18" fill="#131a28"/>
+<rect x="72.8" y="338" width="16.8" height="18" fill="#131a28"/>
+<text x="72.8" y="351.5" fill="#56c8ff" xml:space="preserve" textLength="16.8" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >● </text>
+<rect x="89.6" y="338" width="210" height="18" fill="#131a28"/>
+<text x="89.6" y="351.5" fill="#e9eff9" xml:space="preserve" textLength="210" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >Add CSV export to reports</text>
+<rect x="299.6" y="338" width="8.4" height="18" fill="#121a2b"/>
+<rect x="308" y="338" width="8.4" height="18" fill="#121a2b"/>
+<text x="308" y="351.5" fill="#56c8ff" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="316.4" y="338" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="324.8" y="338" width="8.4" height="18" fill="#0f141f"/>
+<text x="324.8" y="351.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="333.2" y="338" width="285.6" height="18" fill="#0f141f"/>
+<rect x="618.8" y="338" width="8.4" height="18" fill="#0f141f"/>
+<text x="618.8" y="351.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="627.2" y="338" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="635.6" y="338" width="8.4" height="18" fill="#0f141f"/>
+<text x="635.6" y="351.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="644" y="338" width="8.4" height="18" fill="#0f141f"/>
+<rect x="652.4" y="338" width="8.4" height="18" fill="#131a28"/>
+<text x="652.4" y="351.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >┃</text>
+<rect x="660.8" y="338" width="8.4" height="18" fill="#131a28"/>
+<rect x="669.2" y="338" width="16.8" height="18" fill="#131a28"/>
+<rect x="686" y="338" width="16.8" height="18" fill="#131a28"/>
+<text x="686" y="351.5" fill="#4ade80" xml:space="preserve" textLength="16.8" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >✓ </text>
+<rect x="702.8" y="338" width="151.2" height="18" fill="#131a28"/>
+<rect x="702.8" y="347" width="151.2" height="1" fill="#93a0b8"/>
+<text x="702.8" y="351.5" fill="#93a0b8" xml:space="preserve" textLength="151.2" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >Upgrade CI runners</text>
+<rect x="854" y="338" width="58.8" height="18" fill="#131a28"/>
+<rect x="912.8" y="338" width="8.4" height="18" fill="#0f141f"/>
+<rect x="921.2" y="338" width="8.4" height="18" fill="#0f141f"/>
+<text x="921.2" y="351.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="929.6" y="338" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="14" y="356" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="22.4" y="356" width="8.4" height="18" fill="#121a2b"/>
+<text x="22.4" y="369.5" fill="#56c8ff" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="30.8" y="356" width="8.4" height="18" fill="#121a2b"/>
+<rect x="39.2" y="356" width="8.4" height="18" fill="#131a28"/>
+<text x="39.2" y="369.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >┃</text>
+<rect x="47.6" y="356" width="8.4" height="18" fill="#131a28"/>
+<rect x="56" y="356" width="151.2" height="18" fill="#131a28"/>
+<text x="56" y="369.5" fill="#5a6579" xml:space="preserve" textLength="151.2" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >  K-04 · 1d ago · </text>
+<rect x="207.2" y="356" width="25.2" height="18" fill="#131a28"/>
+<text x="207.2" y="369.5" fill="#56c8ff" xml:space="preserve" textLength="25.2" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >low</text>
+<rect x="232.4" y="356" width="67.2" height="18" fill="#131a28"/>
+<rect x="299.6" y="356" width="8.4" height="18" fill="#121a2b"/>
+<rect x="308" y="356" width="8.4" height="18" fill="#121a2b"/>
+<text x="308" y="369.5" fill="#56c8ff" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="316.4" y="356" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="324.8" y="356" width="8.4" height="18" fill="#0f141f"/>
+<text x="324.8" y="369.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="333.2" y="356" width="285.6" height="18" fill="#0f141f"/>
+<rect x="618.8" y="356" width="8.4" height="18" fill="#0f141f"/>
+<text x="618.8" y="369.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="627.2" y="356" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="635.6" y="356" width="8.4" height="18" fill="#0f141f"/>
+<text x="635.6" y="369.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="644" y="356" width="8.4" height="18" fill="#0f141f"/>
+<rect x="652.4" y="356" width="8.4" height="18" fill="#131a28"/>
+<text x="652.4" y="369.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >┃</text>
+<rect x="660.8" y="356" width="8.4" height="18" fill="#131a28"/>
+<rect x="669.2" y="356" width="151.2" height="18" fill="#131a28"/>
+<text x="669.2" y="369.5" fill="#5a6579" xml:space="preserve" textLength="151.2" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >  K-09 · 4h ago · </text>
+<rect x="820.4" y="356" width="33.6" height="18" fill="#131a28"/>
+<text x="820.4" y="369.5" fill="#4ade80" xml:space="preserve" textLength="33.6" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >done</text>
+<rect x="854" y="356" width="58.8" height="18" fill="#131a28"/>
+<rect x="912.8" y="356" width="8.4" height="18" fill="#0f141f"/>
+<rect x="921.2" y="356" width="8.4" height="18" fill="#0f141f"/>
+<text x="921.2" y="369.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="929.6" y="356" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="14" y="374" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="22.4" y="374" width="8.4" height="18" fill="#121a2b"/>
+<text x="22.4" y="387.5" fill="#56c8ff" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="30.8" y="374" width="277.2" height="18" fill="#121a2b"/>
+<rect x="308" y="374" width="8.4" height="18" fill="#121a2b"/>
+<text x="308" y="387.5" fill="#56c8ff" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="316.4" y="374" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="324.8" y="374" width="8.4" height="18" fill="#0f141f"/>
+<text x="324.8" y="387.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="333.2" y="374" width="285.6" height="18" fill="#0f141f"/>
+<rect x="618.8" y="374" width="8.4" height="18" fill="#0f141f"/>
+<text x="618.8" y="387.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="627.2" y="374" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="635.6" y="374" width="8.4" height="18" fill="#0f141f"/>
+<text x="635.6" y="387.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="644" y="374" width="277.2" height="18" fill="#0f141f"/>
+<rect x="921.2" y="374" width="8.4" height="18" fill="#0f141f"/>
+<text x="921.2" y="387.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="929.6" y="374" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="14" y="392" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="22.4" y="392" width="8.4" height="18" fill="#121a2b"/>
+<text x="22.4" y="405.5" fill="#56c8ff" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="30.8" y="392" width="277.2" height="18" fill="#121a2b"/>
+<rect x="308" y="392" width="8.4" height="18" fill="#121a2b"/>
+<text x="308" y="405.5" fill="#56c8ff" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="316.4" y="392" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="324.8" y="392" width="8.4" height="18" fill="#0f141f"/>
+<text x="324.8" y="405.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="333.2" y="392" width="285.6" height="18" fill="#0f141f"/>
+<rect x="618.8" y="392" width="8.4" height="18" fill="#0f141f"/>
+<text x="618.8" y="405.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="627.2" y="392" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="635.6" y="392" width="8.4" height="18" fill="#0f141f"/>
+<text x="635.6" y="405.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="644" y="392" width="8.4" height="18" fill="#0f141f"/>
+<rect x="652.4" y="392" width="8.4" height="18" fill="#131a28"/>
+<text x="652.4" y="405.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >┃</text>
+<rect x="660.8" y="392" width="8.4" height="18" fill="#131a28"/>
+<rect x="669.2" y="392" width="16.8" height="18" fill="#131a28"/>
+<rect x="686" y="392" width="16.8" height="18" fill="#131a28"/>
+<text x="686" y="405.5" fill="#4ade80" xml:space="preserve" textLength="16.8" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >✓ </text>
+<rect x="702.8" y="392" width="210" height="18" fill="#131a28"/>
+<rect x="702.8" y="401" width="210" height="1" fill="#93a0b8"/>
+<text x="702.8" y="405.5" fill="#93a0b8" xml:space="preserve" textLength="210" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >Refactor billing webhooks</text>
+<rect x="912.8" y="392" width="8.4" height="18" fill="#0f141f"/>
+<rect x="921.2" y="392" width="8.4" height="18" fill="#0f141f"/>
+<text x="921.2" y="405.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="929.6" y="392" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="14" y="410" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="22.4" y="410" width="8.4" height="18" fill="#121a2b"/>
+<text x="22.4" y="423.5" fill="#56c8ff" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="30.8" y="410" width="277.2" height="18" fill="#121a2b"/>
+<rect x="308" y="410" width="8.4" height="18" fill="#121a2b"/>
+<text x="308" y="423.5" fill="#56c8ff" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="316.4" y="410" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="324.8" y="410" width="8.4" height="18" fill="#0f141f"/>
+<text x="324.8" y="423.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="333.2" y="410" width="285.6" height="18" fill="#0f141f"/>
+<rect x="618.8" y="410" width="8.4" height="18" fill="#0f141f"/>
+<text x="618.8" y="423.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="627.2" y="410" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="635.6" y="410" width="8.4" height="18" fill="#0f141f"/>
+<text x="635.6" y="423.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="644" y="410" width="8.4" height="18" fill="#0f141f"/>
+<rect x="652.4" y="410" width="8.4" height="18" fill="#131a28"/>
+<text x="652.4" y="423.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >┃</text>
+<rect x="660.8" y="410" width="8.4" height="18" fill="#131a28"/>
+<rect x="669.2" y="410" width="151.2" height="18" fill="#131a28"/>
+<text x="669.2" y="423.5" fill="#5a6579" xml:space="preserve" textLength="151.2" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >  K-10 · 8h ago · </text>
+<rect x="820.4" y="410" width="33.6" height="18" fill="#131a28"/>
+<text x="820.4" y="423.5" fill="#4ade80" xml:space="preserve" textLength="33.6" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >done</text>
+<rect x="854" y="410" width="58.8" height="18" fill="#131a28"/>
+<rect x="912.8" y="410" width="8.4" height="18" fill="#0f141f"/>
+<rect x="921.2" y="410" width="8.4" height="18" fill="#0f141f"/>
+<text x="921.2" y="423.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="929.6" y="410" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="14" y="428" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="22.4" y="428" width="8.4" height="18" fill="#121a2b"/>
+<text x="22.4" y="441.5" fill="#56c8ff" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="30.8" y="428" width="277.2" height="18" fill="#121a2b"/>
+<rect x="308" y="428" width="8.4" height="18" fill="#121a2b"/>
+<text x="308" y="441.5" fill="#56c8ff" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="316.4" y="428" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="324.8" y="428" width="8.4" height="18" fill="#0f141f"/>
+<text x="324.8" y="441.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="333.2" y="428" width="285.6" height="18" fill="#0f141f"/>
+<rect x="618.8" y="428" width="8.4" height="18" fill="#0f141f"/>
+<text x="618.8" y="441.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="627.2" y="428" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="635.6" y="428" width="8.4" height="18" fill="#0f141f"/>
+<text x="635.6" y="441.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="644" y="428" width="277.2" height="18" fill="#0f141f"/>
+<rect x="921.2" y="428" width="8.4" height="18" fill="#0f141f"/>
+<text x="921.2" y="441.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="929.6" y="428" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="14" y="446" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="22.4" y="446" width="8.4" height="18" fill="#121a2b"/>
+<text x="22.4" y="459.5" fill="#56c8ff" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="30.8" y="446" width="277.2" height="18" fill="#121a2b"/>
+<rect x="308" y="446" width="8.4" height="18" fill="#121a2b"/>
+<text x="308" y="459.5" fill="#56c8ff" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="316.4" y="446" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="324.8" y="446" width="8.4" height="18" fill="#0f141f"/>
+<text x="324.8" y="459.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="333.2" y="446" width="285.6" height="18" fill="#0f141f"/>
+<rect x="618.8" y="446" width="8.4" height="18" fill="#0f141f"/>
+<text x="618.8" y="459.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="627.2" y="446" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="635.6" y="446" width="8.4" height="18" fill="#0f141f"/>
+<text x="635.6" y="459.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="644" y="446" width="277.2" height="18" fill="#0f141f"/>
+<rect x="921.2" y="446" width="8.4" height="18" fill="#0f141f"/>
+<text x="921.2" y="459.5" fill="#19202f" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="929.6" y="446" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="14" y="464" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="22.4" y="464" width="294" height="18" fill="#121a2b"/>
+<text x="22.4" y="477.5" fill="#56c8ff" xml:space="preserve" textLength="294" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >╰─────────────────────────────────╯</text>
+<rect x="316.4" y="464" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="324.8" y="464" width="302.4" height="18" fill="#0f141f"/>
+<text x="324.8" y="477.5" fill="#19202f" xml:space="preserve" textLength="302.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >╰──────────────────────────────────╯</text>
+<rect x="627.2" y="464" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="635.6" y="464" width="294" height="18" fill="#0f141f"/>
+<text x="635.6" y="477.5" fill="#19202f" xml:space="preserve" textLength="294" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >╰─────────────────────────────────╯</text>
+<rect x="929.6" y="464" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="14" y="482" width="924" height="18" fill="#0a0d16"/>
+<rect x="14" y="500" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="22.4" y="500" width="907.2" height="18" fill="#101a2e"/>
+<text x="22.4" y="513.5" fill="#7c8cf8" xml:space="preserve" textLength="907.2" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >╭─ new card ───────────────────────────────────────────────────────────────────────────────────────────────╮</text>
+<rect x="929.6" y="500" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="14" y="518" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="22.4" y="518" width="8.4" height="18" fill="#101a2e"/>
+<text x="22.4" y="531.5" fill="#7c8cf8" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="30.8" y="518" width="16.8" height="18" fill="#101a2e"/>
+<rect x="47.6" y="518" width="8.4" height="18" fill="#101a2e"/>
+<text x="47.6" y="531.5" fill="#7c8cf8" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >▸</text>
+<rect x="56" y="518" width="8.4" height="18" fill="#101a2e"/>
+<rect x="64.4" y="518" width="226.8" height="18" fill="#101a2e"/>
+<text x="64.4" y="531.5" fill="#e9eff9" xml:space="preserve" textLength="226.8" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >Polish the launch checklist</text>
+<rect x="291.2" y="518" width="630" height="18" fill="#101a2e"/>
+<rect x="921.2" y="518" width="8.4" height="18" fill="#101a2e"/>
+<text x="921.2" y="531.5" fill="#7c8cf8" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="929.6" y="518" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="14" y="536" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="22.4" y="536" width="8.4" height="18" fill="#101a2e"/>
+<text x="22.4" y="549.5" fill="#7c8cf8" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="30.8" y="536" width="8.4" height="18" fill="#101a2e"/>
+<rect x="39.2" y="536" width="42" height="18" fill="#101a2e"/>
+<text x="39.2" y="549.5" fill="#93a0b8" xml:space="preserve" textLength="42" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >enter</text>
+<rect x="81.2" y="536" width="210" height="18" fill="#101a2e"/>
+<text x="81.2" y="549.5" fill="#5a6579" xml:space="preserve" textLength="210" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  > add card to To-do   ·   </text>
+<rect x="291.2" y="536" width="25.2" height="18" fill="#101a2e"/>
+<text x="291.2" y="549.5" fill="#93a0b8" xml:space="preserve" textLength="25.2" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >esc</text>
+<rect x="316.4" y="536" width="58.8" height="18" fill="#101a2e"/>
+<text x="316.4" y="549.5" fill="#5a6579" xml:space="preserve" textLength="58.8" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  > cancel</text>
+<rect x="375.2" y="536" width="546" height="18" fill="#101a2e"/>
+<rect x="921.2" y="536" width="8.4" height="18" fill="#101a2e"/>
+<text x="921.2" y="549.5" fill="#7c8cf8" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >│</text>
+<rect x="929.6" y="536" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="14" y="554" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="22.4" y="554" width="907.2" height="18" fill="#101a2e"/>
+<text x="22.4" y="567.5" fill="#7c8cf8" xml:space="preserve" textLength="907.2" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >╰──────────────────────────────────────────────────────────────────────────────────────────────────────────╯</text>
+<rect x="929.6" y="554" width="8.4" height="18" fill="#0a0d16"/>
+<rect x="14" y="572" width="924" height="18" fill="#0a0d16"/>
+<rect x="14" y="590" width="924" height="18" fill="#0f141f"/>
+<text x="14" y="603.5" fill="#19202f" xml:space="preserve" textLength="924" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >──────────────────────────────────────────────────────────────────────────────────────────────────────────────</text>
+<rect x="14" y="608" width="16.8" height="18" fill="#0f141f"/>
+<rect x="30.8" y="608" width="8.4" height="18" fill="#384072"/>
+<text x="30.8" y="621.5" fill="#e9eff9" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >n</text>
+<rect x="39.2" y="608" width="33.6" height="18" fill="#0f141f"/>
+<text x="39.2" y="621.5" fill="#93a0b8" xml:space="preserve" textLength="33.6" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  > new</text>
+<rect x="72.8" y="608" width="16.8" height="18" fill="#0f141f"/>
+<rect x="89.6" y="608" width="8.4" height="18" fill="#384072"/>
+<text x="89.6" y="621.5" fill="#e9eff9" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >p</text>
+<rect x="98" y="608" width="75.6" height="18" fill="#0f141f"/>
+<text x="98" y="621.5" fill="#93a0b8" xml:space="preserve" textLength="75.6" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  > progress</text>
+<rect x="173.6" y="608" width="16.8" height="18" fill="#0f141f"/>
+<rect x="190.4" y="608" width="8.4" height="18" fill="#384072"/>
+<text x="190.4" y="621.5" fill="#e9eff9" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >d</text>
+<rect x="198.8" y="608" width="42" height="18" fill="#0f141f"/>
+<text x="198.8" y="621.5" fill="#93a0b8" xml:space="preserve" textLength="42" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  > done</text>
+<rect x="240.8" y="608" width="16.8" height="18" fill="#0f141f"/>
+<rect x="257.6" y="608" width="8.4" height="18" fill="#384072"/>
+<text x="257.6" y="621.5" fill="#e9eff9" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >t</text>
+<rect x="266" y="608" width="50.4" height="18" fill="#0f141f"/>
+<text x="266" y="621.5" fill="#93a0b8" xml:space="preserve" textLength="50.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  > to-do</text>
+<rect x="316.4" y="608" width="16.8" height="18" fill="#0f141f"/>
+<rect x="333.2" y="608" width="8.4" height="18" fill="#384072"/>
+<text x="333.2" y="621.5" fill="#e9eff9" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >x</text>
+<rect x="341.6" y="608" width="58.8" height="18" fill="#0f141f"/>
+<text x="341.6" y="621.5" fill="#93a0b8" xml:space="preserve" textLength="58.8" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  > delete</text>
+<rect x="400.4" y="608" width="16.8" height="18" fill="#0f141f"/>
+<rect x="417.2" y="608" width="16.8" height="18" fill="#384072"/>
+<text x="417.2" y="621.5" fill="#e9eff9" xml:space="preserve" textLength="16.8" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >↑↓</text>
+<rect x="434" y="608" width="42" height="18" fill="#0f141f"/>
+<text x="434" y="621.5" fill="#93a0b8" xml:space="preserve" textLength="42" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  > card</text>
+<rect x="476" y="608" width="16.8" height="18" fill="#0f141f"/>
+<rect x="492.8" y="608" width="16.8" height="18" fill="#384072"/>
+<text x="492.8" y="621.5" fill="#e9eff9" xml:space="preserve" textLength="16.8" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >←→</text>
+<rect x="509.6" y="608" width="58.8" height="18" fill="#0f141f"/>
+<text x="509.6" y="621.5" fill="#93a0b8" xml:space="preserve" textLength="58.8" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  > column</text>
+<rect x="568.4" y="608" width="16.8" height="18" fill="#0f141f"/>
+<rect x="585.2" y="608" width="8.4" height="18" fill="#384072"/>
+<text x="585.2" y="621.5" fill="#e9eff9" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >q</text>
+<rect x="593.6" y="608" width="42" height="18" fill="#0f141f"/>
+<text x="593.6" y="621.5" fill="#93a0b8" xml:space="preserve" textLength="42" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  > quit</text>
+<rect x="635.6" y="608" width="134.4" height="18" fill="#0f141f"/>
+<rect x="770" y="608" width="151.2" height="18" fill="#0f141f"/>
+<text x="770" y="621.5" fill="#4ade80" xml:space="preserve" textLength="151.2" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >K-06 moved to Done</text>
+<rect x="921.2" y="608" width="16.8" height="18" fill="#0f141f"/>
 </svg>
