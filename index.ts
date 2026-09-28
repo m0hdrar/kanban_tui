@@ -11,6 +11,7 @@
  *   p            move the selected card to In Progress
  *   d            move the selected card to Done
  *   t            move the selected card back to To-do
+ *   space        cycle the selected card's priority (medium → high → low)
  *   x / del      delete the selected card
  *   q / ctrl+c   quit
  *

@@ -235,6 +235,7 @@ export function createKanbanApp(
       { key: "p", action: "progress" },
       { key: "d", action: "done" },
       { key: "t", action: "to-do" },
+      { key: "space", action: "priority" },
       { key: "x", action: "delete" },
       { key: "↑↓", action: "card" },
       { key: "←→", action: "column" },
@@ -522,6 +523,31 @@ export function createKanbanApp(
     refresh()
   }
 
+  function cycleSelectedPriority() {
+    const view = activeColumn()
+    const card = board.inColumn(view.id)[selected[view.id]]
+    if (!card) {
+      setToast("no card selected", theme.warn)
+      return
+    }
+    if (card.column === "done") {
+      setToast("done cards have no priority", theme.warn)
+      return
+    }
+
+    const priority = board.cyclePriority(card)
+    // The column re-sorts by priority; keep the selection on the same card.
+    selected[view.id] = board.inColumn(view.id).indexOf(card)
+
+    flashId = card.id
+    flashUntil = now() + FLASH_MS
+    scheduleRepaint(FLASH_MS + 80)
+    setToast(`${card.id} is now ${priorityLabel[priority]} priority`, priorityColor[priority])
+    boardDirty = true
+    refresh()
+    scrollToSelected(view)
+  }
+
   function deleteSelected() {
     const view = activeColumn()
     const cards = board.inColumn(view.id)
@@ -622,6 +648,9 @@ export function createKanbanApp(
         return "handled"
       case "t":
         moveSelected("todo")
+        return "handled"
+      case "space":
+        cycleSelectedPriority()
         return "handled"
       case "x":
       case "delete":

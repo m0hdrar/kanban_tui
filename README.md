@@ -76,6 +76,7 @@ Then run `herdr server reload-config`.
 | `p` | Move the selected card to In Progress |
 | `d` | Move the selected card to Done |
 | `t` | Move the selected card back to To-do |
+| `Space` | Change the selected card's priority (medium → high → low); cards sort high to low |
 | `x` / `Delete` | Delete the selected card |
 | `q` / `Ctrl+C` | Quit |
 

@@ -32,7 +32,9 @@ export interface Board {
   /** Move a card between columns. Returns true when the column changed. */
   move(card: Card, column: ColumnId): boolean
   remove(card: Card): void
-  /** Cards of one column, in display order. */
+  /** Step a card's priority medium → high → low → medium. Returns the new one. */
+  cyclePriority(card: Card): Priority
+  /** Cards of one column, in display order: by priority, except Done, which is newest-first. */
   inColumn(column: ColumnId): Card[]
   counts(): Record<ColumnId, number>
 }
@@ -55,6 +57,8 @@ interface SavedBoard {
 }
 
 const COLUMNS: readonly unknown[] = ["todo", "progress", "done"]
+const PRIORITY_RANK: Record<Priority, number> = { high: 0, medium: 1, low: 2 }
+const NEXT_PRIORITY: Record<Priority, Priority> = { medium: "high", high: "low", low: "medium" }
 const PRIORITIES: readonly unknown[] = ["high", "medium", "low"]
 
 function isCard(value: any): value is Card {
@@ -234,6 +238,12 @@ export function createBoard(options: { now?: () => number; path?: string } = {})
       return true
     },
 
+    cyclePriority(card) {
+      card.priority = NEXT_PRIORITY[card.priority]
+      persist()
+      return card.priority
+    },
+
     remove(card) {
       const index = cards.indexOf(card)
       if (index >= 0) cards.splice(index, 1)
@@ -242,9 +252,11 @@ export function createBoard(options: { now?: () => number; path?: string } = {})
 
     inColumn(column) {
       const list = cards.filter((card) => card.column === column)
-      // Done reads newest-first; the other columns keep their creation order.
+      // Done reads newest-first; the other columns go high → low, keeping creation order within a priority.
       if (column === "done") {
         list.sort((a, b) => (b.completedAt ?? b.movedAt) - (a.completedAt ?? a.movedAt))
+      } else {
+        list.sort((a, b) => PRIORITY_RANK[a.priority] - PRIORITY_RANK[b.priority])
       }
       return list
     },

@@ -38,3 +38,20 @@ test("status line counts open work and is empty when there is none", () => {
   expect(statusLine({ todo: 5, progress: 2, done: 9 })).toBe("Kanban 2 doing · 5 to-do")
   expect(statusLine({ todo: 0, progress: 0, done: 3 })).toBe("")
 })
+
+test("space-cycled priorities persist and sort To-do high to low", () => {
+  const path = tempPath()
+  const board = createBoard({ path })
+  const a = board.create("A")
+  board.create("B")
+  const c = board.create("C")
+
+  expect(board.cyclePriority(c)).toBe("high")
+  expect(board.cyclePriority(a)).toBe("high")
+  expect(board.cyclePriority(a)).toBe("low")
+  expect(board.inColumn("todo").map((card) => card.title)).toEqual(["C", "B", "A"])
+  expect(board.cyclePriority(a)).toBe("medium")
+  expect(board.inColumn("todo").map((card) => card.title)).toEqual(["C", "A", "B"])
+
+  expect(createBoard({ path }).inColumn("todo").map((card) => card.priority)).toEqual(["high", "medium", "medium"])
+})
