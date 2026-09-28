@@ -21,6 +21,10 @@ export interface Card {
   completedAt?: number
 }
 
+import { existsSync, mkdirSync, readFileSync, renameSync, writeFileSync } from "node:fs"
+import { homedir } from "node:os"
+import { dirname, join } from "node:path"
+
 export interface Board {
   cards: Card[]
   /** Create a card, appending it to the given column (To-do by default). */
@@ -31,6 +35,61 @@ export interface Board {
   /** Cards of one column, in display order. */
   inColumn(column: ColumnId): Card[]
   counts(): Record<ColumnId, number>
+}
+
+/** Where the installed app keeps your board. */
+export function defaultBoardPath(): string {
+  return join(homedir(), "Library", "Application Support", "kanban_tui", "board.json")
+}
+
+interface SavedBoard {
+  version: 1
+  nextNumber: number
+  cards: Card[]
+}
+
+const COLUMNS: readonly unknown[] = ["todo", "progress", "done"]
+const PRIORITIES: readonly unknown[] = ["high", "medium", "low"]
+
+function isCard(value: any): value is Card {
+  return (
+    typeof value === "object" &&
+    value !== null &&
+    typeof value.id === "string" &&
+    typeof value.title === "string" &&
+    COLUMNS.includes(value.column) &&
+    PRIORITIES.includes(value.priority) &&
+    Number.isFinite(value.createdAt) &&
+    Number.isFinite(value.movedAt) &&
+    (value.completedAt === undefined || Number.isFinite(value.completedAt))
+  )
+}
+
+/** Returns null when there is no file yet; throws (leaving the file alone) when it is unreadable. */
+function loadBoard(path: string): SavedBoard | null {
+  if (!existsSync(path)) return null
+  let data: any
+  try {
+    data = JSON.parse(readFileSync(path, "utf8"))
+  } catch {
+    throw new Error(`Invalid JSON in ${path}; the file was left unchanged.`)
+  }
+  if (
+    data?.version !== 1 ||
+    !Number.isInteger(data.nextNumber) ||
+    !Array.isArray(data.cards) ||
+    !data.cards.every(isCard)
+  ) {
+    throw new Error(`Unrecognised board data in ${path}; the file was left unchanged.`)
+  }
+  return data
+}
+
+function saveBoard(path: string, data: SavedBoard) {
+  mkdirSync(dirname(path), { recursive: true })
+  const tmp = `${path}.${process.pid}.tmp`
+  writeFileSync(tmp, `${JSON.stringify(data, null, 2)}\n`)
+  renameSync(tmp, path) // atomic: a crash mid-write never leaves a half-written board
 }
 
 const MINUTE = 60_000
@@ -106,16 +165,26 @@ const SEED: SeedCard[] = [
   },
 ]
 
-export function createBoard(options: { now?: () => number } = {}): Board {
+/**
+ * With a `path`, the board is loaded from that file and saved to it on every
+ * change, starting empty on first run. Without one it is an in-memory board
+ * seeded with sample cards (used by the preview).
+ */
+export function createBoard(options: { now?: () => number; path?: string } = {}): Board {
   const time = options.now ?? (() => Date.now())
   const start = time()
+  const { path } = options
+  const saved = path ? loadBoard(path) : null
 
-  let nextNumber = 1
-  const cards: Card[] = []
+  let nextNumber = saved?.nextNumber ?? 1
+  const cards: Card[] = saved?.cards ?? []
 
   const makeId = () => `K-${String(nextNumber++).padStart(2, "0")}`
+  const persist = () => {
+    if (path) saveBoard(path, { version: 1, nextNumber, cards })
+  }
 
-  for (const seed of SEED) {
+  for (const seed of path ? [] : SEED) {
     const createdAt = start - seed.createdAgoMs
     const movedAt = start - (seed.columnSinceAgoMs ?? seed.createdAgoMs)
     const card: Card = {
@@ -144,6 +213,7 @@ export function createBoard(options: { now?: () => number } = {}): Board {
         movedAt: at,
       }
       cards.push(card)
+      persist()
       return card
     },
 
@@ -154,12 +224,14 @@ export function createBoard(options: { now?: () => number } = {}): Board {
       card.movedAt = at
       if (column === "done") card.completedAt = at
       else delete card.completedAt
+      persist()
       return true
     },
 
     remove(card) {
       const index = cards.indexOf(card)
       if (index >= 0) cards.splice(index, 1)
+      persist()
     },
 
     inColumn(column) {

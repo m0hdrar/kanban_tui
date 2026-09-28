@@ -16,8 +16,17 @@
  */
 import { createCliRenderer } from "@opentui/core"
 import { createKanbanApp } from "./src/app"
-import { createBoard } from "./src/board"
+import { createBoard, defaultBoardPath } from "./src/board"
 import { theme } from "./src/theme"
+
+// Load before the renderer takes over the terminal, so a bad file is reported plainly.
+let board: ReturnType<typeof createBoard>
+try {
+  board = createBoard({ path: defaultBoardPath() })
+} catch (error) {
+  console.error(error instanceof Error ? error.message : error)
+  process.exit(1)
+}
 
 const renderer = await createCliRenderer({
   exitOnCtrlC: true,
@@ -26,7 +35,6 @@ const renderer = await createCliRenderer({
   consoleMode: "console-overlay",
 })
 
-const board = createBoard()
 const app = createKanbanApp(renderer, board)
 renderer.root.add(app.root)
 
@@ -44,6 +52,14 @@ function shutdown() {
   app.destroy()
   renderer.destroy()
 }
+
+// A failed save surfaces here (from a keypress or the composer's enter). Stop
+// rather than let the user keep editing a board that isn't being saved.
+process.on("uncaughtException", (error) => {
+  shutdown()
+  console.error(`kanban-tui stopped: ${error instanceof Error ? error.message : error}`)
+  process.exit(1)
+})
 
 renderer.keyInput.on("keypress", (key) => {
   const result = app.handleKey(key)

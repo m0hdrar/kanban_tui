@@ -15,16 +15,26 @@ with priority markers, aging, a live progress bar and a composer for new cards.
 Install with [Homebrew](https://brew.sh):
 
 ```sh
-brew install m0hdrar/tap/kanban
+brew install m0hdrar/tap/kanban-tui
 ```
 
 Then run:
 
 ```sh
-kanban
+kanban-tui
 ```
 
 Supports macOS on Apple Silicon and Intel.
+
+## Data
+
+Your board is saved after every change to:
+
+```text
+~/Library/Application Support/kanban_tui/board.json
+```
+
+If the file is corrupted, the app reports it and exits without overwriting it.
 
 ## Development
 
@@ -55,6 +65,7 @@ The composer takes a title, `enter` adds the card, `esc` cancels.
 | `bun run start` | run the board |
 | `bun run dev` | run with watch mode |
 | `bun run preview` | render a reproducible snapshot to `preview/` |
+| `bun test` | run the tests |
 | `bun run typecheck` | `tsc --noEmit` |
 
 ## Layout
@@ -62,7 +73,7 @@ The composer takes a title, `enter` adds the card, `esc` cancels.
 ```
 index.ts          entry point — renderer, keys, shutdown
 src/app.ts        all renderables: header, columns, cards, composer, footer
-src/board.ts      card/column model (framework-free)
+src/board.ts      card/column model + saving to board.json (framework-free)
 src/theme.ts      palette
 src/format.ts     clock / date / age helpers
 src/widgets.ts    progress bar + keycap legend
