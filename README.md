@@ -14,7 +14,7 @@ A keyboard-first kanban board for your terminal, built with [Bun](https://bun.sh
 - **Priorities:** each card is marked high, medium or low at a glance
 - **Card age:** see how long a card has waited, been in progress, or been done
 - **Progress:** a live progress bar and card counts in the header
-- **Quick capture:** press `n`, type a title, press `Enter`
+- **Quick capture:** press `n`, type a title, press `Enter`; press `e` to edit a title
 - **Local storage:** no account and no cloud; your board is saved on your machine after every change
 
 ## Installation
@@ -76,15 +76,16 @@ Then run `herdr server reload-config`.
 | `p` | Move the selected card to In Progress |
 | `d` | Move the selected card to Done |
 | `t` | Move the selected card back to To-do |
+| `e` | Edit the selected card's title |
 | `Space` | Change the selected card's priority (medium → high → low); cards sort high to low |
 | `x` / `Delete` | Delete the selected card |
 | `q` / `Ctrl+C` | Quit |
 
-### New card
+### New or edited card
 
 | Key | Action |
 | --- | --- |
-| `Enter` | Add the card |
+| `Enter` | Add the card, or save the edited title |
 | `Esc` | Cancel |
 
 ## Data

@@ -55,3 +55,11 @@ test("space-cycled priorities persist and sort To-do high to low", () => {
 
   expect(createBoard({ path }).inColumn("todo").map((card) => card.priority)).toEqual(["high", "medium", "medium"])
 })
+
+test("a renamed card keeps its id and the new title persists", () => {
+  const path = tempPath()
+  const board = createBoard({ path })
+  const card = board.create("Typo titel")
+  board.rename(card, "  Typo title  ")
+  expect(createBoard({ path }).cards[0]).toMatchObject({ id: card.id, title: "Typo title" })
+})

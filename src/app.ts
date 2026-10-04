@@ -38,6 +38,7 @@ export interface KanbanApp {
   moveSelected(column: ColumnId): void
   deleteSelected(): void
   openComposer(value?: string): void
+  editSelected(): void
   closeComposer(): void
   submitComposer(): void
 }
@@ -197,15 +198,15 @@ export function createKanbanApp(
   composerRow.add(new TextRenderable(ctx, { content: t`${fg(theme.accent)("▸")}` }))
   composerRow.add(composerInput)
 
-  const composerHint = new TextRenderable(ctx, {
-    content: joinChunks([
+  const composerHintFor = (action: string) =>
+    joinChunks([
       fg(theme.textDim)("enter"),
-      fg(theme.textFaint)(" add card to To-do"),
+      fg(theme.textFaint)(` ${action}`),
       fg(theme.textFaint)("   ·   "),
       fg(theme.textDim)("esc"),
       fg(theme.textFaint)(" cancel"),
-    ]),
-  })
+    ])
+  const composerHint = new TextRenderable(ctx, { content: composerHintFor("add card to To-do") })
 
   const composer = new BoxRenderable(ctx, {
     id: "composer",
@@ -235,6 +236,7 @@ export function createKanbanApp(
       { key: "p", action: "progress" },
       { key: "d", action: "done" },
       { key: "t", action: "to-do" },
+      { key: "e", action: "edit" },
       { key: "space", action: "priority" },
       { key: "x", action: "delete" },
       { key: "↑↓", action: "card" },
@@ -269,6 +271,8 @@ export function createKanbanApp(
   const selected: Record<ColumnId, number> = { todo: 0, progress: 0, done: 0 }
   let focusIdx = 0
   let composerOpen = false
+  /** The card being retitled, or null when the composer adds a new card. */
+  let editing: Card | null = null
   let boardDirty = true
 
   let toast = ""
@@ -565,6 +569,26 @@ export function createKanbanApp(
   }
 
   function openComposer(value = "") {
+    editing = null
+    composer.title = " new card "
+    composerHint.content = composerHintFor("add card to To-do")
+    showComposer(value)
+  }
+
+  function editSelected() {
+    const view = activeColumn()
+    const card = board.inColumn(view.id)[selected[view.id]]
+    if (!card) {
+      setToast("no card selected", theme.warn)
+      return
+    }
+    editing = card
+    composer.title = ` edit ${card.id} `
+    composerHint.content = composerHintFor("save title")
+    showComposer(card.title)
+  }
+
+  function showComposer(value: string) {
     composerOpen = true
     composer.visible = true
     composerInput.value = value
@@ -583,6 +607,19 @@ export function createKanbanApp(
     const title = composerInput.value.trim()
     if (!title) {
       setToast("give the card a title first", theme.warn)
+      return
+    }
+
+    if (editing) {
+      const card = editing
+      board.rename(card, title)
+      closeComposer()
+      flashId = card.id
+      flashUntil = now() + FLASH_MS
+      scheduleRepaint(FLASH_MS + 80)
+      setToast(`${card.id} renamed`, theme.ok)
+      boardDirty = true
+      refresh()
       return
     }
 
@@ -649,6 +686,9 @@ export function createKanbanApp(
       case "t":
         moveSelected("todo")
         return "handled"
+      case "e":
+        editSelected()
+        return "handled"
       case "space":
         cycleSelectedPriority()
         return "handled"
@@ -678,6 +718,7 @@ export function createKanbanApp(
     moveSelected,
     deleteSelected,
     openComposer,
+    editSelected,
     closeComposer,
     submitComposer,
   }

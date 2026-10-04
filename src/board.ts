@@ -32,6 +32,8 @@ export interface Board {
   /** Move a card between columns. Returns true when the column changed. */
   move(card: Card, column: ColumnId): boolean
   remove(card: Card): void
+  /** Change a card's title. */
+  rename(card: Card, title: string): void
   /** Step a card's priority medium → high → low → medium. Returns the new one. */
   cyclePriority(card: Card): Priority
   /** Cards of one column, in display order: by priority, except Done, which is newest-first. */
@@ -242,6 +244,11 @@ export function createBoard(options: { now?: () => number; path?: string } = {})
       card.priority = NEXT_PRIORITY[card.priority]
       persist()
       return card.priority
+    },
+
+    rename(card, title) {
+      card.title = title.trim()
+      persist()
     },
 
     remove(card) {

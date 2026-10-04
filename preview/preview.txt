@@ -31,5 +31,5 @@
  ╰──────────────────────────────────────────────────────────────────────────────────────────────────────────╯ 
                                                                                                               
 ──────────────────────────────────────────────────────────────────────────────────────────────────────────────
-  n new  p progress  d done  t to-do  x delete  ↑↓ card  ←→ column  q quit                K-06 moved to Done  
+  n new  p progress  d done  t to-do  e edit  space priority  x delete  ↑↓ card  ←→ column  q quit  K-06 moved
 
