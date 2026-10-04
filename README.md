@@ -117,11 +117,12 @@ These commands need Flow 0.5.0 or newer, and `projects`, `project` and `--projec
 
 The [`kanban` skill](skills/kanban/SKILL.md) teaches agents to use these commands. With it, an agent:
 
-- Adds a card for follow-up work it finds but won't do now, such as a bug it noticed or a `TODO` it left
-- Puts it in the project named after the repo it's working in, if there is one, without switching your board
-- Doesn't add the steps of its current task
-- Checks `kanban-tui list` first so it doesn't add duplicates
-- Moves a card to In Progress and Done when you ask it to work on that card
+- Finds the exact card when you ask it to work on one, by id, by words from its title, or as "the next card", searching every project if needed
+- Says which card and project it picked before starting, and asks instead of guessing when nothing or more than one card matches
+- Moves that card to In Progress when it starts and to Done once the work is verified
+- Adds a card only for concrete follow-up work it won't do now, such as a bug it noticed or a `TODO` it left, never for vague ideas or the steps of its current task
+- Asks you about borderline finds instead of adding them, and checks `kanban-tui list --all` first so it doesn't add duplicates
+- Puts cards in the project named after the repo it's working in, if there is one, without switching your board
 - Tells you the id of each card it adds
 - Creates, renames or deletes projects only when you ask
 
