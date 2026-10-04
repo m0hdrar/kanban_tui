@@ -80,6 +80,7 @@ Then run `herdr server reload-config`.
 | `e` | Edit the selected card's title |
 | `Space` | Change the selected card's priority (medium → high → low); cards sort high to low |
 | `x` / `Delete` | Delete the selected card |
+| `c` | Pick a colour theme (`↑`/`↓` preview, `Enter` keep, `Esc` cancel): follow herdr, flow, vesper, tokyonight, catppuccin, gruvbox, nord, rose-pine, dracula |
 | `q` / `Ctrl+C` | Quit |
 
 ### New or edited card
@@ -132,6 +133,8 @@ Your board is saved after every change to one file:
 
 Other processes, such as `kanban-tui add`, can change the file while the board is open. The open board reloads it within a second, and it re-reads the file before each change, so it doesn't overwrite theirs.
 
+Your theme choice is kept next to it in `theme`. Until you pick one, Flow follows the `[theme] name` in `~/.config/herdr/config.toml` (live, while it runs) and falls back to `flow` for herdr themes it doesn't have.
+
 If the file is corrupted, Flow shows an error and exits without overwriting it.
 
 ## Development
@@ -152,7 +155,7 @@ bun run preview      # render a snapshot of the board to preview/
 index.ts             entry point: renderer, keys, shutdown
 src/app.ts           header, columns, cards, composer and footer
 src/board.ts         card and column model, saved to board.json
-src/theme.ts         colour palette
+src/theme.ts         colour themes
 src/format.ts        clock, date and age helpers
 src/widgets.ts       progress bar and key hints
 src/cli.ts           add, list, move, rm and status commands

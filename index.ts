@@ -13,6 +13,7 @@
  *   t            move the selected card back to To-do
  *   space        cycle the selected card's priority (medium → high → low)
  *   x / del      delete the selected card
+ *   c            pick a colour theme, or follow herdr's (remembered between sessions)
  *   q / ctrl+c   quit
  *
  *   bun run start add|list|move|rm|status   commands for scripts and agents (see src/cli.ts)
@@ -37,7 +38,8 @@ if (args.length > 0) {
 
 const { createCliRenderer } = await import("@opentui/core")
 const { createKanbanApp } = await import("./src/app")
-const { theme } = await import("./src/theme")
+const { loadSavedTheme, syncHerdrTheme, theme } = await import("./src/theme")
+loadSavedTheme()
 
 // Load before the renderer takes over the terminal, so a bad file is reported plainly.
 let board: ReturnType<typeof createBoard>
@@ -64,6 +66,8 @@ renderer.setTerminalTitle("Flow · kanban board")
 // add from other panes (`kanban-tui add`) within a second.
 const clock = setInterval(() => {
   app.syncBoard()
+  // ponytail: re-reads herdr's config every tick while following it; it's tiny
+  if (syncHerdrTheme()) app.applyTheme()
   app.refresh()
 }, 1000)
 
@@ -92,7 +96,7 @@ renderer.keyInput.on("keypress", (key) => {
   if (result === "quit") shutdown()
 })
 
-renderer.on("resize", () => app.refresh())
+renderer.on("resize", () => app.applyTheme())
 
 process.on("SIGINT", shutdown)
 process.on("SIGTERM", shutdown)

@@ -12,7 +12,19 @@ import {
 } from "@opentui/core"
 import { type Board, type Card, type ColumnId } from "./board"
 import { clamp, formatAge, formatClock, formatDate } from "./format"
-import { columnLabel, priorityColor, priorityLabel, theme } from "./theme"
+import {
+  chooseTheme,
+  columnLabel,
+  herdrTheme,
+  priorityColor,
+  priorityLabel,
+  saveTheme,
+  theme,
+  themeChoice,
+  themeChoices,
+  themeName,
+  type ThemeChoice,
+} from "./theme"
 import { joinChunks, keyHints, progressBar } from "./widgets"
 
 /** The subset of a key event the app cares about (easy to fake in previews). */
@@ -43,12 +55,14 @@ export interface KanbanApp {
   editSelected(): void
   closeComposer(): void
   submitComposer(): void
+  openThemePicker(): void
+  /** Repaint after the theme changed outside the app (herdr's, while following it). */
+  applyTheme(): void
 }
 
 interface ColumnView {
   id: ColumnId
   title: string
-  accent: string
   empty: string
   hint: string
   panel: BoxRenderable
@@ -73,7 +87,6 @@ export function createKanbanApp(
     flexDirection: "column",
     width: "100%",
     height: "100%",
-    backgroundColor: theme.bg,
   })
 
   // ------------------------------------------------------------------ header
@@ -104,8 +117,6 @@ export function createKanbanApp(
     flexShrink: 0,
     border: ["bottom"],
     borderStyle: "single",
-    borderColor: theme.borderSoft,
-    backgroundColor: theme.panel,
   })
   header.add(tagline)
   header.add(headerMeta)
@@ -125,21 +136,18 @@ export function createKanbanApp(
     {
       id: "todo",
       title: "TO-DO",
-      accent: theme.todo,
       empty: "nothing queued",
       hint: "press n to add a card",
     },
     {
       id: "progress",
       title: "IN PROGRESS",
-      accent: theme.progress,
       empty: "nothing in flight",
       hint: "press p on a card",
     },
     {
       id: "done",
       title: "DONE",
-      accent: theme.done,
       empty: "nothing shipped yet",
       hint: "press d on a card",
     },
@@ -188,16 +196,12 @@ export function createKanbanApp(
   const composerInput = new InputRenderable(ctx, {
     id: "composer-input",
     placeholder: "what needs doing?",
-    backgroundColor: theme.composer,
-    focusedBackgroundColor: theme.composer,
-    textColor: theme.text,
-    focusedTextColor: theme.text,
-    placeholderColor: theme.textFaint,
     flexGrow: 1,
   })
 
   const composerRow = new BoxRenderable(ctx, { flexDirection: "row", gap: 1, paddingX: 1 })
-  composerRow.add(new TextRenderable(ctx, { content: t`${fg(theme.accent)("▸")}` }))
+  const composerArrow = new TextRenderable(ctx, { content: t`` })
+  composerRow.add(composerArrow)
   composerRow.add(composerInput)
 
   const composerHintFor = (action: string) =>
@@ -218,22 +222,16 @@ export function createKanbanApp(
     marginBottom: 1,
     border: true,
     borderStyle: "rounded",
-    borderColor: theme.accent,
-    backgroundColor: theme.composer,
     paddingX: 1,
     title: " new card ",
-    titleColor: theme.accent,
     visible: false,
   })
   composer.add(composerRow)
   composer.add(composerHint)
 
   // ------------------------------------------------------------------- footer
-  const hints = new TextRenderable(ctx, {
-    height: 1,
-    wrapMode: "none",
-    truncate: true,
-    content: keyHints([
+  const hintsFor = () =>
+    keyHints([
       { key: "n", action: "new" },
       { key: "p", action: "progress" },
       { key: "d", action: "done" },
@@ -243,9 +241,10 @@ export function createKanbanApp(
       { key: "x", action: "delete" },
       { key: "↑↓", action: "card" },
       { key: "←→", action: "column" },
+      { key: "c", action: "theme" },
       { key: "q", action: "quit" },
-    ]),
-  })
+    ])
+  const hints = new TextRenderable(ctx, { height: 1, wrapMode: "none", truncate: true, content: t`` })
   const status = new TextRenderable(ctx, { content: t``, height: 1, wrapMode: "none", truncate: true })
 
   const footer = new BoxRenderable(ctx, {
@@ -258,16 +257,35 @@ export function createKanbanApp(
     flexShrink: 0,
     border: ["top"],
     borderStyle: "single",
-    borderColor: theme.borderSoft,
-    backgroundColor: theme.panel,
   })
   footer.add(hints)
   footer.add(status)
+
+  // ------------------------------------------------------------ theme picker
+  const PICKER_WIDTH = 30
+  const pickerList = new TextRenderable(ctx, { content: t`` })
+  const pickerHint = new TextRenderable(ctx, { content: t`` })
+  const picker = new BoxRenderable(ctx, {
+    id: "theme-picker",
+    position: "absolute",
+    zIndex: 10,
+    width: PICKER_WIDTH,
+    flexDirection: "column",
+    gap: 1,
+    border: true,
+    borderStyle: "rounded",
+    paddingX: 1,
+    title: " theme ",
+    visible: false,
+  })
+  picker.add(pickerList)
+  picker.add(pickerHint)
 
   root.add(header)
   root.add(boardRow)
   root.add(composer)
   root.add(footer)
+  root.add(picker)
 
   // -------------------------------------------------------------------- state
   const selected: Record<ColumnId, number> = { todo: 0, progress: 0, done: 0 }
@@ -276,9 +294,13 @@ export function createKanbanApp(
   /** The card being retitled, or null when the composer adds a new card. */
   let editing: Card | null = null
   let boardDirty = true
+  let pickerOpen = false
+  let pickerIndex = 0
+  /** The choice to restore when the picker is cancelled. */
+  let pickerBefore: ThemeChoice = themeChoice
 
   let toast = ""
-  let toastColor: string = theme.textDim
+  let toastColor = ""
   let toastUntil = 0
   let flashId: string | null = null
   let flashUntil = 0
@@ -298,11 +320,91 @@ export function createKanbanApp(
     }, delay)
   }
 
-  function setToast(message: string, color: string = theme.textDim, ms = TOAST_MS) {
+  function setToast(message: string, color = theme.textDim, ms = TOAST_MS) {
     toast = message
     toastColor = color
     toastUntil = now() + ms
     scheduleRepaint(ms + 80)
+  }
+
+  /** Paint the chrome built once at startup; cards and header/footer text pick up `theme` on every render. */
+  function applyTheme() {
+    renderer.setBackgroundColor(theme.bg)
+    root.backgroundColor = theme.bg
+    for (const bar of [header, footer]) {
+      bar.borderColor = theme.borderSoft
+      bar.backgroundColor = theme.panel
+    }
+    composer.borderColor = theme.accent
+    composer.backgroundColor = theme.composer
+    composer.titleColor = theme.accent
+    composerInput.backgroundColor = theme.composer
+    composerInput.focusedBackgroundColor = theme.composer
+    composerInput.textColor = theme.text
+    composerInput.focusedTextColor = theme.text
+    composerInput.placeholderColor = theme.textFaint
+    composerArrow.content = t`${fg(theme.accent)("▸")}`
+    composerHint.content = composerHintFor(editing ? "save title" : "add card to To-do")
+    hints.content = hintsFor()
+    tagline.content = t`${fg(theme.textDim)("kanban board")}`
+    if (pickerOpen) renderPicker()
+    boardDirty = true
+  }
+
+  function choiceLabel(choice: ThemeChoice) {
+    return choice === "herdr" ? `follow herdr (${herdrTheme() ?? "flow"})` : choice
+  }
+
+  function renderPicker() {
+    picker.borderColor = theme.accent
+    picker.titleColor = theme.accent
+    picker.backgroundColor = theme.panelFocused
+    picker.left = Math.max(0, Math.floor((renderer.width - PICKER_WIDTH) / 2))
+    picker.top = Math.max(0, Math.floor((renderer.height - themeChoices.length - 6) / 2))
+    pickerList.content = joinChunks(
+      themeChoices.flatMap((choice, index) => {
+        const line =
+          index === pickerIndex
+            ? bold(fg(theme.accent)(`▸ ${choiceLabel(choice)}`))
+            : fg(theme.textDim)(`  ${choiceLabel(choice)}`)
+        return index === 0 ? [line] : [fg(theme.textDim)("\n"), line]
+      }),
+    )
+    pickerHint.content = joinChunks([
+      fg(theme.textDim)("enter"),
+      fg(theme.textFaint)(" keep  "),
+      fg(theme.textDim)("esc"),
+      fg(theme.textFaint)(" cancel"),
+    ])
+  }
+
+  function openThemePicker() {
+    pickerOpen = true
+    pickerBefore = themeChoice
+    pickerIndex = themeChoices.indexOf(themeChoice)
+    picker.visible = true
+    renderPicker()
+  }
+
+  /** Move the highlight and preview that theme straight away. */
+  function movePicker(delta: number) {
+    pickerIndex = (pickerIndex + delta + themeChoices.length) % themeChoices.length
+    chooseTheme(themeChoices[pickerIndex]!)
+    applyTheme()
+    refresh()
+  }
+
+  function closeThemePicker(keep: boolean) {
+    pickerOpen = false
+    picker.visible = false
+    if (keep) {
+      saveTheme()
+      setToast(`theme: ${choiceLabel(themeChoice)}`, theme.accent)
+    } else {
+      chooseTheme(pickerBefore)
+      applyTheme()
+    }
+    refresh()
   }
 
   function activeColumn(): ColumnView {
@@ -369,10 +471,11 @@ export function createKanbanApp(
       const focused = index === focusIdx
       const cards = board.inColumn(view.id)
 
-      view.panel.borderColor = focused ? view.accent : theme.borderSoft
+      const accent = theme[view.id]
+      view.panel.borderColor = focused ? accent : theme.borderSoft
       view.panel.backgroundColor = focused ? theme.panelFocused : theme.panel
       view.panel.title = ` ${view.title} · ${cards.length} `
-      view.panel.titleColor = focused ? view.accent : theme.textFaint
+      view.panel.titleColor = focused ? accent : theme.textFaint
 
       for (const child of view.scroll.getChildren()) view.scroll.remove(child)
 
@@ -415,7 +518,7 @@ export function createKanbanApp(
       backgroundColor: isSelected ? theme.cardSelected : theme.card,
       border: ["left"],
       borderStyle: "heavy",
-      borderColor: isSelected ? theme.borderFocus : isFlashing ? view.accent : theme.borderSoft,
+      borderColor: isSelected ? theme.borderFocus : isFlashing ? theme[view.id] : theme.borderSoft,
     })
 
     const marker = isSelected ? "▸ " : "  "
@@ -644,6 +747,15 @@ export function createKanbanApp(
 
   function handleKey(key: KeyLike): KeyResult {
     // While composing, the input owns the keyboard; only Escape is ours.
+    if (pickerOpen) {
+      if (key.ctrl && key.name === "c") return "quit"
+      if (key.name === "up" || key.name === "k") movePicker(-1)
+      else if (key.name === "down" || key.name === "j") movePicker(1)
+      else if (key.name === "return" || key.name === "enter") closeThemePicker(true)
+      else if (key.name === "escape" || key.name === "c" || key.name === "q") closeThemePicker(false)
+      return "handled"
+    }
+
     if (composerOpen) {
       if (key.name === "escape") {
         closeComposer()
@@ -694,6 +806,9 @@ export function createKanbanApp(
       case "space":
         cycleSelectedPriority()
         return "handled"
+      case "c":
+        openThemePicker()
+        return "handled"
       case "x":
       case "delete":
         deleteSelected()
@@ -705,6 +820,7 @@ export function createKanbanApp(
 
   composerInput.on("enter", submitComposer)
 
+  applyTheme()
   refresh()
 
   return {
@@ -732,5 +848,10 @@ export function createKanbanApp(
     editSelected,
     closeComposer,
     submitComposer,
+    openThemePicker,
+    applyTheme() {
+      applyTheme()
+      refresh()
+    },
   }
 }
