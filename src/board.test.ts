@@ -2,7 +2,7 @@ import { expect, test } from "bun:test"
 import { mkdtempSync, readFileSync, writeFileSync } from "node:fs"
 import { tmpdir } from "node:os"
 import { join } from "node:path"
-import { createBoard, statusLine } from "./board"
+import { DEFAULT_PROJECT, createBoard, statusLine } from "./board"
 import { runCommand } from "./cli"
 
 const tempPath = () => join(mkdtempSync(join(tmpdir(), "kanban-")), "nested", "board.json")
@@ -98,4 +98,59 @@ test("cli lists, moves and removes cards by id", () => {
   expect(createBoard({ path }).cards.map((c) => c.id)).toEqual(["K-01"])
   expect(() => runCommand(board, ["move", "K-01", "doing"])).toThrow("column must be one of")
   expect(() => runCommand(board, ["rm", "K-99"])).toThrow("no card K-99")
+})
+
+test("projects keep their own cards, and old boards land in the default project", () => {
+  const path = tempPath()
+  const board = createBoard({ path })
+  board.create("Old card")
+  // A board saved before projects existed has no project fields.
+  writeFileSync(path, readFileSync(path, "utf8").replace(/,?\s*"projects?": ("[^"]*"|\[[^\]]*\])/g, ""))
+  const old = createBoard({ path })
+  expect(old.project).toBe(DEFAULT_PROJECT)
+  expect(old.cards[0]!.project).toBe(DEFAULT_PROJECT)
+
+  old.openProject("  Side gig ")
+  expect(old.counts().todo).toBe(0)
+  runCommand(old, ["add", "Invoice"])
+
+  const reopened = createBoard({ path })
+  expect(reopened.project).toBe("Side gig")
+  expect(reopened.projects).toEqual([DEFAULT_PROJECT, "Side gig"])
+  expect(runCommand(reopened, ["list"])).toBe("K-02\ttodo\tmedium\tInvoice")
+  reopened.openProject(DEFAULT_PROJECT)
+  expect(reopened.inColumn("todo").map((c) => c.title)).toEqual(["Old card"])
+})
+
+test("cli manages projects, and --project works without switching the open board", () => {
+  const path = tempPath()
+  const board = createBoard({ path })
+  expect(runCommand(board, ["project", "add", "Side", "gig"])).toBe('added project "Side gig"')
+  expect(() => runCommand(board, ["project", "add", "side GIG"])).toThrow("already exists")
+  runCommand(board, ["project", "rename", "side gig", "side gig"]) // lookups ignore case; a case-only rename is fine
+  expect(createBoard({ path }).projects).toEqual([DEFAULT_PROJECT, "side gig"])
+
+  // An agent adds to another project; the board stays on General.
+  expect(runCommand(createBoard({ path }), ["add", "Invoice", "--project", "Client"])).toBe("K-01")
+  expect(createBoard({ path }).project).toBe(DEFAULT_PROJECT)
+  expect(runCommand(createBoard({ path }), ["list", "--project", "client"])).toBe("K-01\ttodo\tmedium\tInvoice")
+  expect(() => runCommand(createBoard({ path }), ["list", "--project", "Nope"])).toThrow('no project "Nope"')
+
+  expect(runCommand(createBoard({ path }), ["project", "rename", "client", "Client work"])).toBe(
+    'renamed "Client" to "Client work"',
+  )
+  expect(runCommand(createBoard({ path }), ["project", "open", "client work"])).toBe('opened "Client work"')
+  expect(runCommand(createBoard({ path }), ["projects"])).toBe(
+    "General\t0 to-do\t0 doing\t0 done\nside gig\t0 to-do\t0 doing\t0 done\nClient work\t1 to-do\t0 doing\t0 done\topen",
+  )
+  expect(() => runCommand(createBoard({ path }), ["project", "rename", "General", "side gig"])).toThrow("already exists")
+
+  expect(runCommand(createBoard({ path }), ["project", "rm", "Client work"])).toBe(
+    'deleted project "Client work" and its 1 card',
+  )
+  const after = createBoard({ path })
+  expect(after.project).toBe(DEFAULT_PROJECT) // deleting the open project opens the first one
+  expect(after.cards).toEqual([])
+  runCommand(after, ["project", "rm", "side gig"])
+  expect(() => runCommand(after, ["project", "rm", "General"])).toThrow("only project")
 })

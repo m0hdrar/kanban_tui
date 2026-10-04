@@ -19,15 +19,36 @@ export interface Card {
   movedAt: number
   /** epoch ms the card landed in `done`, if it ever has */
   completedAt?: number
+  /** the project the card belongs to */
+  project: string
 }
+
+/** Where cards saved before projects existed live. */
+export const DEFAULT_PROJECT = "General"
+
 
 import { existsSync, mkdirSync, readFileSync, renameSync, writeFileSync } from "node:fs"
 import { homedir } from "node:os"
 import { dirname, join } from "node:path"
 
 export interface Board {
+  /** Every card, in every project. */
   cards: Card[]
-  /** Create a card, appending it to the given column (To-do by default). */
+  /** The open project; `create`, `inColumn` and `counts` only see its cards. */
+  readonly project: string
+  /** Every project, oldest first. */
+  projects: string[]
+  /** Open a project, creating it if it's new. The choice is saved with the board. */
+  openProject(name: string): void
+  /** Work in a project for this process only; the board's open project doesn't change. */
+  useProject(name: string): void
+  /** Create an empty project without opening it. Throws if the name is empty or taken. */
+  addProject(name: string): string
+  /** Rename a project; its cards follow. Throws if it's missing or the new name is taken. */
+  renameProject(from: string, to: string): string
+  /** Delete a project and all its cards; returns how many cards went. Throws for the last project. */
+  deleteProject(name: string): number
+  /** Create a card in the open project, appending it to the given column (To-do by default). */
   create(title: string, opts?: { column?: ColumnId; priority?: Priority }): Card
   /** Move a card between columns. Returns true when the column changed. */
   move(card: Card, column: ColumnId): boolean
@@ -62,6 +83,9 @@ interface SavedBoard {
   version: 1
   nextNumber: number
   cards: Card[]
+  /** absent in boards saved before projects existed */
+  projects?: string[]
+  project?: string
 }
 
 const COLUMNS: readonly unknown[] = ["todo", "progress", "done"]
@@ -79,7 +103,8 @@ function isCard(value: any): value is Card {
     PRIORITIES.includes(value.priority) &&
     Number.isFinite(value.createdAt) &&
     Number.isFinite(value.movedAt) &&
-    (value.completedAt === undefined || Number.isFinite(value.completedAt))
+    (value.completedAt === undefined || Number.isFinite(value.completedAt)) &&
+    (value.project === undefined || typeof value.project === "string")
   )
 }
 
@@ -95,12 +120,20 @@ function parseBoard(text: string, path: string): SavedBoard {
     data?.version !== 1 ||
     !Number.isInteger(data.nextNumber) ||
     !Array.isArray(data.cards) ||
-    !data.cards.every(isCard)
+    !data.cards.every(isCard) ||
+    !(data.projects === undefined || (Array.isArray(data.projects) && data.projects.every(isName))) ||
+    !(data.project === undefined || isName(data.project))
   ) {
     throw new Error(`Unrecognised board data in ${path}; the file was left unchanged.`)
   }
+  // Boards from before projects put every card in the default project.
+  for (const card of data.cards) card.project ??= DEFAULT_PROJECT
+  data.project ??= DEFAULT_PROJECT
+  data.projects = [...new Set([...(data.projects ?? []), data.project, ...data.cards.map((c: Card) => c.project)])]
   return data
 }
+
+const isName = (value: unknown) => typeof value === "string" && value.trim() !== ""
 
 /** Writes atomically and returns the text written. */
 function saveBoard(path: string, data: SavedBoard): string {
@@ -197,11 +230,17 @@ export function createBoard(options: { now?: () => number; path?: string } = {})
 
   let nextNumber = 1
   const cards: Card[] = []
+  const projects: string[] = [DEFAULT_PROJECT]
+  /** the project this process shows */
+  let project = DEFAULT_PROJECT
+  /** the project the board file has open; differs from `project` only after `useProject` */
+  let openProject = DEFAULT_PROJECT
+  let scoped = false
   let lastText = "" // the file's contents when this process last read or wrote it
 
   const makeId = () => `K-${String(nextNumber++).padStart(2, "0")}`
   const persist = () => {
-    if (path) lastText = saveBoard(path, { version: 1, nextNumber, cards })
+    if (path) lastText = saveBoard(path, { version: 1, nextNumber, cards, projects, project: openProject })
   }
 
   const sync = (): boolean => {
@@ -217,6 +256,10 @@ export function createBoard(options: { now?: () => number; path?: string } = {})
       return Object.assign(existing, card)
     })
     cards.splice(0, cards.length, ...next)
+    projects.splice(0, projects.length, ...saved.projects!)
+    // ponytail: the open project lives in the file, so two open boards follow each other's switches
+    openProject = saved.project!
+    if (!scoped) project = openProject
     nextNumber = saved.nextNumber
     lastText = text
     return true
@@ -226,6 +269,16 @@ export function createBoard(options: { now?: () => number; path?: string } = {})
   // ponytail: each change re-reads the file first, then writes, so agents adding
   // cards from other processes aren't overwritten. Two writes landing in the same
   // millisecond can still race; add a lock file if that ever bites.
+  /** Names are unique ignoring case, so the CLI can look them up loosely. */
+  const freeName = (name: string, renaming?: string) => {
+    const clean = name.trim()
+    if (!clean) throw new Error("a project needs a name")
+    if (projects.some((p) => p !== renaming && p.toLowerCase() === clean.toLowerCase())) {
+      throw new Error(`project "${clean}" already exists`)
+    }
+    return clean
+  }
+
   const has = (card: Card) => {
     sync()
     return cards.includes(card)
@@ -241,6 +294,7 @@ export function createBoard(options: { now?: () => number; path?: string } = {})
       priority: seed.priority,
       createdAt,
       movedAt,
+      project,
     }
     if (seed.column === "done") card.completedAt = movedAt
     cards.push(card)
@@ -248,6 +302,58 @@ export function createBoard(options: { now?: () => number; path?: string } = {})
 
   const board: Board = {
     cards,
+    projects,
+
+    get project() {
+      return project
+    },
+
+    openProject(name) {
+      sync()
+      const clean = name.trim()
+      project = openProject = projects.find((p) => p.toLowerCase() === clean.toLowerCase()) ?? clean
+      if (!projects.includes(project)) projects.push(project)
+      persist()
+    },
+
+    useProject(name) {
+      scoped = true
+      project = name.trim()
+    },
+
+    addProject(name) {
+      sync()
+      const clean = freeName(name)
+      projects.push(clean)
+      persist()
+      return clean
+    },
+
+    renameProject(from, to) {
+      sync()
+      if (!projects.includes(from)) throw new Error(`no project "${from}"`)
+      const clean = freeName(to, from)
+      projects[projects.indexOf(from)] = clean
+      for (const card of cards) if (card.project === from) card.project = clean
+      if (project === from) project = clean
+      if (openProject === from) openProject = clean
+      persist()
+      return clean
+    },
+
+    deleteProject(name) {
+      sync()
+      if (!projects.includes(name)) throw new Error(`no project "${name}"`)
+      if (projects.length === 1) throw new Error(`"${name}" is the only project; add another before deleting it`)
+      projects.splice(projects.indexOf(name), 1)
+      const kept = cards.filter((card) => card.project !== name)
+      const removed = cards.length - kept.length
+      cards.splice(0, cards.length, ...kept)
+      if (openProject === name) openProject = projects[0]!
+      if (project === name) project = openProject
+      persist()
+      return removed
+    },
 
     create(title, opts = {}) {
       sync()
@@ -259,8 +365,10 @@ export function createBoard(options: { now?: () => number; path?: string } = {})
         priority: opts.priority ?? "medium",
         createdAt: at,
         movedAt: at,
+        project,
       }
       cards.push(card)
+      if (!projects.includes(project)) projects.push(project) // a `--project` that didn't exist yet
       persist()
       return card
     },
@@ -297,7 +405,7 @@ export function createBoard(options: { now?: () => number; path?: string } = {})
     },
 
     inColumn(column) {
-      const list = cards.filter((card) => card.column === column)
+      const list = cards.filter((card) => card.column === column && card.project === project)
       // Done reads newest-first; the other columns go high → low, keeping creation order within a priority.
       if (column === "done") {
         list.sort((a, b) => (b.completedAt ?? b.movedAt) - (a.completedAt ?? a.movedAt))
@@ -309,7 +417,7 @@ export function createBoard(options: { now?: () => number; path?: string } = {})
 
     counts() {
       const out: Record<ColumnId, number> = { todo: 0, progress: 0, done: 0 }
-      for (const card of cards) out[card.column]++
+      for (const card of cards) if (card.project === project) out[card.column]++
       return out
     },
 

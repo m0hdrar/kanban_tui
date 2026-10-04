@@ -12,9 +12,15 @@
 <text x="828.8" y="45.5" fill="#93a0b8" xml:space="preserve" textLength="92.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >Sun, Sep 27</text>
 <rect x="921.2" y="32" width="16.8" height="18" fill="#0f141f"/>
 <rect x="14" y="50" width="16.8" height="18" fill="#0f141f"/>
-<rect x="30.8" y="50" width="100.8" height="18" fill="#0f141f"/>
-<text x="30.8" y="63.5" fill="#93a0b8" xml:space="preserve" textLength="100.8" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >kanban board</text>
-<rect x="131.6" y="50" width="487.2" height="18" fill="#0f141f"/>
+<rect x="30.8" y="50" width="58.8" height="18" fill="#0f141f"/>
+<text x="30.8" y="63.5" fill="#7c8cf8" xml:space="preserve" textLength="58.8" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="700"  >General</text>
+<rect x="89.6" y="50" width="8.4" height="18" fill="#0f141f"/>
+<rect x="98" y="50" width="8.4" height="18" fill="#0f141f"/>
+<text x="98" y="63.5" fill="#5a6579" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >·</text>
+<rect x="106.4" y="50" width="8.4" height="18" fill="#0f141f"/>
+<rect x="114.8" y="50" width="100.8" height="18" fill="#0f141f"/>
+<text x="114.8" y="63.5" fill="#93a0b8" xml:space="preserve" textLength="100.8" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >kanban board</text>
+<rect x="215.6" y="50" width="403.2" height="18" fill="#0f141f"/>
 <rect x="618.8" y="50" width="100.8" height="18" fill="#0f141f"/>
 <text x="618.8" y="63.5" fill="#4ade80" xml:space="preserve" textLength="100.8" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >████████████</text>
 <rect x="719.6" y="50" width="84" height="18" fill="#0f141f"/>
@@ -660,34 +666,36 @@
 <rect x="383.6" y="608" width="16.8" height="18" fill="#0f141f"/>
 <rect x="400.4" y="608" width="42" height="18" fill="#384072"/>
 <text x="400.4" y="621.5" fill="#e9eff9" xml:space="preserve" textLength="42" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >space</text>
-<rect x="442.4" y="608" width="75.6" height="18" fill="#0f141f"/>
-<text x="442.4" y="621.5" fill="#93a0b8" xml:space="preserve" textLength="75.6" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  > priority</text>
+<rect x="442.4" y="608" width="16.8" height="18" fill="#0f141f"/>
+<text x="442.4" y="621.5" fill="#93a0b8" xml:space="preserve" textLength="16.8" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  > p</text>
+<rect x="459.2" y="608" width="25.2" height="18" fill="#0f141f"/>
+<text x="459.2" y="621.5" fill="#ffffff" xml:space="preserve" textLength="25.2" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >...</text>
+<rect x="484.4" y="608" width="33.6" height="18" fill="#0f141f"/>
+<text x="484.4" y="621.5" fill="#93a0b8" xml:space="preserve" textLength="33.6" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >lete</text>
 <rect x="518" y="608" width="16.8" height="18" fill="#0f141f"/>
-<rect x="534.8" y="608" width="8.4" height="18" fill="#384072"/>
-<text x="534.8" y="621.5" fill="#e9eff9" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >x</text>
-<rect x="543.2" y="608" width="58.8" height="18" fill="#0f141f"/>
-<text x="543.2" y="621.5" fill="#93a0b8" xml:space="preserve" textLength="58.8" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  > delete</text>
-<rect x="602" y="608" width="16.8" height="18" fill="#0f141f"/>
-<rect x="618.8" y="608" width="16.8" height="18" fill="#384072"/>
-<text x="618.8" y="621.5" fill="#e9eff9" xml:space="preserve" textLength="16.8" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >↑↓</text>
-<rect x="635.6" y="608" width="42" height="18" fill="#0f141f"/>
-<text x="635.6" y="621.5" fill="#93a0b8" xml:space="preserve" textLength="42" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  > card</text>
-<rect x="677.6" y="608" width="16.8" height="18" fill="#0f141f"/>
-<rect x="694.4" y="608" width="16.8" height="18" fill="#384072"/>
-<text x="694.4" y="621.5" fill="#e9eff9" xml:space="preserve" textLength="16.8" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >←→</text>
-<rect x="711.2" y="608" width="58.8" height="18" fill="#0f141f"/>
-<text x="711.2" y="621.5" fill="#93a0b8" xml:space="preserve" textLength="58.8" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  > column</text>
-<rect x="770" y="608" width="16.8" height="18" fill="#0f141f"/>
-<rect x="786.8" y="608" width="8.4" height="18" fill="#384072"/>
-<text x="786.8" y="621.5" fill="#e9eff9" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >c</text>
-<rect x="795.2" y="608" width="50.4" height="18" fill="#0f141f"/>
-<text x="795.2" y="621.5" fill="#93a0b8" xml:space="preserve" textLength="50.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  > theme</text>
-<rect x="845.6" y="608" width="16.8" height="18" fill="#0f141f"/>
-<rect x="862.4" y="608" width="8.4" height="18" fill="#384072"/>
-<text x="862.4" y="621.5" fill="#e9eff9" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >q</text>
-<rect x="870.8" y="608" width="42" height="18" fill="#0f141f"/>
-<text x="870.8" y="621.5" fill="#93a0b8" xml:space="preserve" textLength="42" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  > quit</text>
-<rect x="912.8" y="608" width="16.8" height="18" fill="#0f141f"/>
-<rect x="929.6" y="608" width="8.4" height="18" fill="#0f141f"/>
-<text x="929.6" y="621.5" fill="#4ade80" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >K</text>
+<rect x="534.8" y="608" width="16.8" height="18" fill="#384072"/>
+<text x="534.8" y="621.5" fill="#e9eff9" xml:space="preserve" textLength="16.8" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >↑↓</text>
+<rect x="551.6" y="608" width="42" height="18" fill="#0f141f"/>
+<text x="551.6" y="621.5" fill="#93a0b8" xml:space="preserve" textLength="42" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  > card</text>
+<rect x="593.6" y="608" width="16.8" height="18" fill="#0f141f"/>
+<rect x="610.4" y="608" width="16.8" height="18" fill="#384072"/>
+<text x="610.4" y="621.5" fill="#e9eff9" xml:space="preserve" textLength="16.8" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >←→</text>
+<rect x="627.2" y="608" width="58.8" height="18" fill="#0f141f"/>
+<text x="627.2" y="621.5" fill="#93a0b8" xml:space="preserve" textLength="58.8" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  > column</text>
+<rect x="686" y="608" width="16.8" height="18" fill="#0f141f"/>
+<rect x="702.8" y="608" width="8.4" height="18" fill="#384072"/>
+<text x="702.8" y="621.5" fill="#e9eff9" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >o</text>
+<rect x="711.2" y="608" width="67.2" height="18" fill="#0f141f"/>
+<text x="711.2" y="621.5" fill="#93a0b8" xml:space="preserve" textLength="67.2" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  > project</text>
+<rect x="778.4" y="608" width="16.8" height="18" fill="#0f141f"/>
+<rect x="795.2" y="608" width="8.4" height="18" fill="#384072"/>
+<text x="795.2" y="621.5" fill="#e9eff9" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >c</text>
+<rect x="803.6" y="608" width="50.4" height="18" fill="#0f141f"/>
+<text x="803.6" y="621.5" fill="#93a0b8" xml:space="preserve" textLength="50.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  > theme</text>
+<rect x="854" y="608" width="16.8" height="18" fill="#0f141f"/>
+<rect x="870.8" y="608" width="8.4" height="18" fill="#384072"/>
+<text x="870.8" y="621.5" fill="#e9eff9" xml:space="preserve" textLength="8.4" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  >q</text>
+<rect x="879.2" y="608" width="42" height="18" fill="#0f141f"/>
+<text x="879.2" y="621.5" fill="#93a0b8" xml:space="preserve" textLength="42" lengthAdjust="spacingAndGlyphs" font-family='"Cascadia Mono","JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,monospace' font-size="15" font-weight="400"  > quit</text>
+<rect x="921.2" y="608" width="16.8" height="18" fill="#0f141f"/>
 </svg>

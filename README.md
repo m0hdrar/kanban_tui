@@ -10,6 +10,7 @@ A keyboard-first kanban board for your terminal, built with [Bun](https://bun.sh
 
 ## Features
 
+- **Projects:** each project has its own cards; press `o` to switch, add, rename or delete one
 - **Three columns:** To-do, In Progress and Done, moved between with a single key
 - **Priorities:** each card is marked high, medium or low at a glance
 - **Card age:** see how long a card has waited, been in progress, or been done
@@ -80,6 +81,7 @@ Then run `herdr server reload-config`.
 | `e` | Edit the selected card's title |
 | `Space` | Change the selected card's priority (medium → high → low); cards sort high to low |
 | `x` / `Delete` | Delete the selected card |
+| `o` | Projects: `↑`/`↓` choose, `Enter` open, `r` rename, `x` twice to delete it and its cards, `Esc` cancel; pick `+ new project` to create one |
 | `c` | Pick a colour theme (`↑`/`↓` preview, `Enter` keep, `Esc` cancel): follow herdr, flow, vesper, tokyonight, catppuccin, gruvbox, nord, rose-pine, dracula |
 | `q` / `Ctrl+C` | Quit |
 
@@ -92,7 +94,7 @@ Then run `herdr server reload-config`.
 
 ## Coding agents
 
-Agents such as Claude Code or Codex, in herdr panes or anywhere else, can manage the board from the shell. If the board is open, the change appears within a second, and your selection stays on the card it was on.
+Agents such as Claude Code or Codex, in herdr panes or anywhere else, can manage the board from the shell. Card commands work on the project the board has open, or on another one with `--project <name>`, which doesn't switch the board. If the board is open, the change appears within a second, and your selection stays on the card it was on.
 
 | Command | Action |
 | --- | --- |
@@ -101,19 +103,27 @@ Agents such as Claude Code or Codex, in herdr panes or anywhere else, can manage
 | `kanban-tui list --all` | Also list Done cards |
 | `kanban-tui move <id> todo\|progress\|done` | Move a card |
 | `kanban-tui rm <id>` | Delete a card |
+| `kanban-tui projects` | List projects with their card counts; the open one is marked `open` |
+| `kanban-tui project add <name>` | Create a project without opening it |
+| `kanban-tui project open <name>` | Open a project on the board |
+| `kanban-tui project rename <name> <new name>` | Rename a project (quote names with spaces) |
+| `kanban-tui project rm <name>` | Delete a project and all its cards |
+| `--project <name>` | Run a card command in that project; `add` creates it if it doesn't exist |
 | `kanban-tui help` | Show these commands |
 
-These commands need Flow 0.5.0 or newer; older versions open the board instead.
+These commands need Flow 0.5.0 or newer, and `projects`, `project` and `--project` need 0.7.0; older versions open the board instead.
 
 ### The kanban skill
 
 The [`kanban` skill](skills/kanban/SKILL.md) teaches agents to use these commands. With it, an agent:
 
 - Adds a card for follow-up work it finds but won't do now, such as a bug it noticed or a `TODO` it left
+- Puts it in the project named after the repo it's working in, if there is one, without switching your board
 - Doesn't add the steps of its current task
 - Checks `kanban-tui list` first so it doesn't add duplicates
 - Moves a card to In Progress and Done when you ask it to work on that card
 - Tells you the id of each card it adds
+- Creates, renames or deletes projects only when you ask
 
 Install it with:
 
@@ -130,6 +140,8 @@ Your board is saved after every change to one file:
 ```text
 ~/Library/Application Support/kanban_tui/board.json
 ```
+
+It holds every project; the open one is saved with it, so `kanban-tui` commands use the project you last opened. Boards from before projects open as the `General` project.
 
 Other processes, such as `kanban-tui add`, can change the file while the board is open. The open board reloads it within a second, and it re-reads the file before each change, so it doesn't overwrite theirs.
 

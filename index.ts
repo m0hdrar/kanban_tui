@@ -13,10 +13,11 @@
  *   t            move the selected card back to To-do
  *   space        cycle the selected card's priority (medium → high → low)
  *   x / del      delete the selected card
+ *   o            projects: switch, create (+ new project), rename (r), delete (x twice)
  *   c            pick a colour theme, or follow herdr's (remembered between sessions)
  *   q / ctrl+c   quit
  *
- *   bun run start add|list|move|rm|status   commands for scripts and agents (see src/cli.ts)
+ *   bun run start add|list|move|rm|status|projects|project   commands for scripts and agents (see src/cli.ts)
  */
 import { createBoard, defaultBoardPath } from "./src/board"
 

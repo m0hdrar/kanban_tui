@@ -1,6 +1,6 @@
                                                                                                               
                                                                                       17:32:05 · Sun, Sep 27  
-  kanban board                                                          ████████████░░░░░░░░░░  55%  shipped  
+  General · kanban board                                                ████████████░░░░░░░░░░  55%  shipped  
                                                                             4 to-do · 1 in progress · 6 done  
                                                                                                               
 ──────────────────────────────────────────────────────────────────────────────────────────────────────────────
@@ -31,5 +31,5 @@
  ╰──────────────────────────────────────────────────────────────────────────────────────────────────────────╯ 
                                                                                                               
 ──────────────────────────────────────────────────────────────────────────────────────────────────────────────
-  n new  p progress  d done  t to-do  e edit  space priority  x delete  ↑↓ card  ←→ column  c theme  q quit  K
+  n new  p progress  d done  t to-do  e edit  space p...lete  ↑↓ card  ←→ column  o project  c theme  q quit  
 

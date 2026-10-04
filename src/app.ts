@@ -56,6 +56,7 @@ export interface KanbanApp {
   closeComposer(): void
   submitComposer(): void
   openThemePicker(): void
+  openProjectPicker(): void
   /** Repaint after the theme changed outside the app (herdr's, while following it). */
   applyTheme(): void
 }
@@ -90,9 +91,7 @@ export function createKanbanApp(
   })
 
   // ------------------------------------------------------------------ header
-  const tagline = new TextRenderable(ctx, {
-    content: t`${fg(theme.textDim)("kanban board")}`,
-  })
+  const tagline = new TextRenderable(ctx, { content: t`` })
 
   const clockLine = new TextRenderable(ctx, { content: t`${fg(theme.textDim)("--:--:--")}` })
   const progressLine = new TextRenderable(ctx, { content: t`${fg(theme.textFaint)("loading…")}` })
@@ -241,6 +240,7 @@ export function createKanbanApp(
       { key: "x", action: "delete" },
       { key: "↑↓", action: "card" },
       { key: "←→", action: "column" },
+      { key: "o", action: "project" },
       { key: "c", action: "theme" },
       { key: "q", action: "quit" },
     ])
@@ -261,8 +261,9 @@ export function createKanbanApp(
   footer.add(hints)
   footer.add(status)
 
-  // ------------------------------------------------------------ theme picker
+  // ------------------------------------------- theme and project picker
   const PICKER_WIDTH = 30
+  const NEW_PROJECT = "+ new project"
   const pickerList = new TextRenderable(ctx, { content: t`` })
   const pickerHint = new TextRenderable(ctx, { content: t`` })
   const picker = new BoxRenderable(ctx, {
@@ -275,7 +276,6 @@ export function createKanbanApp(
     border: true,
     borderStyle: "rounded",
     paddingX: 1,
-    title: " theme ",
     visible: false,
   })
   picker.add(pickerList)
@@ -293,8 +293,16 @@ export function createKanbanApp(
   let composerOpen = false
   /** The card being retitled, or null when the composer adds a new card. */
   let editing: Card | null = null
+  /** The composer is naming a new project. */
+  let naming = false
+  /** The project the composer is renaming, while `naming`. */
+  let renaming: string | null = null
+  /** The project whose delete waits for a second `x`. */
+  let pendingDelete: string | null = null
   let boardDirty = true
-  let pickerOpen = false
+  let pickerOpen: "theme" | "project" | null = null
+  /** What the open picker lists, fixed while it's open. */
+  let pickerItems: string[] = []
   let pickerIndex = 0
   /** The choice to restore when the picker is cancelled. */
   let pickerBefore: ThemeChoice = themeChoice
@@ -344,9 +352,8 @@ export function createKanbanApp(
     composerInput.focusedTextColor = theme.text
     composerInput.placeholderColor = theme.textFaint
     composerArrow.content = t`${fg(theme.accent)("▸")}`
-    composerHint.content = composerHintFor(editing ? "save title" : "add card to To-do")
+    composerHint.content = composerHintFor(composerAction())
     hints.content = hintsFor()
-    tagline.content = t`${fg(theme.textDim)("kanban board")}`
     if (pickerOpen) renderPicker()
     boardDirty = true
   }
@@ -355,56 +362,139 @@ export function createKanbanApp(
     return choice === "herdr" ? `follow herdr (${herdrTheme() ?? "flow"})` : choice
   }
 
+  function pickerHintText(): Array<[key: string, action: string]> {
+    if (pickerOpen === "theme") return [["enter", "keep"], ["esc", "cancel"]]
+    if (pendingDelete) {
+      const count = board.cards.filter((card) => card.project === pendingDelete).length
+      return [["x", `again deletes it and its ${count} card${count === 1 ? "" : "s"}`]]
+    }
+    return [["enter", "open"], ["r", "rename"], ["x", "delete"], ["esc", "cancel"]]
+  }
+
   function renderPicker() {
+    const hint = pickerHintText()
+    const hintWidth = hint.reduce((sum, [key, action]) => sum + key.length + action.length + 3, 0)
+    const width = Math.min(
+      Math.max(PICKER_WIDTH, hintWidth + 4, ...pickerItems.map((item) => item.length + 6)),
+      renderer.width,
+    )
+    picker.width = width
+    picker.title = ` ${pickerOpen} `
     picker.borderColor = theme.accent
     picker.titleColor = theme.accent
     picker.backgroundColor = theme.panelFocused
-    picker.left = Math.max(0, Math.floor((renderer.width - PICKER_WIDTH) / 2))
-    picker.top = Math.max(0, Math.floor((renderer.height - themeChoices.length - 6) / 2))
+    picker.left = Math.max(0, Math.floor((renderer.width - width) / 2))
+    picker.top = Math.max(0, Math.floor((renderer.height - pickerItems.length - 6) / 2))
     pickerList.content = joinChunks(
-      themeChoices.flatMap((choice, index) => {
+      pickerItems.flatMap((item, index) => {
         const line =
-          index === pickerIndex
-            ? bold(fg(theme.accent)(`▸ ${choiceLabel(choice)}`))
-            : fg(theme.textDim)(`  ${choiceLabel(choice)}`)
+          index === pickerIndex ? bold(fg(theme.accent)(`▸ ${item}`)) : fg(theme.textDim)(`  ${item}`)
         return index === 0 ? [line] : [fg(theme.textDim)("\n"), line]
       }),
     )
-    pickerHint.content = joinChunks([
-      fg(theme.textDim)("enter"),
-      fg(theme.textFaint)(" keep  "),
-      fg(theme.textDim)("esc"),
-      fg(theme.textFaint)(" cancel"),
-    ])
+    const color = pendingDelete ? theme.danger : theme.textFaint
+    pickerHint.content = joinChunks(
+      hint.flatMap(([key, action]) => [fg(pendingDelete ? theme.danger : theme.textDim)(key), fg(color)(` ${action}  `)]),
+    )
   }
 
   function openThemePicker() {
-    pickerOpen = true
+    pickerOpen = "theme"
     pickerBefore = themeChoice
+    pickerItems = themeChoices.map(choiceLabel)
     pickerIndex = themeChoices.indexOf(themeChoice)
     picker.visible = true
     renderPicker()
   }
 
-  /** Move the highlight and preview that theme straight away. */
-  function movePicker(delta: number) {
-    pickerIndex = (pickerIndex + delta + themeChoices.length) % themeChoices.length
-    chooseTheme(themeChoices[pickerIndex]!)
-    applyTheme()
+  function openProjectPicker(highlight = board.project) {
+    board.sync()
+    pickerOpen = "project"
+    pendingDelete = null
+    pickerItems = [...board.projects, NEW_PROJECT]
+    pickerIndex = Math.max(0, board.projects.indexOf(highlight))
+    picker.visible = true
+    renderPicker()
     refresh()
   }
 
-  function closeThemePicker(keep: boolean) {
-    pickerOpen = false
+  /** The project highlighted in the picker, or null on "+ new project". */
+  function pickedProject() {
+    const item = pickerItems[pickerIndex]!
+    return item === NEW_PROJECT ? null : item
+  }
+
+  function renamePickedProject() {
+    const name = pickedProject()
+    if (!name) return
+    pickerOpen = null
     picker.visible = false
-    if (keep) {
-      saveTheme()
-      setToast(`theme: ${choiceLabel(themeChoice)}`, theme.accent)
-    } else {
-      chooseTheme(pickerBefore)
+    openProjectComposer(name)
+  }
+
+  /** The first `x` asks; a second one deletes the project and its cards. */
+  function deletePickedProject() {
+    const name = pickedProject()
+    if (!name) return
+    if (board.projects.length === 1) {
+      setToast("can't delete the only project", theme.warn)
+      refresh()
+      return
+    }
+    if (pendingDelete !== name) {
+      pendingDelete = name
+      renderPicker()
+      return
+    }
+    const wasOpen = name === board.project
+    const removed = board.deleteProject(name)
+    if (wasOpen) switchProject(board.project)
+    setToast(`deleted project ${name} and its ${removed} card${removed === 1 ? "" : "s"}`, theme.danger)
+    boardDirty = true
+    openProjectPicker(board.projects[Math.min(pickerIndex, board.projects.length - 1)])
+  }
+
+  /** Move the highlight; a theme is previewed straight away. */
+  function movePicker(delta: number) {
+    pickerIndex = (pickerIndex + delta + pickerItems.length) % pickerItems.length
+    if (pickerOpen === "theme") {
+      chooseTheme(themeChoices[pickerIndex]!)
       applyTheme()
+    } else {
+      renderPicker()
     }
     refresh()
+  }
+
+  function closePicker(keep: boolean) {
+    const kind = pickerOpen
+    pickerOpen = null
+    pendingDelete = null
+    picker.visible = false
+    if (kind === "theme") {
+      if (keep) {
+        saveTheme()
+        setToast(`theme: ${choiceLabel(themeChoice)}`, theme.accent)
+      } else {
+        chooseTheme(pickerBefore)
+        applyTheme()
+      }
+    } else if (keep) {
+      const item = pickerItems[pickerIndex]!
+      if (item === NEW_PROJECT) return openProjectComposer()
+      switchProject(item)
+    }
+    refresh()
+  }
+
+  function switchProject(name: string) {
+    board.openProject(name)
+    focusIdx = 0
+    selected.todo = selected.progress = selected.done = 0
+    flashId = null
+    setToast(`project: ${board.project}`, theme.accent)
+    boardDirty = true
+    for (const view of views) view.scroll.scrollTo(0)
   }
 
   function activeColumn(): ColumnView {
@@ -430,13 +520,16 @@ export function createKanbanApp(
   }
 
   function renderHeader() {
+    tagline.content = t`${bold(fg(theme.accent)(board.project))} ${fg(theme.textFaint)("·")} ${fg(theme.textDim)(
+      "kanban board",
+    )}`
     const at = now()
     clockLine.content = t`${bold(fg(theme.text)(formatClock(at)))} ${fg(theme.textFaint)("·")} ${fg(
       theme.textDim,
     )(formatDate(at))}`
 
     const counts = board.counts()
-    const total = board.cards.length
+    const total = counts.todo + counts.progress + counts.done
     const ratio = total === 0 ? 0 : counts.done / total
     progressLine.content = joinChunks([
       progressBar(ratio, 22, theme.done),
@@ -673,11 +766,27 @@ export function createKanbanApp(
     refresh()
   }
 
+  function composerAction() {
+    return naming ? (renaming ? "rename project" : "create project") : editing ? "save title" : "add card to To-do"
+  }
+
   function openComposer(value = "") {
     editing = null
+    naming = false
+    renaming = null
     composer.title = " new card "
-    composerHint.content = composerHintFor("add card to To-do")
+    composerHint.content = composerHintFor(composerAction())
     showComposer(value)
+  }
+
+  /** Name a new project, or rename `from`. */
+  function openProjectComposer(from: string | null = null) {
+    editing = null
+    naming = true
+    renaming = from
+    composer.title = from ? ` rename ${from} ` : " new project "
+    composerHint.content = composerHintFor(composerAction())
+    showComposer(from ?? "")
   }
 
   function editSelected() {
@@ -688,12 +797,14 @@ export function createKanbanApp(
       return
     }
     editing = card
+    naming = false
     composer.title = ` edit ${card.id} `
-    composerHint.content = composerHintFor("save title")
+    composerHint.content = composerHintFor(composerAction())
     showComposer(card.title)
   }
 
   function showComposer(value: string) {
+    composerInput.placeholder = naming ? "project name" : "what needs doing?"
     composerOpen = true
     composer.visible = true
     composerInput.value = value
@@ -711,7 +822,26 @@ export function createKanbanApp(
   function submitComposer() {
     const title = composerInput.value.trim()
     if (!title) {
-      setToast("give the card a title first", theme.warn)
+      setToast(naming ? "give the project a name first" : "give the card a title first", theme.warn)
+      return
+    }
+
+    if (naming) {
+      const from = renaming
+      if (board.projects.some((p) => p !== from && p.toLowerCase() === title.toLowerCase())) {
+        setToast(`project ${title} already exists`, theme.warn)
+        return
+      }
+      closeComposer()
+      if (from) {
+        board.renameProject(from, title)
+        setToast(`renamed ${from} to ${title}`, theme.ok)
+        boardDirty = true
+        openProjectPicker(title)
+      } else {
+        switchProject(title)
+        refresh()
+      }
       return
     }
 
@@ -749,10 +879,19 @@ export function createKanbanApp(
     // While composing, the input owns the keyboard; only Escape is ours.
     if (pickerOpen) {
       if (key.ctrl && key.name === "c") return "quit"
-      if (key.name === "up" || key.name === "k") movePicker(-1)
+      const deleting = pickerOpen === "project" && (key.name === "x" || key.name === "delete")
+      if (pendingDelete && !deleting) {
+        // Any other key cancels a pending delete.
+        pendingDelete = null
+        renderPicker()
+        return "handled"
+      }
+      if (deleting) deletePickedProject()
+      else if (pickerOpen === "project" && key.name === "r") renamePickedProject()
+      else if (key.name === "up" || key.name === "k") movePicker(-1)
       else if (key.name === "down" || key.name === "j") movePicker(1)
-      else if (key.name === "return" || key.name === "enter") closeThemePicker(true)
-      else if (key.name === "escape" || key.name === "c" || key.name === "q") closeThemePicker(false)
+      else if (key.name === "return" || key.name === "enter") closePicker(true)
+      else if (key.name === "escape" || key.name === "q" || key.name === (pickerOpen === "theme" ? "c" : "o")) closePicker(false)
       return "handled"
     }
 
@@ -809,6 +948,9 @@ export function createKanbanApp(
       case "c":
         openThemePicker()
         return "handled"
+      case "o":
+        openProjectPicker()
+        return "handled"
       case "x":
       case "delete":
         deleteSelected()
@@ -849,6 +991,7 @@ export function createKanbanApp(
     closeComposer,
     submitComposer,
     openThemePicker,
+    openProjectPicker,
     applyTheme() {
       applyTheme()
       refresh()
