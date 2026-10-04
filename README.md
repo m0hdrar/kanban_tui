@@ -65,25 +65,6 @@ tab_bar_right = [
 
 Then run `herdr server reload-config`.
 
-### Let coding agents add cards
-
-Agents such as Claude Code or Codex, in herdr panes or anywhere else, can manage the board from the shell:
-
-```sh
-kanban-tui add "Fix token refresh race" --priority high   # prints the new id, e.g. K-07
-kanban-tui list                                           # open cards (--all adds Done)
-kanban-tui move K-07 progress                             # todo, progress or done
-kanban-tui rm K-07
-```
-
-The [`kanban` skill](skills/kanban/SKILL.md) tells agents when to use these commands: add a card for follow-up work they find but won't do now, and skip the steps of their current task. Install it with:
-
-```sh
-npx skills add m0hdrar/kanban_tui
-```
-
-Or copy `skills/kanban` into `~/.claude/skills/` (or your agent's skills folder).
-
 ## Usage
 
 ### Board
@@ -108,6 +89,39 @@ Or copy `skills/kanban` into `~/.claude/skills/` (or your agent's skills folder)
 | `Enter` | Add the card, or save the edited title |
 | `Esc` | Cancel |
 
+## Coding agents
+
+Agents such as Claude Code or Codex, in herdr panes or anywhere else, can manage the board from the shell. If the board is open, the change appears within a second, and your selection stays on the card it was on.
+
+| Command | Action |
+| --- | --- |
+| `kanban-tui add "<title>" [--priority high\|medium\|low]` | Add a card to To-do; prints its id, such as `K-07` |
+| `kanban-tui list` | List To-do and In Progress cards: id, column, priority and title, tab-separated |
+| `kanban-tui list --all` | Also list Done cards |
+| `kanban-tui move <id> todo\|progress\|done` | Move a card |
+| `kanban-tui rm <id>` | Delete a card |
+| `kanban-tui help` | Show these commands |
+
+These commands need Flow 0.5.0 or newer; older versions open the board instead.
+
+### The kanban skill
+
+The [`kanban` skill](skills/kanban/SKILL.md) teaches agents to use these commands. With it, an agent:
+
+- Adds a card for follow-up work it finds but won't do now, such as a bug it noticed or a `TODO` it left
+- Doesn't add the steps of its current task
+- Checks `kanban-tui list` first so it doesn't add duplicates
+- Moves a card to In Progress and Done when you ask it to work on that card
+- Tells you the id of each card it adds
+
+Install it with:
+
+```sh
+npx skills add m0hdrar/kanban_tui
+```
+
+Or copy `skills/kanban` into `~/.claude/skills/` for Claude Code, or `~/.agents/skills/` for Codex and other agents.
+
 ## Data
 
 Your board is saved after every change to one file:
@@ -115,6 +129,8 @@ Your board is saved after every change to one file:
 ```text
 ~/Library/Application Support/kanban_tui/board.json
 ```
+
+Other processes, such as `kanban-tui add`, can change the file while the board is open. The open board reloads it within a second, and it re-reads the file before each change, so it doesn't overwrite theirs.
 
 If the file is corrupted, Flow shows an error and exits without overwriting it.
 
