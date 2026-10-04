@@ -30,6 +30,8 @@ export interface KanbanApp {
   handleKey(key: KeyLike): KeyResult
   /** Repaint header/footer and, when needed, the board itself. */
   refresh(): void
+  /** Pick up changes made to the board file by other processes, keeping each selection on its card. */
+  syncBoard(): void
   destroy(): void
 
   // Exposed for the headless preview and for future tests.
@@ -709,6 +711,15 @@ export function createKanbanApp(
     root,
     handleKey,
     refresh,
+    syncBoard() {
+      const picked = views.map((view) => board.inColumn(view.id)[selected[view.id]])
+      if (!board.sync()) return
+      views.forEach((view, index) => {
+        const at = picked[index] ? board.inColumn(view.id).indexOf(picked[index]) : -1
+        if (at >= 0) selected[view.id] = at
+      })
+      boardDirty = true
+    },
     destroy() {
       if (repaintTimer) clearTimeout(repaintTimer)
       root.destroyRecursively()

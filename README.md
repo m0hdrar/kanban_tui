@@ -16,6 +16,7 @@ A keyboard-first kanban board for your terminal, built with [Bun](https://bun.sh
 - **Progress:** a live progress bar and card counts in the header
 - **Quick capture:** press `n`, type a title, press `Enter`; press `e` to edit a title
 - **Local storage:** no account and no cloud; your board is saved on your machine after every change
+- **Scriptable:** `kanban-tui add`, `list`, `move` and `rm` change the board from the shell, and an open board shows the change within a second, so coding agents can add cards themselves
 
 ## Installation
 
@@ -63,6 +64,25 @@ tab_bar_right = [
 ```
 
 Then run `herdr server reload-config`.
+
+### Let coding agents add cards
+
+Agents such as Claude Code or Codex, in herdr panes or anywhere else, can manage the board from the shell:
+
+```sh
+kanban-tui add "Fix token refresh race" --priority high   # prints the new id, e.g. K-07
+kanban-tui list                                           # open cards (--all adds Done)
+kanban-tui move K-07 progress                             # todo, progress or done
+kanban-tui rm K-07
+```
+
+The [`kanban` skill](skills/kanban/SKILL.md) tells agents when to use these commands: add a card for follow-up work they find but won't do now, and skip the steps of their current task. Install it with:
+
+```sh
+npx skills add m0hdrar/kanban_tui
+```
+
+Or copy `skills/kanban` into `~/.claude/skills/` (or your agent's skills folder).
 
 ## Usage
 
@@ -119,6 +139,8 @@ src/board.ts         card and column model, saved to board.json
 src/theme.ts         colour palette
 src/format.ts        clock, date and age helpers
 src/widgets.ts       progress bar and key hints
+src/cli.ts           add, list, move, rm and status commands
+skills/kanban/       agent skill for the commands
 scripts/preview.ts   headless snapshot (txt, ans, svg)
 ```
 

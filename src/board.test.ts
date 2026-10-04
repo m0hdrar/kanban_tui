@@ -3,6 +3,7 @@ import { mkdtempSync, readFileSync, writeFileSync } from "node:fs"
 import { tmpdir } from "node:os"
 import { join } from "node:path"
 import { createBoard, statusLine } from "./board"
+import { runCommand } from "./cli"
 
 const tempPath = () => join(mkdtempSync(join(tmpdir(), "kanban-")), "nested", "board.json")
 
@@ -62,4 +63,39 @@ test("a renamed card keeps its id and the new title persists", () => {
   const card = board.create("Typo titel")
   board.rename(card, "  Typo title  ")
   expect(createBoard({ path }).cards[0]).toMatchObject({ id: card.id, title: "Typo title" })
+})
+
+test("an open board keeps cards another process adds, and picks them up on sync", () => {
+  const path = tempPath()
+  const open = createBoard({ path })
+  const mine = open.create("Mine")
+
+  // An agent in another pane runs `kanban-tui add`.
+  expect(runCommand(createBoard({ path }), ["add", "Fix", "flaky", "test", "--priority", "high"])).toBe("K-02")
+
+  expect(open.sync()).toBe(true)
+  expect(open.sync()).toBe(false)
+  expect(open.cards).toContain(mine) // same object, so the UI's selection survives
+  open.move(mine, "progress")
+
+  const after = createBoard({ path })
+  expect(after.cards.map((c) => [c.id, c.title, c.column, c.priority])).toEqual([
+    ["K-01", "Mine", "progress", "medium"],
+    ["K-02", "Fix flaky test", "todo", "high"],
+  ])
+  expect(after.create("Next").id).toBe("K-03")
+})
+
+test("cli lists, moves and removes cards by id", () => {
+  const path = tempPath()
+  const board = createBoard({ path })
+  runCommand(board, ["add", "A"])
+  runCommand(board, ["add", "B"])
+  expect(runCommand(board, ["move", "k-01", "done"])).toBe("K-01 → done")
+  expect(runCommand(board, ["list"])).toBe("K-02\ttodo\tmedium\tB")
+  expect(runCommand(board, ["list", "--all"])).toContain("K-01\tdone")
+  runCommand(board, ["rm", "K-02"])
+  expect(createBoard({ path }).cards.map((c) => c.id)).toEqual(["K-01"])
+  expect(() => runCommand(board, ["move", "K-01", "doing"])).toThrow("column must be one of")
+  expect(() => runCommand(board, ["rm", "K-99"])).toThrow("no card K-99")
 })

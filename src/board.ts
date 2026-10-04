@@ -39,6 +39,12 @@ export interface Board {
   /** Cards of one column, in display order: by priority, except Done, which is newest-first. */
   inColumn(column: ColumnId): Card[]
   counts(): Record<ColumnId, number>
+  /**
+   * Pick up changes another process (such as `kanban-tui add`) wrote to the
+   * file. Returns true when the cards changed. Cards that still exist keep
+   * their object identity, so references held by the UI stay valid.
+   */
+  sync(): boolean
 }
 
 /** One line for status bars such as herdr's tab bar; empty when there's nothing to do. */
@@ -77,12 +83,11 @@ function isCard(value: any): value is Card {
   )
 }
 
-/** Returns null when there is no file yet; throws (leaving the file alone) when it is unreadable. */
-function loadBoard(path: string): SavedBoard | null {
-  if (!existsSync(path)) return null
+/** Parses a saved board; throws (so the caller leaves the file alone) when it is unreadable. */
+function parseBoard(text: string, path: string): SavedBoard {
   let data: any
   try {
-    data = JSON.parse(readFileSync(path, "utf8"))
+    data = JSON.parse(text)
   } catch {
     throw new Error(`Invalid JSON in ${path}; the file was left unchanged.`)
   }
@@ -97,11 +102,14 @@ function loadBoard(path: string): SavedBoard | null {
   return data
 }
 
-function saveBoard(path: string, data: SavedBoard) {
+/** Writes atomically and returns the text written. */
+function saveBoard(path: string, data: SavedBoard): string {
   mkdirSync(dirname(path), { recursive: true })
+  const text = `${JSON.stringify(data, null, 2)}\n`
   const tmp = `${path}.${process.pid}.tmp`
-  writeFileSync(tmp, `${JSON.stringify(data, null, 2)}\n`)
+  writeFileSync(tmp, text)
   renameSync(tmp, path) // atomic: a crash mid-write never leaves a half-written board
+  return text
 }
 
 const MINUTE = 60_000
@@ -186,14 +194,41 @@ export function createBoard(options: { now?: () => number; path?: string } = {})
   const time = options.now ?? (() => Date.now())
   const start = time()
   const { path } = options
-  const saved = path ? loadBoard(path) : null
 
-  let nextNumber = saved?.nextNumber ?? 1
-  const cards: Card[] = saved?.cards ?? []
+  let nextNumber = 1
+  const cards: Card[] = []
+  let lastText = "" // the file's contents when this process last read or wrote it
 
   const makeId = () => `K-${String(nextNumber++).padStart(2, "0")}`
   const persist = () => {
-    if (path) saveBoard(path, { version: 1, nextNumber, cards })
+    if (path) lastText = saveBoard(path, { version: 1, nextNumber, cards })
+  }
+
+  const sync = (): boolean => {
+    if (!path || !existsSync(path)) return false
+    const text = readFileSync(path, "utf8")
+    if (text === lastText) return false
+    const saved = parseBoard(text, path)
+    const mine = new Map(cards.map((card) => [card.id, card]))
+    const next = saved.cards.map((card) => {
+      const existing = mine.get(card.id)
+      if (!existing) return card
+      delete existing.completedAt
+      return Object.assign(existing, card)
+    })
+    cards.splice(0, cards.length, ...next)
+    nextNumber = saved.nextNumber
+    lastText = text
+    return true
+  }
+  sync()
+
+  // ponytail: each change re-reads the file first, then writes, so agents adding
+  // cards from other processes aren't overwritten. Two writes landing in the same
+  // millisecond can still race; add a lock file if that ever bites.
+  const has = (card: Card) => {
+    sync()
+    return cards.includes(card)
   }
 
   for (const seed of path ? [] : SEED) {
@@ -215,6 +250,7 @@ export function createBoard(options: { now?: () => number; path?: string } = {})
     cards,
 
     create(title, opts = {}) {
+      sync()
       const at = time()
       const card: Card = {
         id: makeId(),
@@ -230,7 +266,7 @@ export function createBoard(options: { now?: () => number; path?: string } = {})
     },
 
     move(card, column) {
-      if (card.column === column) return false
+      if (!has(card) || card.column === column) return false
       const at = time()
       card.column = column
       card.movedAt = at
@@ -241,17 +277,20 @@ export function createBoard(options: { now?: () => number; path?: string } = {})
     },
 
     cyclePriority(card) {
+      if (!has(card)) return card.priority
       card.priority = NEXT_PRIORITY[card.priority]
       persist()
       return card.priority
     },
 
     rename(card, title) {
+      if (!has(card)) return
       card.title = title.trim()
       persist()
     },
 
     remove(card) {
+      sync()
       const index = cards.indexOf(card)
       if (index >= 0) cards.splice(index, 1)
       persist()
@@ -273,6 +312,8 @@ export function createBoard(options: { now?: () => number; path?: string } = {})
       for (const card of cards) out[card.column]++
       return out
     },
+
+    sync,
   }
 
   return board

@@ -15,16 +15,22 @@
  *   x / del      delete the selected card
  *   q / ctrl+c   quit
  *
- *   bun run start status   print "Kanban 2 doing · 5 to-do" for status bars
+ *   bun run start add|list|move|rm|status   commands for scripts and agents (see src/cli.ts)
  */
-import { createBoard, defaultBoardPath, statusLine } from "./src/board"
+import { createBoard, defaultBoardPath } from "./src/board"
 
-// `kanban-tui status` prints one line for status bars; it skips loading the UI.
-if (process.argv[2] === "status") {
+// Any argument runs a one-shot command instead of the board; the UI isn't loaded.
+const args = process.argv.slice(2)
+if (args.length > 0) {
+  const { runCommand } = await import("./src/cli")
   try {
-    console.log(statusLine(createBoard({ path: defaultBoardPath() }).counts()))
-  } catch {
+    console.log(runCommand(createBoard({ path: defaultBoardPath() }), args))
+  } catch (error) {
     // An unreadable board just leaves the status line empty.
+    if (args[0] !== "status") {
+      console.error(error instanceof Error ? error.message : error)
+      process.exit(1)
+    }
   }
   process.exit(0)
 }
@@ -54,8 +60,12 @@ renderer.root.add(app.root)
 
 renderer.setTerminalTitle("Flow · kanban board")
 
-// Keeps the clock, ages and toast timers honest.
-const clock = setInterval(() => app.refresh(), 1000)
+// Keeps the clock, ages and toast timers honest, and shows cards that agents
+// add from other panes (`kanban-tui add`) within a second.
+const clock = setInterval(() => {
+  app.syncBoard()
+  app.refresh()
+}, 1000)
 
 let shuttingDown = false
 
