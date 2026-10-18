@@ -76,7 +76,11 @@ export function statusLine(counts: Record<ColumnId, number>): string {
 
 /** Where the installed app keeps your board. */
 export function defaultBoardPath(): string {
-  return join(homedir(), "Library", "Application Support", "kanban_tui", "board.json")
+  const dir =
+    process.platform === "darwin"
+      ? join(homedir(), "Library", "Application Support")
+      : (process.env.XDG_DATA_HOME ?? join(homedir(), ".local", "share"))
+  return join(dir, "kanban_tui", "board.json")
 }
 
 interface SavedBoard {

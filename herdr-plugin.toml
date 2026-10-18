@@ -3,7 +3,7 @@ name = "Kanban"
 version = "0.1.0"
 min_herdr_version = "0.9.0"
 description = "Flow, a keyboard-first kanban board, in a Herdr pane."
-platforms = ["macos"]
+platforms = ["macos", "linux"]
 
 [[build]]
 command = ["bun", "install", "--production"]

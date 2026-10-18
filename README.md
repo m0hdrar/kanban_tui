@@ -2,7 +2,7 @@
 
 [![Release](https://img.shields.io/github/v/release/m0hdrar/kanban_tui)](https://github.com/m0hdrar/kanban_tui/releases)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-![Platform](https://img.shields.io/badge/platform-macOS-lightgrey)
+![Platform](https://img.shields.io/badge/platform-macOS%20%7C%20Linux-lightgrey)
 
 A keyboard-first kanban board for your terminal, built with [Bun](https://bun.sh) and [OpenTUI](https://github.com/sst/opentui).
 
@@ -33,7 +33,7 @@ Then run:
 kanban-tui
 ```
 
-Supports macOS on Apple Silicon and Intel.
+Supports macOS and Linux, on Apple Silicon/ARM64 and Intel/x64. On Linux, install [Homebrew on Linux](https://docs.brew.sh/Homebrew-on-Linux) or download a binary from the [releases](https://github.com/m0hdrar/kanban_tui/releases).
 
 ### As a herdr plugin
 
@@ -139,7 +139,8 @@ Or copy `skills/kanban` into `~/.claude/skills/` for Claude Code, or `~/.agents/
 Your board is saved after every change to one file:
 
 ```text
-~/Library/Application Support/kanban_tui/board.json
+~/Library/Application Support/kanban_tui/board.json   # macOS
+~/.local/share/kanban_tui/board.json                  # Linux ($XDG_DATA_HOME if set)
 ```
 
 It holds every project; the open one is saved with it, so `kanban-tui` commands use the project you last opened. Boards from before projects open as the `General` project.
