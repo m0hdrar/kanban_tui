@@ -70,6 +70,18 @@ interface ColumnView {
   scroll: ScrollBoxRenderable
 }
 
+/**
+ * Remove and free a container's children. `remove()` alone only detaches them:
+ * each TextRenderable keeps a native text buffer alive, and rebuilding the cards
+ * on every keypress leaked them until OpenTUI ran out of native memory.
+ */
+function clearChildren(container: ScrollBoxRenderable) {
+  for (const child of container.getChildren()) {
+    container.remove(child)
+    child.destroyRecursively()
+  }
+}
+
 const TOAST_MS = 3600
 const FLASH_MS = 900
 const CARD_ROWS = 2
@@ -570,7 +582,7 @@ export function createKanbanApp(
       view.panel.title = ` ${view.title} · ${cards.length} `
       view.panel.titleColor = focused ? accent : theme.textFaint
 
-      for (const child of view.scroll.getChildren()) view.scroll.remove(child)
+      clearChildren(view.scroll)
 
       if (cards.length === 0) {
         const empty = new BoxRenderable(ctx, { flexDirection: "column", paddingY: 2 })

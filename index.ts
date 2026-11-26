@@ -56,6 +56,9 @@ const renderer = await createCliRenderer({
   backgroundColor: theme.bg,
   targetFps: 30,
   consoleMode: "console-overlay",
+  // Opening the debug console allocates a full-width buffer; if an error came
+  // from native memory running out, that allocation fails too and hides the cause.
+  openConsoleOnError: false,
 })
 
 const app = createKanbanApp(renderer, board)
@@ -74,21 +77,36 @@ const clock = setInterval(() => {
 
 let shuttingDown = false
 
+/** Terminal modes the renderer turns on: mouse tracking, alternate screen, hidden cursor. */
+const RESET_TERMINAL =
+  "\x1b[?1000l\x1b[?1002l\x1b[?1003l\x1b[?1006l\x1b[?2004l\x1b[?1049l\x1b[?25h\x1b[0m"
+
 function shutdown() {
   if (shuttingDown) return
   shuttingDown = true
   clearInterval(clock)
-  app.destroy()
-  renderer.destroy()
+  // Each step is guarded: after a fatal error the renderer itself may fail to
+  // clean up, and the terminal must never be left sending mouse codes.
+  try {
+    app.destroy()
+  } catch {}
+  try {
+    renderer.destroy()
+  } catch {}
+  try {
+    process.stdout.write(RESET_TERMINAL)
+  } catch {}
 }
 
 // A failed save surfaces here (from a keypress or the composer's enter). Stop
 // rather than let the user keep editing a board that isn't being saved.
-process.on("uncaughtException", (error) => {
+function fatal(error: unknown) {
   shutdown()
   console.error(`kanban-tui stopped: ${error instanceof Error ? error.message : error}`)
   process.exit(1)
-})
+}
+process.on("uncaughtException", fatal)
+process.on("unhandledRejection", fatal)
 
 renderer.keyInput.on("keypress", (key) => {
   const result = app.handleKey(key)
